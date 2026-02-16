@@ -2,7 +2,7 @@
 
 import { createContext, useContext } from "react"
 
-export type ViewId = "overview" | "projects" | "decisions" | "goals" | "activity" | "timeline" | "graph"
+export type ViewId = "overview" | "projects" | "decisions" | "goals" | "activity" | "timeline" | "graph" | "sites"
 
 export interface DashboardState {
   activeView: ViewId

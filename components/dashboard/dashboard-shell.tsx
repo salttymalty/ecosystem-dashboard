@@ -12,6 +12,7 @@ import { GoalsView } from "./views/goals-view"
 import { ActivityView } from "./views/activity-view"
 import { TimelineView } from "./views/timeline-view"
 import { GraphView } from "./views/graph-view"
+import { SitesView } from "./views/sites-view"
 import { cn } from "@/lib/utils"
 
 const VIEW_MAP: Record<ViewId, React.ComponentType> = {
@@ -22,6 +23,7 @@ const VIEW_MAP: Record<ViewId, React.ComponentType> = {
   activity: ActivityView,
   timeline: TimelineView,
   graph: GraphView,
+  sites: SitesView,
 }
 
 export function DashboardShell() {
@@ -45,9 +47,9 @@ export function DashboardShell() {
       if (tag === "INPUT" || tag === "TEXTAREA") return
 
       // Number keys 1-7 for views
-      const viewKeys: ViewId[] = ["overview", "projects", "decisions", "goals", "activity", "timeline", "graph"]
+      const viewKeys: ViewId[] = ["overview", "projects", "decisions", "goals", "activity", "timeline", "graph", "sites"]
       const num = parseInt(e.key)
-      if (num >= 1 && num <= 7) {
+      if (num >= 1 && num <= 8) {
         e.preventDefault()
         setActiveView(viewKeys[num - 1])
       }

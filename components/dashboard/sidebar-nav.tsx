@@ -13,6 +13,7 @@ import {
   Zap,
   Calendar,
   Network,
+  Globe,
   Search,
   Sun,
   Moon,
@@ -29,6 +30,7 @@ const NAV_ITEMS: { id: ViewId; label: string; icon: React.ReactNode; shortcut: s
   { id: "activity", label: "Activity", icon: <Zap className="h-4 w-4" />, shortcut: "5" },
   { id: "timeline", label: "Timeline", icon: <Calendar className="h-4 w-4" />, shortcut: "6" },
   { id: "graph", label: "Graph", icon: <Network className="h-4 w-4" />, shortcut: "7" },
+  { id: "sites", label: "Sites", icon: <Globe className="h-4 w-4" />, shortcut: "8" },
 ]
 
 export function SidebarNav() {

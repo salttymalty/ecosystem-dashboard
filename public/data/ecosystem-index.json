@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-02-16T08:54:36.304949",
+    "generated": "2026-02-16T09:29:24.635884",
     "generator": "build-ecosystem-index.py",
     "staleness_threshold_days": 14
   },
@@ -262,7 +262,11 @@
           "date": "2026-02-04",
           "message": "Initial commit: OEFF docs scaffold"
         }
-      ]
+      ],
+      "links": {
+        "repo": "https://github.com/oneearth-admin/oeff-docs",
+        "site": "https://docs.oneearthfilmfest.org"
+      }
     },
     {
       "id": "[name]",
@@ -491,7 +495,11 @@
           "date": "2026-02-05",
           "message": "initial site"
         }
-      ]
+      ],
+      "links": {
+        "repo": "https://github.com/salttymalty/partner-art",
+        "site": "https://taylorhopkins.art"
+      }
     },
     {
       "id": "convene",
@@ -507,9 +515,14 @@
         "next_action": null,
         "open_questions": []
       },
-      "last_activity": "2026-02-15",
-      "staleness_days": 1,
+      "last_activity": "2026-02-16",
+      "staleness_days": 0,
       "recent_commits": [
+        {
+          "hash": "6ba3c530",
+          "date": "2026-02-16",
+          "message": "Add README from Gemini audit quick wins"
+        },
         {
           "hash": "908e2457",
           "date": "2026-02-15",
@@ -555,7 +568,11 @@
           "date": "2026-02-07",
           "message": "Production Ops design refresh: IBM Carbon-inspired floor plan tool"
         }
-      ]
+      ],
+      "links": {
+        "repo": "https://github.com/salttymalty/convene-floorplan",
+        "site": "https://salttymalty.github.io/convene-floorplan"
+      }
     },
     {
       "id": "warm-stack",
@@ -593,7 +610,8 @@
           "date": "2026-02-12",
           "message": "Initial commit: warm-stack v0.1 — stdlib Python toolkit"
         }
-      ]
+      ],
+      "links": {}
     },
     {
       "id": "actors-garden",
@@ -616,6 +634,16 @@
       "last_activity": "2026-02-16",
       "staleness_days": 0,
       "recent_commits": [
+        {
+          "hash": "fb95b864",
+          "date": "2026-02-16",
+          "message": "Duplicate slice for McKenna (+1), remove transposition instructions"
+        },
+        {
+          "hash": "5721eee5",
+          "date": "2026-02-16",
+          "message": "Add README, untrack MP3/PDF binaries, update .gitignore"
+        },
         {
           "hash": "7ef4c8e3",
           "date": "2026-02-16",
@@ -766,7 +794,10 @@
           "date": "2026-02-08",
           "message": "Initial commit: AG consulting engagement + LMM 2026 production"
         }
-      ]
+      ],
+      "links": {
+        "repo": "https://github.com/salttymalty/actors-garden"
+      }
     },
     {
       "id": "mad-hudson",
@@ -787,9 +818,14 @@
           "Phase 1 monitoring period runs through April 7."
         ]
       },
-      "last_activity": "2026-02-15",
-      "staleness_days": 1,
+      "last_activity": "2026-02-16",
+      "staleness_days": 0,
       "recent_commits": [
+        {
+          "hash": "86f56393",
+          "date": "2026-02-16",
+          "message": "Move 38 strategy docs to strategy/, rename archive to kebab-case"
+        },
         {
           "hash": "1032e9e1",
           "date": "2026-02-15",
@@ -1030,7 +1066,11 @@
           "date": "2026-02-09",
           "message": "Initial commit: Mad Hudson SEO audit, gameplan, and multi-agent orchestration"
         }
-      ]
+      ],
+      "links": {
+        "repo": "https://github.com/salttymalty/madhudson-seo-project",
+        "site": "https://madhudsonwatches.com"
+      }
     },
     {
       "id": "personal-os",
@@ -1063,7 +1103,10 @@
           "date": "2026-02-12",
           "message": "Initial commit: Claude Code infrastructure — agents, skills, corpus, provenance"
         }
-      ]
+      ],
+      "links": {
+        "repo": "https://github.com/salttymalty/claude-infrastructure"
+      }
     },
     {
       "id": "fifty-years",
@@ -1075,7 +1118,8 @@
       "state_summary": null,
       "last_activity": null,
       "staleness_days": null,
-      "recent_commits": []
+      "recent_commits": [],
+      "links": {}
     },
     {
       "id": "financial-os",
@@ -1087,7 +1131,8 @@
       "state_summary": null,
       "last_activity": null,
       "staleness_days": null,
-      "recent_commits": []
+      "recent_commits": [],
+      "links": {}
     }
   ],
   "decisions": [
@@ -2351,6 +2396,39 @@
       "date": "2026-02-15"
     },
     {
+      "id": "2026-02-15T20-00-actors-garden-soundslice-key-audit",
+      "domain": "actors-garden",
+      "started": "2026-02-15T20:00:00Z",
+      "intent": "Integrate shifted stems into upload pipeline, audit key mismatches across all slices, create per-student slices for split-key songs",
+      "tags": [
+        "soundslice",
+        "pitch-shifting",
+        "key-management",
+        "student-experience",
+        "upload-pipeline",
+        "audit"
+      ],
+      "artifacts_created": [
+        "Actors-Garden/Production/02-Stems-MP3/*/sat_shift*/full_mix.mp3"
+      ],
+      "artifacts_modified": [
+        "Actors-Garden/catalog.py",
+        "Actors-Garden/catalog.py",
+        "Actors-Garden/catalog.json",
+        "Actors-Garden/soundslice-upload-runbook.md",
+        "Actors-Garden/student-links.html",
+        "Actors-Garden/student-links-public.html",
+        "Actors-Garden/student-links-public-deploy/index.html"
+      ],
+      "decisions": [
+        "bake-keys-into-recordings",
+        "duplicate-slice-for-split-keys",
+        "replace-full-mix-on-shifted-slices",
+        "tiiny-api-not-viable"
+      ],
+      "date": "2026-02-15"
+    },
+    {
       "id": "2026-02-15T20-00-ecosystem-audit",
       "domain": "meta",
       "started": "2026-02-15T20:00:00Z",
@@ -2515,6 +2593,78 @@
         "external-dashboard-complement"
       ],
       "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-16T12-00-meta-corpus-promotion",
+      "domain": "meta",
+      "started": "2026-02-16T12:00:00Z",
+      "intent": "Promote enriched and reclassified corpus digests to main corpus, rebuild index, research platform export options",
+      "tags": [
+        "corpus",
+        "enrichment",
+        "reclassification",
+        "context-recovery",
+        "infrastructure",
+        "platform-exports"
+      ],
+      "artifacts_created": [],
+      "artifacts_modified": [
+        "~/.claude/corpus/digests/",
+        "~/.claude/corpus/corpus-index.yaml"
+      ],
+      "decisions": [
+        "enriched-before-reclassified-merge-order",
+        "platform-exports-requested",
+        "gemini-api-not-viable-for-artifacts"
+      ],
+      "date": "2026-02-16"
+    },
+    {
+      "id": "2026-02-16T14-45-gemini-audit-quickwins",
+      "domain": "meta",
+      "started": "2026-02-16T14:45:00Z",
+      "intent": "Resume Gemini repo audits from Feb 15, implement all 5 quick wins from synthesis, create /repo-audit periodic skill",
+      "tags": [
+        "audit",
+        "infrastructure",
+        "hygiene",
+        "cross-repo",
+        "skill-creation",
+        "gemini-api"
+      ],
+      "artifacts_created": [
+        "~/.claude/skills/repo-audit/SKILL.md",
+        "~/random/.gitignore",
+        "~/Actors-Garden/README.md",
+        "~/actors-garden-site/README.md",
+        "~/convene-floorplan/README.md",
+        "~/random/README.md",
+        "~/README.md",
+        "~/random/scripts/data/",
+        "~/random/scripts/qc/",
+        "~/random/scripts/venues/",
+        "~/random/templates/",
+        "~/random/docs/",
+        "~/random/data/qc-reports/",
+        "~/Desktop/madhudson-seo-project/strategy/"
+      ],
+      "artifacts_modified": [
+        "~/.claude/CLAUDE.md",
+        "~/Actors-Garden/.gitignore",
+        "~/Desktop/claude/.gitignore",
+        "~/audit/SYNTHESIS.md",
+        "~/Desktop/madhudson-seo-project/START-HERE.md",
+        "~/Desktop/madhudson-seo-project/archive/",
+        "~/Desktop/claude/"
+      ],
+      "decisions": [
+        "known-exceptions-in-claude-md",
+        "ag-binary-untracking",
+        "madhudson-strategy-directory",
+        "repo-audit-skill",
+        "monthly-audit-cadence"
+      ],
+      "date": "2026-02-16"
     },
     {
       "id": "sw-20260212-16b7",
@@ -3013,16 +3163,16 @@
   "corpus": {
     "total": 594,
     "by_domain": {
-      "ag": 12,
-      "cogcom": 17,
-      "consulting": 6,
-      "convene": 21,
-      "cross-domain": 271,
-      "design": 152,
-      "madhudson": 12,
-      "meta": 1,
-      "oeff": 73,
-      "personal": 29
+      "ag": 13,
+      "cogcom": 21,
+      "consulting": 12,
+      "convene": 35,
+      "cross-domain": 186,
+      "design": 169,
+      "madhudson": 17,
+      "meta": 19,
+      "oeff": 84,
+      "personal": 38
     }
   },
   "stale": [],
@@ -3267,6 +3417,12 @@
         "date": "2026-02-15"
       },
       {
+        "id": "2026-02-15T20-00-actors-garden-soundslice-key-audit",
+        "domain": "actors-garden",
+        "intent": "Integrate shifted stems into upload pipeline, audit key mismatches across all sl",
+        "date": "2026-02-15"
+      },
+      {
         "id": "2026-02-15T20-00-ecosystem-audit",
         "domain": "meta",
         "intent": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, wh",
@@ -3301,6 +3457,18 @@
         "domain": "oeff",
         "intent": "Transform OEFF Airtable from data storage into operational command center — comp",
         "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-16T12-00-meta-corpus-promotion",
+        "domain": "meta",
+        "intent": "Promote enriched and reclassified corpus digests to main corpus, rebuild index, ",
+        "date": "2026-02-16"
+      },
+      {
+        "id": "2026-02-16T14-45-gemini-audit-quickwins",
+        "domain": "meta",
+        "intent": "Resume Gemini repo audits from Feb 15, implement all 5 quick wins from synthesis",
+        "date": "2026-02-16"
       },
       {
         "id": "sw-20260212-16b7",
@@ -3347,10 +3515,34 @@
     ],
     "commits": [
       {
+        "hash": "6ba3c530",
+        "date": "2026-02-16",
+        "message": "Add README from Gemini audit quick wins",
+        "project": "Convene Floor Plan"
+      },
+      {
+        "hash": "fb95b864",
+        "date": "2026-02-16",
+        "message": "Duplicate slice for McKenna (+1), remove transposition instructions",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "5721eee5",
+        "date": "2026-02-16",
+        "message": "Add README, untrack MP3/PDF binaries, update .gitignore",
+        "project": "Actors Garden"
+      },
+      {
         "hash": "7ef4c8e3",
         "date": "2026-02-16",
         "message": "Fix key mismatches, create McKenna's separate +1 slice",
         "project": "Actors Garden"
+      },
+      {
+        "hash": "86f56393",
+        "date": "2026-02-16",
+        "message": "Move 38 strategy docs to strategy/, rename archive to kebab-case",
+        "project": "Mad Hudson SEO"
       },
       {
         "hash": "dabff9c1",
@@ -3501,37 +3693,13 @@
         "date": "2026-02-15",
         "message": "Remove duplicate files flagged by Gemini audit",
         "project": "Actors Garden"
-      },
-      {
-        "hash": "1032e9e1",
-        "date": "2026-02-15",
-        "message": "Extract shared CSS into madhudson-base.css, eliminate token duplication across 4 pages",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "b7f78e38",
-        "date": "2026-02-15",
-        "message": "Fix roadmap topbar clipping on mobile",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "724f9426",
-        "date": "2026-02-15",
-        "message": "Remove personal names from deliverable pages",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "bd6561fd",
-        "date": "2026-02-15",
-        "message": "Strip decoration, systematize spacing, add slides mobile layout",
-        "project": "Mad Hudson SEO"
       }
     ],
     "domain_activity": {
       "mad-hudson": 16,
       "oeff": 7,
-      "meta": 14,
-      "actors-garden": 2,
+      "meta": 16,
+      "actors-garden": 3,
       "convene": 3,
       "design": 1,
       "audio-archive": 1
@@ -3589,7 +3757,7 @@
       "id": "convene",
       "label": "Convene Floor Plan",
       "text": "Convene Floor Plan complete",
-      "date": "2026-02-15"
+      "date": "2026-02-16"
     },
     {
       "type": "project",
@@ -3610,7 +3778,7 @@
       "id": "mad-hudson",
       "label": "Mad Hudson SEO",
       "text": "Mad Hudson SEO Completed full design overhaul of SEO deliverable. Palette: sage. Typography: Fraunces H1 only. Stripped shadows, accent borders, status dots. Added slides mobile layout. Created madhudson-seo-deliverable skill. Swarm audit sw-20260215-6f61. Explore deliverable architecture: shared CSS vs Python build script vs React ecosystem. Load madhudson-seo-deliverable skill and provenance session 2026-02-15T17-00-mad-hudson-design-overhaul.yaml for full context. Should the deliverable evolve from static HTML toward a build-script approach? Duplicated tokens across 12 files is the real pain point. What's the right middle ground between duplicated static HTML and framework dependency? If/when Garen wants to support React apps across the ecosystem, what infrastructure would that require? Phase 1 monitoring period runs through April 7.",
-      "date": "2026-02-15"
+      "date": "2026-02-16"
     },
     {
       "type": "project",
@@ -3971,6 +4139,13 @@
     },
     {
       "type": "session",
+      "id": "2026-02-15T20-00-actors-garden-soundslice-key-audit",
+      "label": "Integrate shifted stems into upload pipeline, audit key mismatches across all sl",
+      "text": "Integrate shifted stems into upload pipeline, audit key mismatches across all slices, create per-student slices for split-key songs actors-garden soundslice pitch-shifting key-management student-experience upload-pipeline audit",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
       "id": "2026-02-15T20-00-ecosystem-audit",
       "label": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, wh",
       "text": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, where the money is, and what to do next meta audit market-research pricing strategy cross-domain monetization",
@@ -4010,6 +4185,20 @@
       "label": "Transform OEFF Airtable from data storage into operational command center — comp",
       "text": "Transform OEFF Airtable from data storage into operational command center — computed fields, visibility layer, dashboard oeff airtable data-visualization operational-dashboard venue-management season-scoping beautiful-first api-workaround",
       "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-16T12-00-meta-corpus-promotion",
+      "label": "Promote enriched and reclassified corpus digests to main corpus, rebuild index, ",
+      "text": "Promote enriched and reclassified corpus digests to main corpus, rebuild index, research platform export options meta corpus enrichment reclassification context-recovery infrastructure platform-exports",
+      "date": "2026-02-16"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-16T14-45-gemini-audit-quickwins",
+      "label": "Resume Gemini repo audits from Feb 15, implement all 5 quick wins from synthesis",
+      "text": "Resume Gemini repo audits from Feb 15, implement all 5 quick wins from synthesis, create /repo-audit periodic skill meta audit infrastructure hygiene cross-repo skill-creation gemini-api",
+      "date": "2026-02-16"
     },
     {
       "type": "session",
@@ -4099,9 +4288,9 @@
         "date": "2025-10-26",
         "totalHours": 0.5,
         "domains": {
-          "cross-domain": 0.5
+          "personal": 0.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "personal"
       },
       {
         "date": "2025-10-27",
@@ -4113,9 +4302,9 @@
         "date": "2025-10-28",
         "totalHours": 1.5,
         "domains": {
-          "cross-domain": 1.5
+          "convene": 1.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "convene"
       },
       {
         "date": "2025-10-29",
@@ -4153,9 +4342,9 @@
         "date": "2025-11-03",
         "totalHours": 1.0,
         "domains": {
-          "cross-domain": 1.0
+          "convene": 1.0
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "convene"
       },
       {
         "date": "2025-11-04",
@@ -4169,9 +4358,9 @@
         "date": "2025-11-05",
         "totalHours": 0.5,
         "domains": {
-          "cross-domain": 0.5
+          "convene": 0.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "convene"
       },
       {
         "date": "2025-11-06",
@@ -4186,7 +4375,8 @@
         "date": "2025-11-07",
         "totalHours": 4.0,
         "domains": {
-          "cross-domain": 4.0
+          "cross-domain": 3.5,
+          "oeff": 0.5
         },
         "dominantDomain": "cross-domain"
       },
@@ -4206,7 +4396,8 @@
         "date": "2025-11-10",
         "totalHours": 2.5,
         "domains": {
-          "cross-domain": 2.5
+          "convene": 1.0,
+          "cross-domain": 1.5
         },
         "dominantDomain": "cross-domain"
       },
@@ -4220,17 +4411,18 @@
         "date": "2025-11-12",
         "totalHours": 0.5,
         "domains": {
-          "cross-domain": 0.5
+          "convene": 0.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "convene"
       },
       {
         "date": "2025-11-13",
         "totalHours": 1.0,
         "domains": {
-          "cross-domain": 1.0
+          "convene": 0.5,
+          "cross-domain": 0.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "convene"
       },
       {
         "date": "2025-11-14",
@@ -4311,7 +4503,8 @@
         "totalHours": 3.0,
         "domains": {
           "convene": 0.5,
-          "cross-domain": 2.5
+          "design": 1.0,
+          "cross-domain": 1.5
         },
         "dominantDomain": "cross-domain"
       },
@@ -4319,9 +4512,9 @@
         "date": "2025-11-25",
         "totalHours": 1.5,
         "domains": {
-          "cross-domain": 1.5
+          "oeff": 1.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "oeff"
       },
       {
         "date": "2025-11-26",
@@ -4333,10 +4526,10 @@
         "date": "2025-11-27",
         "totalHours": 5.5,
         "domains": {
-          "oeff": 2.0,
-          "cross-domain": 3.5
+          "oeff": 5.0,
+          "cross-domain": 0.5
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "oeff"
       },
       {
         "date": "2025-11-28",
@@ -4356,8 +4549,8 @@
         "date": "2025-11-30",
         "totalHours": 7.0,
         "domains": {
-          "cross-domain": 5.5,
-          "personal": 1.5
+          "cross-domain": 3.5,
+          "personal": 3.5
         },
         "dominantDomain": "cross-domain"
       },
@@ -4365,7 +4558,8 @@
         "date": "2025-12-01",
         "totalHours": 3.0,
         "domains": {
-          "cross-domain": 3.0
+          "cross-domain": 2.5,
+          "design": 0.5
         },
         "dominantDomain": "cross-domain"
       },
@@ -4470,9 +4664,9 @@
         "date": "2025-12-14",
         "totalHours": 2.0,
         "domains": {
-          "cross-domain": 2.0
+          "oeff": 2.0
         },
-        "dominantDomain": "cross-domain"
+        "dominantDomain": "oeff"
       },
       {
         "date": "2025-12-15",
@@ -4511,7 +4705,8 @@
         "date": "2025-12-19",
         "totalHours": 4.5,
         "domains": {
-          "cross-domain": 4.5
+          "cross-domain": 3.5,
+          "oeff": 1.0
         },
         "dominantDomain": "cross-domain"
       },
@@ -4519,7 +4714,9 @@
         "date": "2025-12-20",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 7.45,
+          "personal": 2.21,
+          "cross-domain": 4.14,
+          "oeff": 1.1,
           "convene": 0.55
         },
         "dominantDomain": "cross-domain"
@@ -4528,8 +4725,9 @@
         "date": "2025-12-21",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 6.22,
-          "design": 1.78
+          "cross-domain": 4.44,
+          "design": 1.78,
+          "convene": 1.78
         },
         "dominantDomain": "cross-domain"
       },
@@ -4537,9 +4735,11 @@
         "date": "2025-12-22",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 6.46,
+          "personal": 0.31,
+          "mad-hudson": 1.54,
           "convene": 0.62,
-          "mad-hudson": 0.92
+          "cross-domain": 5.23,
+          "meta": 0.31
         },
         "dominantDomain": "cross-domain"
       },
@@ -4556,7 +4756,8 @@
         "date": "2025-12-24",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 5.22,
+          "cross-domain": 3.13,
+          "meta": 2.09,
           "personal": 2.78
         },
         "dominantDomain": "cross-domain"
@@ -4565,10 +4766,10 @@
         "date": "2025-12-25",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 4.25,
+          "cross-domain": 3.5,
           "convene": 1.0,
-          "mad-hudson": 1.25,
-          "design": 1.25,
+          "mad-hudson": 1.5,
+          "design": 1.75,
           "personal": 0.25
         },
         "dominantDomain": "cross-domain"
@@ -4577,10 +4778,13 @@
         "date": "2025-12-26",
         "totalHours": 8,
         "domains": {
-          "design": 0.51,
-          "cross-domain": 6.81,
-          "mad-hudson": 0.51,
-          "personal": 0.17
+          "design": 1.53,
+          "personal": 0.34,
+          "cross-domain": 4.26,
+          "ag": 0.34,
+          "mad-hudson": 0.85,
+          "meta": 0.34,
+          "convene": 0.34
         },
         "dominantDomain": "cross-domain"
       },
@@ -4588,9 +4792,12 @@
         "date": "2025-12-27",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 6.31,
-          "design": 0.31,
-          "mad-hudson": 1.38
+          "cross-domain": 3.54,
+          "design": 0.62,
+          "personal": 0.92,
+          "mad-hudson": 1.54,
+          "meta": 1.23,
+          "convene": 0.15
         },
         "dominantDomain": "cross-domain"
       },
@@ -4598,7 +4805,8 @@
         "date": "2025-12-28",
         "totalHours": 6.0,
         "domains": {
-          "cross-domain": 6.0
+          "cross-domain": 3.0,
+          "design": 3.0
         },
         "dominantDomain": "cross-domain"
       },
@@ -4606,7 +4814,10 @@
         "date": "2025-12-29",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 8.0
+          "design": 2.89,
+          "convene": 0.44,
+          "cross-domain": 3.11,
+          "meta": 1.56
         },
         "dominantDomain": "cross-domain"
       },
@@ -4622,10 +4833,11 @@
         "date": "2025-12-31",
         "totalHours": 8,
         "domains": {
-          "design": 1.79,
-          "cross-domain": 4.18,
-          "personal": 1.31,
+          "design": 2.27,
+          "cross-domain": 3.22,
+          "personal": 1.55,
           "convene": 0.24,
+          "meta": 0.24,
           "oeff": 0.48
         },
         "dominantDomain": "cross-domain"
@@ -4634,9 +4846,10 @@
         "date": "2026-01-01",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 1.52,
+          "meta": 0.38,
           "personal": 3.43,
-          "design": 3.05
+          "design": 3.05,
+          "cross-domain": 1.14
         },
         "dominantDomain": "personal"
       },
@@ -4664,8 +4877,8 @@
         "date": "2026-01-04",
         "totalHours": 8,
         "domains": {
-          "design": 7.24,
-          "cross-domain": 0.76
+          "design": 7.81,
+          "cross-domain": 0.19
         },
         "dominantDomain": "design"
       },
@@ -4675,7 +4888,9 @@
         "domains": {
           "design": 6.71,
           "personal": 0.26,
-          "cross-domain": 1.03
+          "cross-domain": 0.26,
+          "oeff": 0.52,
+          "meta": 0.26
         },
         "dominantDomain": "design"
       },
@@ -4709,7 +4924,8 @@
         "totalHours": 8,
         "domains": {
           "design": 5.78,
-          "cross-domain": 2.22
+          "meta": 0.44,
+          "cross-domain": 1.78
         },
         "dominantDomain": "design"
       },
@@ -4719,8 +4935,7 @@
         "domains": {
           "design": 4.67,
           "ag": 1.0,
-          "convene": 2.0,
-          "cross-domain": 0.33
+          "convene": 2.33
         },
         "dominantDomain": "design"
       },
@@ -4728,9 +4943,9 @@
         "date": "2026-01-11",
         "totalHours": 8,
         "domains": {
-          "design": 5.65,
+          "design": 6.12,
           "oeff": 0.47,
-          "cross-domain": 1.88
+          "cross-domain": 1.41
         },
         "dominantDomain": "design"
       },
@@ -4746,9 +4961,11 @@
         "date": "2026-01-13",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 1.78,
+          "convene": 0.3,
           "design": 5.93,
-          "personal": 0.3
+          "personal": 0.3,
+          "cross-domain": 0.89,
+          "meta": 0.59
         },
         "dominantDomain": "design"
       },
@@ -4756,8 +4973,9 @@
         "date": "2026-01-14",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 1.4,
+          "convene": 0.6,
           "design": 6.2,
+          "cross-domain": 0.8,
           "oeff": 0.4
         },
         "dominantDomain": "design"
@@ -4790,8 +5008,9 @@
         "totalHours": 7.5,
         "domains": {
           "design": 3.5,
-          "cross-domain": 2.0,
-          "personal": 2.0
+          "cross-domain": 1.0,
+          "personal": 2.0,
+          "convene": 1.0
         },
         "dominantDomain": "design"
       },
@@ -4862,7 +5081,8 @@
         "domains": {
           "personal": 0.47,
           "oeff": 4.24,
-          "cross-domain": 2.35,
+          "cross-domain": 1.88,
+          "convene": 0.47,
           "ag": 0.94
         },
         "dominantDomain": "oeff"
@@ -4879,9 +5099,9 @@
         "date": "2026-01-27",
         "totalHours": 8,
         "domains": {
-          "oeff": 4.31,
+          "oeff": 4.62,
           "design": 3.08,
-          "cross-domain": 0.62
+          "cross-domain": 0.31
         },
         "dominantDomain": "oeff"
       },
@@ -4899,7 +5119,7 @@
         "totalHours": 8,
         "domains": {
           "design": 3.56,
-          "cross-domain": 0.44,
+          "meta": 0.44,
           "oeff": 1.33,
           "personal": 2.67
         },
@@ -4931,12 +5151,13 @@
         "date": "2026-02-01",
         "totalHours": 8,
         "domains": {
-          "cross-domain": 2.48,
+          "meta": 0.83,
           "oeff": 0.55,
           "convene": 0.55,
           "mad-hudson": 0.28,
           "design": 3.03,
           "personal": 0.83,
+          "cross-domain": 1.66,
           "ag": 0.28
         },
         "dominantDomain": "design"
@@ -4946,8 +5167,9 @@
         "totalHours": 8,
         "domains": {
           "design": 0.8,
-          "cross-domain": 2.0,
-          "oeff": 5.2
+          "convene": 0.8,
+          "oeff": 5.2,
+          "cross-domain": 1.2
         },
         "dominantDomain": "oeff"
       },
@@ -4974,7 +5196,8 @@
         "domains": {
           "oeff": 3.7,
           "partner-art": 0.48,
-          "cross-domain": 1.67,
+          "cross-domain": 0.72,
+          "meta": 0.96,
           "design": 2.15
         },
         "dominantDomain": "oeff"
@@ -4985,12 +5208,12 @@
         "domains": {
           "oeff": 2.6,
           "ag": 1.4,
-          "convene": 2.4,
+          "convene": 2.8,
           "personal": 0.2,
           "design": 0.6,
-          "cross-domain": 0.8
+          "cross-domain": 0.4
         },
-        "dominantDomain": "oeff"
+        "dominantDomain": "convene"
       },
       {
         "date": "2026-02-07",
@@ -4998,9 +5221,9 @@
         "domains": {
           "partner-art": 2.21,
           "convene": 1.02,
-          "cross-domain": 1.02,
-          "design": 1.02,
-          "meta": 2.72
+          "cross-domain": 0.34,
+          "meta": 3.4,
+          "design": 1.02
         },
         "dominantDomain": "meta"
       },
@@ -5010,7 +5233,7 @@
         "domains": {
           "partner-art": 3.75,
           "ag": 1.5,
-          "cross-domain": 1.0
+          "meta": 1.0
         },
         "dominantDomain": "partner-art"
       },
@@ -5082,25 +5305,28 @@
         "date": "2026-02-15",
         "totalHours": 8,
         "domains": {
-          "oeff": 1.14,
-          "convene": 0.79,
+          "oeff": 1.08,
+          "convene": 0.74,
           "design": 0.03,
-          "ag": 0.64,
-          "mad-hudson": 0.99,
-          "personal": 0.09,
-          "actors-garden": 0.76,
-          "meta": 3.39,
-          "audio-archive": 0.18
+          "ag": 0.61,
+          "mad-hudson": 0.94,
+          "personal": 0.08,
+          "actors-garden": 1.16,
+          "meta": 3.2,
+          "audio-archive": 0.17
         },
         "dominantDomain": "meta"
       },
       {
         "date": "2026-02-16",
-        "totalHours": 0.25,
+        "totalHours": 6.75,
         "domains": {
-          "ag": 0.25
+          "convene": 0.25,
+          "ag": 0.75,
+          "mad-hudson": 0.25,
+          "meta": 5.5
         },
-        "dominantDomain": "ag"
+        "dominantDomain": "meta"
       }
     ],
     "dateRange": {
@@ -5109,5 +5335,329 @@
     },
     "totalDays": 119,
     "activeDays": 97
-  }
+  },
+  "sites": [
+    {
+      "url": "https://docs.oneearthfilmfest.org",
+      "label": "Team Docs",
+      "domain": "oeff",
+      "platform": "cloudflare",
+      "project": "oeff"
+    },
+    {
+      "url": "https://hosts.oneearthfilmfest.org",
+      "label": "Host Portal",
+      "domain": "oeff",
+      "platform": "cloudflare",
+      "project": "oeff"
+    },
+    {
+      "url": "https://oneearth-admin.github.io/oeff-tonight",
+      "label": "Screening Runsheet",
+      "domain": "oeff",
+      "platform": "github-pages",
+      "project": "oeff"
+    },
+    {
+      "url": "https://oeff2026.tiiny.site",
+      "label": "OEFF 2026",
+      "domain": "oeff",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://oeffweekly.tiiny.site",
+      "label": "OEFF Weekly",
+      "domain": "oeff",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://oeffaccess.tiiny.site",
+      "label": "OEFF Access",
+      "domain": "oeff",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://oeff26-tasks-processes.tiiny.site",
+      "label": "Tasks & Processes",
+      "domain": "oeff",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://taylorhopkins.art",
+      "label": "Portfolio",
+      "domain": "partner-art",
+      "platform": "cloudflare",
+      "project": "[name]"
+    },
+    {
+      "url": "https://taylorhopkins.art/available",
+      "label": "Available Work",
+      "domain": "partner-art",
+      "platform": "cloudflare",
+      "project": "[name]"
+    },
+    {
+      "url": "https://taylorhopkins.art/cards",
+      "label": "Piece Cards",
+      "domain": "partner-art",
+      "platform": "cloudflare",
+      "project": "[name]"
+    },
+    {
+      "url": "https://thopkinsart.tiiny.site",
+      "label": "Portfolio (tiiny)",
+      "domain": "partner-art",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://t-career.tiiny.site",
+      "label": "Career Page",
+      "domain": "partner-art",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://salttymalty.github.io/convene-floorplan",
+      "label": "Floor Plan Tool",
+      "domain": "convene",
+      "platform": "github-pages",
+      "project": "convene"
+    },
+    {
+      "url": "https://convene1.tiiny.site",
+      "label": "Convene v1",
+      "domain": "convene",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://convene2.tiiny.site",
+      "label": "Convene v2",
+      "domain": "convene",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://convene3.tiiny.site",
+      "label": "Convene v3",
+      "domain": "convene",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://flosht.tiiny.site",
+      "label": "Flow Sheet",
+      "domain": "convene",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://bookingplan.tiiny.site",
+      "label": "Booking Plan",
+      "domain": "convene",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://bookingplanv2.tiiny.site",
+      "label": "Booking Plan v2",
+      "domain": "convene",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://projector-recs.tiiny.site",
+      "label": "Projector Recs",
+      "domain": "convene",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://lmm2026soundslice.tiiny.site",
+      "label": "Soundslice Portal",
+      "domain": "ag",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://aglmm6.tiiny.site",
+      "label": "LMM Lesson 6",
+      "domain": "ag",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://aglmm-week5.tiiny.site",
+      "label": "LMM Week 5",
+      "domain": "ag",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://agweek1lessonplan.tiiny.site",
+      "label": "Week 1 Lesson Plan",
+      "domain": "ag",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://agsongselection.tiiny.site",
+      "label": "Song Selection",
+      "domain": "ag",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://madhudsonwatches.com",
+      "label": "Shopify Store",
+      "domain": "mad-hudson",
+      "platform": "shopify",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://watchconcepts.tiiny.site",
+      "label": "Watch Concepts",
+      "domain": "mad-hudson",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://watchconceptsrnd.tiiny.site",
+      "label": "Concepts R&D",
+      "domain": "mad-hudson",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://design-core.tiiny.site",
+      "label": "Design Core",
+      "domain": "design",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://commonsfirstdraft.tiiny.site",
+      "label": "Commons First Draft",
+      "domain": "design",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://intentionaltechtools.tiiny.site",
+      "label": "Intentional Tech Tools",
+      "domain": "design",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://ecosystem-dashboard.vercel.app",
+      "label": "Ecosystem Dashboard",
+      "domain": "meta",
+      "platform": "vercel",
+      "project": "personal-os"
+    },
+    {
+      "url": "https://garenssystems.tiiny.site",
+      "label": "Garen's Systems",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://garenindex.tiiny.site",
+      "label": "Garen Index",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://garendelegate.tiiny.site",
+      "label": "Delegate",
+      "domain": "personal",
+      "platform": "tiiny",
+      "private": true
+    },
+    {
+      "url": "https://garenshibori.tiiny.site",
+      "label": "Shibori",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://dailyboard.tiiny.site",
+      "label": "Daily Board",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://sessionsummary0102.tiiny.site",
+      "label": "Session Summary",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://toolprefs.tiiny.site",
+      "label": "Tool Prefs",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://techresources.tiiny.site",
+      "label": "Tech Resources",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://yesimadeathingsorry.tiiny.site",
+      "label": "Yes I Made a Thing",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://dadconcussionrecovery.tiiny.site",
+      "label": "Dad Concussion Recovery",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://suppcity.tiiny.site",
+      "label": "Supp City",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://readinglist3.tiiny.site",
+      "label": "Reading List v3",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://readinglist2.tiiny.site",
+      "label": "Reading List v2",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://gsreadinglist.tiiny.site",
+      "label": "Reading List",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://wardrobe.tiiny.site",
+      "label": "Wardrobe",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://wardrobe2.tiiny.site",
+      "label": "Wardrobe v2",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://uniform.tiiny.site",
+      "label": "Uniform",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://jesswebsite.tiiny.site",
+      "label": "Jess Website",
+      "domain": "personal",
+      "platform": "tiiny"
+    },
+    {
+      "url": "https://gdgdformsoptions.tiiny.site",
+      "label": "GDGD Forms Options",
+      "domain": "personal",
+      "platform": "tiiny"
+    }
+  ]
 }

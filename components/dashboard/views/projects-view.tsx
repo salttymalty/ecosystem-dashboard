@@ -16,6 +16,8 @@ import {
   Target,
   AlertTriangle,
   ChevronRight,
+  ExternalLink,
+  Github,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -109,6 +111,30 @@ export function ProjectsView() {
                       </span>
                     </div>
                     <DomainChip domain={project.domain} size="xs" />
+                    {project.links?.repo && (
+                      <a
+                        href={project.links.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="p-1 rounded hover:bg-accent/80 transition-colors"
+                        title="GitHub"
+                      >
+                        <Github className="h-3.5 w-3.5 text-muted-foreground hover:text-foreground" />
+                      </a>
+                    )}
+                    {project.links?.site && (
+                      <a
+                        href={project.links.site}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="p-1 rounded hover:bg-accent/80 transition-colors"
+                        title="Live site"
+                      >
+                        <ExternalLink className="h-3.5 w-3.5 text-muted-foreground hover:text-foreground" />
+                      </a>
+                    )}
                     <div className="ml-auto">
                       <Sparkline
                         data={project.recentCommits.map((c) => c.count).reverse()}

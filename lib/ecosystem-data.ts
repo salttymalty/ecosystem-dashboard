@@ -48,6 +48,16 @@ export interface Project {
   blockers?: string[]
   openQuestions?: string[]
   path?: string
+  links?: { repo?: string; site?: string }
+}
+
+export interface Site {
+  url: string
+  label: string
+  domain: string
+  platform: string
+  project?: string
+  private?: boolean
 }
 
 export interface ProvenanceSession {
@@ -143,6 +153,7 @@ interface RawProject {
   last_activity: string
   staleness_days: number
   recent_commits: { hash: string; date: string; message: string }[]
+  links?: { repo?: string; site?: string }
 }
 
 interface RawDecision {
@@ -213,6 +224,7 @@ interface RawEcosystemIndex {
   open_questions: { project: string; question: string }[]
   search: RawSearchItem[]
   timeline: RawTimeline
+  sites?: Site[]
 }
 
 // === Adapter functions ===
@@ -290,6 +302,7 @@ export function transformEcosystemData(raw: RawEcosystemIndex) {
     blockers: p.state_summary?.blockers || [],
     openQuestions: p.state_summary?.open_questions || [],
     path: p.path,
+    links: p.links || {},
   }))
 
   const decisions: Decision[] = raw.decisions.map((d) => ({
@@ -369,6 +382,7 @@ export function transformEcosystemData(raw: RawEcosystemIndex) {
     weeklyReviews,
     corpus,
     searchIndex,
+    sites: raw.sites || [],
     meta: raw._meta,
   }
 }

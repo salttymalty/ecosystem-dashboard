@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-02-15T11:41:58.959838",
+    "generated": "2026-02-16T08:54:36.304949",
     "generator": "build-ecosystem-index.py",
     "staleness_threshold_days": 14
   },
@@ -8,7 +8,7 @@
     {
       "id": "oeff",
       "name": "OEFF 2026",
-      "path": "/Users/garen/Desktop/OEFF Clean Data",
+      "path": "~/Desktop/OEFF Clean Data",
       "domain": "oeff",
       "exists": true,
       "is_git_repo": true,
@@ -20,7 +20,7 @@
         "open_questions": []
       },
       "last_activity": "2026-02-15",
-      "staleness_days": 0,
+      "staleness_days": 1,
       "recent_commits": [
         {
           "hash": "dabff9c1",
@@ -35,42 +35,42 @@
         {
           "hash": "17f9f079",
           "date": "2026-02-13",
-          "message": "Add host communications plan \u2014 5 streams, master calendar, YAMM workflow"
+          "message": "Add host communications plan — 5 streams, master calendar, YAMM workflow"
         },
         {
           "hash": "ec99e602",
           "date": "2026-02-13",
-          "message": "Add Kim onboarding package \u2014 proposal, Claude instructions, overview"
+          "message": "Add Kim onboarding package — proposal, Claude instructions, overview"
         },
         {
           "hash": "937b87b2",
           "date": "2026-02-13",
-          "message": "Host Guide v12.5 \u2014 fix logo, correct session count, emphasize optional"
+          "message": "Host Guide v12.5 — fix logo, correct session count, emphasize optional"
         },
         {
           "hash": "ff1295e2",
           "date": "2026-02-13",
-          "message": "Host Guide v12.4 \u2014 btn-primary for registration, fix recording labels"
+          "message": "Host Guide v12.4 — btn-primary for registration, fix recording labels"
         },
         {
           "hash": "3adfaa29",
           "date": "2026-02-12",
-          "message": "Host Guide v12.3 \u2014 webinar links use next-step pattern"
+          "message": "Host Guide v12.3 — webinar links use next-step pattern"
         },
         {
           "hash": "587d355f",
           "date": "2026-02-12",
-          "message": "Host Guide v12.2 \u2014 surface recordings + registration above accordion"
+          "message": "Host Guide v12.2 — surface recordings + registration above accordion"
         },
         {
           "hash": "7928ec15",
           "date": "2026-02-12",
-          "message": "Host Guide v12.1 \u2014 surface registration link, add email fallback"
+          "message": "Host Guide v12.1 — surface registration link, add email fallback"
         },
         {
           "hash": "48897f12",
           "date": "2026-02-12",
-          "message": "Update Host Guide v12.0 \u2014 new Zoom link + webinar recordings"
+          "message": "Update Host Guide v12.0 — new Zoom link + webinar recordings"
         },
         {
           "hash": "6c3c4539",
@@ -80,7 +80,7 @@
         {
           "hash": "e1d0fcf7",
           "date": "2026-02-12",
-          "message": "Fix black shadow in host guide (rgba \u2192 warm-tinted hsla)"
+          "message": "Fix black shadow in host guide (rgba → warm-tinted hsla)"
         },
         {
           "hash": "89a02379",
@@ -170,12 +170,12 @@
         {
           "hash": "f5691978",
           "date": "2026-02-09",
-          "message": "Update Host Guide v11.7 \u2014 Integrate review comments"
+          "message": "Update Host Guide v11.7 — Integrate review comments"
         },
         {
           "hash": "8986138e",
           "date": "2026-02-09",
-          "message": "Add Host Guide v11.6 \u2014 Review doc integration"
+          "message": "Add Host Guide v11.6 — Review doc integration"
         },
         {
           "hash": "78d3ef34",
@@ -265,10 +265,10 @@
       ]
     },
     {
-      "id": "taylor",
-      "name": "Taylor Hopkins Art",
-      "path": "/Users/garen/taylor-hopkins-art",
-      "domain": "taylor-hopkins",
+      "id": "[name]",
+      "name": "[name] Art",
+      "path": "~/partner-art",
+      "domain": "partner-art",
       "exists": true,
       "is_git_repo": true,
       "state_summary": {
@@ -279,7 +279,7 @@
         "open_questions": []
       },
       "last_activity": "2026-02-12",
-      "staleness_days": 3,
+      "staleness_days": 4,
       "recent_commits": [
         {
           "hash": "1f2f99d1",
@@ -299,7 +299,7 @@
         {
           "hash": "ceaa30d7",
           "date": "2026-02-12",
-          "message": "Add event creation handler \u2014 CODEX-PLAN Phase 5 complete"
+          "message": "Add event creation handler — CODEX-PLAN Phase 5 complete"
         },
         {
           "hash": "5c7d4bd8",
@@ -454,12 +454,12 @@
         {
           "hash": "1ff62910",
           "date": "2026-02-07",
-          "message": "rewrite TAYLOR.md for claude.ai workflow"
+          "message": "rewrite [name].md for claude.ai workflow"
         },
         {
           "hash": "213e2167",
           "date": "2026-02-07",
-          "message": "rename Village to Village Tap, add TAYLOR.md instructions"
+          "message": "rename Village to Village Tap, add [name].md instructions"
         },
         {
           "hash": "d2b8ccad",
@@ -496,7 +496,7 @@
     {
       "id": "convene",
       "name": "Convene Floor Plan",
-      "path": "/Users/garen/convene-floorplan",
+      "path": "~/convene-floorplan",
       "domain": "convene",
       "exists": true,
       "is_git_repo": true,
@@ -508,7 +508,7 @@
         "open_questions": []
       },
       "last_activity": "2026-02-15",
-      "staleness_days": 0,
+      "staleness_days": 1,
       "recent_commits": [
         {
           "hash": "908e2457",
@@ -560,13 +560,13 @@
     {
       "id": "warm-stack",
       "name": "Warm Stack",
-      "path": "/Users/garen/warm-stack",
+      "path": "~/warm-stack",
       "domain": "design",
       "exists": true,
       "is_git_repo": true,
       "state_summary": null,
       "last_activity": "2026-02-15",
-      "staleness_days": 0,
+      "staleness_days": 1,
       "recent_commits": [
         {
           "hash": "94127195",
@@ -591,14 +591,14 @@
         {
           "hash": "4d2d13b8",
           "date": "2026-02-12",
-          "message": "Initial commit: warm-stack v0.1 \u2014 stdlib Python toolkit"
+          "message": "Initial commit: warm-stack v0.1 — stdlib Python toolkit"
         }
       ]
     },
     {
       "id": "actors-garden",
       "name": "Actors Garden",
-      "path": "/Users/garen/Actors-Garden",
+      "path": "~/Actors-Garden",
       "domain": "ag",
       "exists": true,
       "is_git_repo": true,
@@ -606,16 +606,106 @@
         "last_updated": "2026-02-08",
         "working_on": "2026-02-08 session 3: OKLCH design system exploration complete. Registered AG as new domain in Beautiful-First vocabulary with three scales (Garden, Spotlight, Play) forming split-complementary triad. Built interactive chroma explorer, flavor transforms, SVG motifs (seedling, tree, sun, curtain), full semantic token map, and in-context preview. TOON format export ready. Moving away from navy #2e3a8c toward Deep Forest #2e5a45.",
         "blockers": [
-          "Need GiGi to review redesign proposal and research",
+          "Need [name] to review redesign proposal and research",
           "Need to finalize retainer terms",
           "Need to schedule first session (late Feb)"
         ],
-        "next_action": "Build Home page prototype once GiGi approves redesign direction",
+        "next_action": "Build Home page prototype once [name] approves redesign direction",
         "open_questions": []
       },
-      "last_activity": "2026-02-15",
+      "last_activity": "2026-02-16",
       "staleness_days": 0,
       "recent_commits": [
+        {
+          "hash": "7ef4c8e3",
+          "date": "2026-02-16",
+          "message": "Fix key mismatches, create McKenna's separate +1 slice"
+        },
+        {
+          "hash": "91cd9577",
+          "date": "2026-02-15",
+          "message": "Revise scope with honest market-rate pricing and family framing"
+        },
+        {
+          "hash": "c8db3025",
+          "date": "2026-02-15",
+          "message": "Add shifted stems routing to upload pipeline, re-upload all recordings"
+        },
+        {
+          "hash": "0b692241",
+          "date": "2026-02-15",
+          "message": "Add Half Vox + Ghost Vox recordings, refactor vocal mix engine"
+        },
+        {
+          "hash": "3cfdcbcf",
+          "date": "2026-02-15",
+          "message": "Fix S3 upload (http.client bypass), upload karaoke to 14 songs"
+        },
+        {
+          "hash": "ff187a3d",
+          "date": "2026-02-15",
+          "message": "Add reupload-karaoke command, update pipeline status to current state"
+        },
+        {
+          "hash": "e8e2879e",
+          "date": "2026-02-15",
+          "message": "Move \"It's Our Turn Now\" to Unexpected Stories, remove from LMM student links"
+        },
+        {
+          "hash": "c70ddac8",
+          "date": "2026-02-15",
+          "message": "Add deploy folder for tiiny.host: lmm2026soundslice.tiiny.site"
+        },
+        {
+          "hash": "967417ad",
+          "date": "2026-02-15",
+          "message": "Add --public flag: names-stripped song links page"
+        },
+        {
+          "hash": "f65599d5",
+          "date": "2026-02-15",
+          "message": "Add student practice links page generator"
+        },
+        {
+          "hash": "4e2122bd",
+          "date": "2026-02-15",
+          "message": "Add sync command: copy syncpoints from Full Mix to Karaoke siblings"
+        },
+        {
+          "hash": "ffa0ec6b",
+          "date": "2026-02-15",
+          "message": "Remove countdown timer MP3s from source audio"
+        },
+        {
+          "hash": "f1fab286",
+          "date": "2026-02-15",
+          "message": "Delete LIVE duplicates and clean up 3-recording slices"
+        },
+        {
+          "hash": "11f64108",
+          "date": "2026-02-15",
+          "message": "Add enriched naming convention with show, performer, and key context"
+        },
+        {
+          "hash": "7797c10f",
+          "date": "2026-02-15",
+          "message": "Add cleanup --apply: scored duplicate detection with safe auto-delete"
+        },
+        {
+          "hash": "43398952",
+          "date": "2026-02-15",
+          "message": "Add rename-recordings command: Audio/Audio 2 → Full Mix/Karaoke"
+        },
+        {
+          "hash": "f44b0cbc",
+          "date": "2026-02-15",
+          "message": "Add stems command: WAV→MP3 conversion and upload readiness report"
+        },
+        {
+          "hash": "452cef2a",
+          "date": "2026-02-15",
+          "message": "Rebuild Soundslice guide with design system tokens, correct stems workflow"
+        },
         {
           "hash": "15436a9b",
           "date": "2026-02-15",
@@ -629,7 +719,7 @@
         {
           "hash": "617df4f7",
           "date": "2026-02-15",
-          "message": "Update runbook with Wk5 program state \u2014 cuts, cast changes, blockers"
+          "message": "Update runbook with Wk5 program state — cuts, cast changes, blockers"
         },
         {
           "hash": "0c8d3bb8",
@@ -649,7 +739,7 @@
         {
           "hash": "a4a48d12",
           "date": "2026-02-12",
-          "message": "Add Week 4 solo results email to Gigi \u2014 key changes, class notes"
+          "message": "Add Week 4 solo results email to [name] — key changes, class notes"
         },
         {
           "hash": "9ceddf29",
@@ -681,7 +771,7 @@
     {
       "id": "mad-hudson",
       "name": "Mad Hudson SEO",
-      "path": "/Users/garen/Desktop/madhudson-seo-project",
+      "path": "~/Desktop/madhudson-seo-project",
       "domain": "mad-hudson",
       "exists": true,
       "is_git_repo": true,
@@ -698,7 +788,7 @@
         ]
       },
       "last_activity": "2026-02-15",
-      "staleness_days": 0,
+      "staleness_days": 1,
       "recent_commits": [
         {
           "hash": "1032e9e1",
@@ -773,7 +863,7 @@
         {
           "hash": "18a833e8",
           "date": "2026-02-14",
-          "message": "Collapse slides 12+13 into single 'What Changes Next' slide (15\u219214)"
+          "message": "Collapse slides 12+13 into single 'What Changes Next' slide (15→14)"
         },
         {
           "hash": "2d88a448",
@@ -945,13 +1035,13 @@
     {
       "id": "personal-os",
       "name": "Personal OS",
-      "path": "/Users/garen/.claude",
+      "path": "~/.claude",
       "domain": "personal",
       "exists": true,
       "is_git_repo": true,
       "state_summary": null,
       "last_activity": "2026-02-15",
-      "staleness_days": 0,
+      "staleness_days": 1,
       "recent_commits": [
         {
           "hash": "3c98b8ec",
@@ -971,14 +1061,14 @@
         {
           "hash": "da177e81",
           "date": "2026-02-12",
-          "message": "Initial commit: Claude Code infrastructure \u2014 agents, skills, corpus, provenance"
+          "message": "Initial commit: Claude Code infrastructure — agents, skills, corpus, provenance"
         }
       ]
     },
     {
       "id": "fifty-years",
       "name": "50 Years Ago Today",
-      "path": "/Users/garen/fifty-years-ago",
+      "path": "~/fifty-years-ago",
       "domain": "personal",
       "exists": true,
       "is_git_repo": false,
@@ -990,7 +1080,7 @@
     {
       "id": "financial-os",
       "name": "Financial OS",
-      "path": "/Users/garen/financial-os",
+      "path": "~/financial-os",
       "domain": "personal",
       "exists": true,
       "is_git_repo": false,
@@ -1002,7 +1092,6 @@
   ],
   "decisions": [
     {
-      "file": "/Users/garen/decisions/2026-02-08-actors-garden-consulting-engagement.md",
       "slug": "2026-02-08-actors-garden-consulting-engagement",
       "date": "2026-02-08",
       "title": "Formalizing a Consulting Engagement with Actor's Garden",
@@ -1014,14 +1103,13 @@
         "onboarding",
         "handoff-planning"
       ],
-      "summary": "Garen and GG (Actor's Garden) agreed to formalize a consulting relationship focused on documentation, operational architecture, and handoff planning for Actor's Garden. This grows directly out of the operational skills Garen has been developing through the OEFF film festival and Convene work \u2014 disco"
+      "summary": "Garen and GG (Actor's Garden) agreed to formalize a consulting relationship focused on documentation, operational architecture, and handoff planning for Actor's Garden. This grows directly out of the operational skills Garen has been developing through the OEFF film festival and Convene work — disco"
     },
     {
-      "file": "/Users/garen/decisions/2026-02-08-taylor-art-market-strategy.md",
-      "slug": "2026-02-08-taylor-art-market-strategy",
+      "slug": "2026-02-08-[name]-art-market-strategy",
       "date": "2026-02-08",
-      "title": "Taylor Hopkins \u2014 Art Market Strategy",
-      "project": "taylor-hopkins-art",
+      "title": "[name] — Art Market Strategy",
+      "project": "partner-art",
       "tags": [
         "strategy",
         "markets",
@@ -1033,11 +1121,10 @@
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-11-compiling-agents-research.md",
       "slug": "2026-02-11-compiling-agents-research",
       "date": "2026-02-11",
-      "title": "Code Compiling Agents \u2014 Research Findings and Decision",
-      "project": "cross-project (swarm infrastructure, warm-stack, taylor-hopkins-art)",
+      "title": "Code Compiling Agents — Research Findings and Decision",
+      "project": "cross-project (swarm infrastructure, warm-stack, partner-art)",
       "tags": [
         "compiling agents",
         "build pipeline",
@@ -1046,40 +1133,36 @@
         "agentless",
         "incremental builds"
       ],
-      "summary": "We investigated whether high-efficiency code compiling agents would benefit our stack. A three-agent research team (landscape researcher, stack-mapper, architecture advisor) converged on the same finding from different angles: **We already have a compiling architecture.** The ecosystem \u2014 `build.py` "
+      "summary": "We investigated whether high-efficiency code compiling agents would benefit our stack. A three-agent research team (landscape researcher, stack-mapper, architecture advisor) converged on the same finding from different angles: **We already have a compiling architecture.** The ecosystem — `build.py` "
     },
     {
-      "file": "/Users/garen/decisions/2026-02-11-multi-agent-landscape-research.md",
       "slug": "2026-02-11-multi-agent-landscape-research",
       "date": "2026-02-11",
-      "title": "Multi-Agent Landscape Research \u2014 February 2026",
+      "title": "Multi-Agent Landscape Research — February 2026",
       "project": null,
       "tags": [],
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-11-swarm-infrastructure-methodology.md",
       "slug": "2026-02-11-swarm-infrastructure-methodology",
       "date": null,
-      "title": "Decision: Swarm Infrastructure Methodology \u2014 Research-Grounded Architecture",
+      "title": "Decision: Swarm Infrastructure Methodology — Research-Grounded Architecture",
       "project": null,
       "tags": [],
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-beautiful-first-origins.md",
       "slug": "2026-02-12-beautiful-first-origins",
       "date": null,
-      "title": "Decision: Beautiful-First Origins \u2014 Where the Design Philosophy Comes From",
+      "title": "Decision: Beautiful-First Origins — Where the Design Philosophy Comes From",
       "project": null,
       "tags": [],
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-git-auth-routing.md",
       "slug": "2026-02-12-git-auth-routing",
       "date": "2026-02-12",
-      "title": "Git Auth Routing \u2014 Which GitHub Account for Which Repo",
+      "title": "Git Auth Routing — Which GitHub Account for Which Repo",
       "project": "cross-project",
       "tags": [
         "git",
@@ -1091,25 +1174,22 @@
       "summary": "Two GitHub accounts are configured via `gh auth`. Each repo belongs to a specific account, and pushing with the wrong one active gives a \"repository not found\" error. | Repo / Domain | GitHub Account | Switch Command | |---------------|---------------|----------------| | `personal-os` (~/Desktop/cla"
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-oeff-budget-structure-confirmed.md",
       "slug": "2026-02-12-oeff-budget-structure-confirmed",
       "date": "2026-02-12",
-      "title": "OEFF 2026 Budget Structure \u2014 Confirmed",
+      "title": "OEFF 2026 Budget Structure — Confirmed",
       "project": null,
       "tags": [],
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-relationship-context.md",
       "slug": "2026-02-12-relationship-context",
       "date": null,
-      "title": "Decision: Relationship Context \u2014 The People Behind the Projects",
+      "title": "Decision: Relationship Context — The People Behind the Projects",
       "project": null,
       "tags": [],
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-signal-vs-structural-detection.md",
       "slug": "2026-02-12-signal-vs-structural-detection",
       "date": "2026-02-12",
       "title": "Signal Detection vs. Structural Knowledge",
@@ -1118,16 +1198,14 @@
       "summary": "When a problem requires understanding the *structure* of a media file (e.g., which films are in a compilation reel and where they start), use structural knowledge (manifests, offset tables, human verification) rather than signal-processing approaches (scene detection, freeze detection, black detecti"
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-stack-philosophy.md",
       "slug": "2026-02-12-stack-philosophy",
       "date": null,
-      "title": "Decision: Stack Philosophy \u2014 Why Python + Vanilla JS + No Databases",
+      "title": "Decision: Stack Philosophy — Why Python + Vanilla JS + No Databases",
       "project": null,
       "tags": [],
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-12-subversive-multi-agent-orchestration-framing.md",
       "slug": "2026-02-12-subversive-multi-agent-orchestration-framing",
       "date": "2026-02-12",
       "title": "Subversive Framing of Multi-Agent Orchestration as Paradigm Challenge",
@@ -1144,7 +1222,6 @@
       "summary": "Crafted and posted a Dadaist-inflected provocation in Nate B Jones's Substack executive circle chat, reframing multi-agent orchestration as a paradigm-level question rather than a workflow optimization problem. The core move: the string \"multi agent orchestration values ethics care community support"
     },
     {
-      "file": "/Users/garen/decisions/2026-02-13-lightweight-cms-options-for-oeff.md",
       "slug": "2026-02-13-lightweight-cms-options-for-oeff",
       "date": "2026-02-13",
       "title": "Lightweight CMS Options for OEFF",
@@ -1157,10 +1234,9 @@
         "google-sheets",
         "architecture"
       ],
-      "summary": "The OEFF docs site (`docs.oneearthfilmfest.org`) is static HTML on Cloudflare Pages, authored entirely by Garen. Every content change \u2014 email templates, escalation procedures, host FAQ updates \u2014 routes through him. This is the primary collaboration bottleneck: the team can't edit operational content"
+      "summary": "The OEFF docs site (`docs.oneearthfilmfest.org`) is static HTML on Cloudflare Pages, authored entirely by Garen. Every content change — email templates, escalation procedures, host FAQ updates — routes through him. This is the primary collaboration bottleneck: the team can't edit operational content"
     },
     {
-      "file": "/Users/garen/decisions/2026-02-14-lens-practices-what-it-preaches.md",
       "slug": "2026-02-14-lens-practices-what-it-preaches",
       "date": "2026-02-14",
       "title": "The Lens Practices What It Preaches",
@@ -1169,10 +1245,9 @@
       "summary": ""
     },
     {
-      "file": "/Users/garen/decisions/2026-02-14-letter-layout-mode-and-advisor-flavor.md",
       "slug": "2026-02-14-letter-layout-mode-and-advisor-flavor",
       "date": "2026-02-14",
-      "title": "The \"Letter\" Layout Mode \u2014 Data-as-Typography, Editorial Section Rhythm, and Advisor Tone",
+      "title": "The \"Letter\" Layout Mode — Data-as-Typography, Editorial Section Rhythm, and Advisor Tone",
       "project": "cross-project (Beautiful-First design system)",
       "tags": [
         "design-system",
@@ -1185,7 +1260,6 @@
       "summary": "Adopt \"Letter\" as a named layout mode in the Beautiful-First design system, and \"Advisor\" as a flavor descriptor. This came from rediscovering an early Mad Hudson SEO summary artifact (`mad-hudson-seo-summary.html`) that felt distinctly better than the later dashboard and slide deck built from the s"
     },
     {
-      "file": "/Users/garen/decisions/2026-02-15-design-extraction-iteration-priority.md",
       "slug": "2026-02-15-design-extraction-iteration-priority",
       "date": "2026-02-15",
       "title": "Design Extraction Iteration Priority",
@@ -1202,7 +1276,6 @@
   ],
   "sessions": [
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-07T21-00-provenance-layer-build.yaml",
       "id": "2026-02-07T21-00-provenance-layer-build",
       "domain": "meta",
       "started": "2026-02-07T21:00:00Z",
@@ -1230,7 +1303,6 @@
       "date": "2026-02-07"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-09T-mad-hudson-phase1-shopify-integration.yaml",
       "id": "2026-02-09-mad-hudson-phase1-shopify",
       "domain": "mad-hudson",
       "started": "2026-02-09",
@@ -1278,7 +1350,6 @@
       "date": "2026-02-09"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-09T10-00-mad-hudson-seo-phase2-kickoff.yaml",
       "id": "2026-02-09T10-00-mad-hudson-seo-phase2-kickoff",
       "domain": "mad-hudson",
       "started": "2026-02-09T10:00:00Z",
@@ -1298,20 +1369,20 @@
         "zero-dependencies"
       ],
       "artifacts_created": [
-        "/Users/garen/Desktop/madhudson-seo-project/MADHUDSON-GAMEPLAN.md",
-        "/Users/garen/Desktop/madhudson-seo-project/MADHUDSON-SECURITY-POLICY.md",
-        "/Users/garen/Desktop/madhudson-seo-project/MADHUDSON-AGENT-ORCHESTRATION.md",
-        "/Users/garen/Desktop/madhudson-seo-project/MAD-HUDSON-SEO-SUMMARY-FOR-CONNOR.md",
-        "/Users/garen/Desktop/madhudson-seo-project/CONNOR-SEO-CHECKLIST.md",
-        "/Users/garen/Desktop/madhudson-seo-project/START-HERE.md",
-        "/Users/garen/Desktop/madhudson-seo-project/PHASE-2-KICKOFF.md",
-        "/Users/garen/Desktop/madhudson-seo-project/TEAM-OPERATIONS-DASHBOARD.md",
-        "/Users/garen/Desktop/madhudson-seo-project/README.md",
-        "/Users/garen/Desktop/madhudson-seo-project/.gitignore",
-        "/Users/garen/madhudson-seo-reports/"
+        "~/Desktop/madhudson-seo-project/MADHUDSON-GAMEPLAN.md",
+        "~/Desktop/madhudson-seo-project/MADHUDSON-SECURITY-POLICY.md",
+        "~/Desktop/madhudson-seo-project/MADHUDSON-AGENT-ORCHESTRATION.md",
+        "~/Desktop/madhudson-seo-project/MAD-HUDSON-SEO-SUMMARY-FOR-CONNOR.md",
+        "~/Desktop/madhudson-seo-project/CONNOR-SEO-CHECKLIST.md",
+        "~/Desktop/madhudson-seo-project/START-HERE.md",
+        "~/Desktop/madhudson-seo-project/PHASE-2-KICKOFF.md",
+        "~/Desktop/madhudson-seo-project/TEAM-OPERATIONS-DASHBOARD.md",
+        "~/Desktop/madhudson-seo-project/README.md",
+        "~/Desktop/madhudson-seo-project/.gitignore",
+        "~/madhudson-seo-reports/"
       ],
       "artifacts_modified": [
-        "/Users/garen/Desktop/madhudson-seo-project/",
+        "~/Desktop/madhudson-seo-project/",
         ""
       ],
       "decisions": [
@@ -1329,7 +1400,6 @@
       "date": "2026-02-09"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-13T00-42-oeff-presenter-guide.yaml",
       "id": "2026-02-13T00-42-oeff-presenter-guide",
       "domain": "oeff",
       "started": "2026-02-12T20:00:00Z",
@@ -1369,7 +1439,6 @@
       "date": "2026-02-12"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-13T01-30-oeff-host-comms-infrastructure.yaml",
       "id": "2026-02-13T01-30-oeff-host-comms-infrastructure",
       "domain": "oeff",
       "started": "2026-02-13T01:30:00Z",
@@ -1406,7 +1475,6 @@
       "date": "2026-02-13"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T-mad-hudson-archive.yaml",
       "id": "2026-02-14T-mad-hudson-archive",
       "domain": "mad-hudson",
       "started": "2026-02-14",
@@ -1438,11 +1506,10 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T04-00-email-triage-build.yaml",
       "id": "2026-02-14T04-00-email-triage-build",
       "domain": "meta",
       "started": "2026-02-14T04:00:00Z",
-      "intent": "Build haiku-powered email triage system \u2014 from exploration of automation gaps to working multi-account Gmail classifier with cleanup",
+      "intent": "Build haiku-powered email triage system — from exploration of automation gaps to working multi-account Gmail classifier with cleanup",
       "tags": [
         "automation",
         "haiku",
@@ -1474,7 +1541,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T05-00-deep-triage-and-pink-boots-quote.yaml",
       "id": "2026-02-14T05-00-deep-triage-and-pink-boots-quote",
       "domain": "meta",
       "started": "2026-02-14T05:00:00Z",
@@ -1510,7 +1576,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T09-00-mad-hudson-data-strategy.yaml",
       "id": "2026-02-14T09-00-mad-hudson-data-strategy",
       "domain": "mad-hudson",
       "started": "2026-02-14T09:00:00Z",
@@ -1530,17 +1595,17 @@
         "git-infrastructure"
       ],
       "artifacts_created": [
-        "/Users/garen/Desktop/madhudson-conversion-jan10-feb09.csv",
-        "/Users/garen/.claude/agents/madhudson-seo-builder.md",
-        "/Users/garen/Desktop/madhudson-seo-project/madhudson-phase1/src/commands/pull-reports.js",
-        "/Users/garen/.claude/provenance/sessions/sw-20260214-ec9b.yaml"
+        "~/Desktop/madhudson-conversion-jan10-feb09.csv",
+        "~/.claude/agents/madhudson-seo-builder.md",
+        "~/Desktop/madhudson-seo-project/madhudson-phase1/src/commands/pull-reports.js",
+        "~/.claude/provenance/sessions/sw-20260214-ec9b.yaml"
       ],
       "artifacts_modified": [
-        "/Users/garen/Desktop/madhudson-seo-project/madhudson-phase1/package.json",
-        "/Users/garen/.gitignore",
-        "/Users/garen/Desktop/madhudson-seo-project/",
+        "~/Desktop/madhudson-seo-project/madhudson-phase1/package.json",
+        "~/.gitignore",
+        "~/Desktop/madhudson-seo-project/",
         "",
-        "/Users/garen/",
+        "~/",
         "",
         "",
         "https://github.com/salttymalty/madhudson-seo-project"
@@ -1557,11 +1622,10 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T11-00-mad-hudson-seo-artifacts.yaml",
       "id": "2026-02-14T11-00-mad-hudson-seo-artifacts",
       "domain": "mad-hudson",
       "started": "2026-02-14T11:00:00Z",
-      "intent": "Build two single-file HTML artifacts (dashboard + slide deck) from the Ember team research session findings. First pass was too simplified and non-technical \u2014 rebuilt with analytical depth, data density, and proper sourcing.",
+      "intent": "Build two single-file HTML artifacts (dashboard + slide deck) from the Ember team research session findings. First pass was too simplified and non-technical — rebuilt with analytical depth, data density, and proper sourcing.",
       "tags": [
         "mad-hudson",
         "seo",
@@ -1588,11 +1652,10 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T16-00-mad-hudson-bot-context.yaml",
       "id": "2026-02-14T16-00-mad-hudson-bot-context",
       "domain": "mad-hudson",
       "started": "2026-02-14T16:00:00-06:00",
-      "intent": "Add Brad social post context to bot traffic analysis \u2014 high-traffic days may correlate with Brad's posts driving real interest, not purely bot traffic. Nuance the framing in both dashboard and slides, then deploy to GitHub Pages.",
+      "intent": "Add Brad social post context to bot traffic analysis — high-traffic days may correlate with Brad's posts driving real interest, not purely bot traffic. Nuance the framing in both dashboard and slides, then deploy to GitHub Pages.",
       "tags": [
         "mad-hudson",
         "seo",
@@ -1602,8 +1665,8 @@
       ],
       "artifacts_created": [],
       "artifacts_modified": [
-        "/Users/garen/Desktop/mad-hudson-seo-research-dashboard.html",
-        "/Users/garen/Desktop/mad-hudson-seo-research-slides.html",
+        "~/Desktop/mad-hudson-seo-research-dashboard.html",
+        "~/Desktop/mad-hudson-seo-research-slides.html",
         "/tmp/madhudson-seo-project/docs/dashboard.html",
         "/tmp/madhudson-seo-project/docs/slides.html"
       ],
@@ -1613,7 +1676,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T18-00-desktop-reorganization.yaml",
       "id": "2026-02-14T18-00-desktop-reorganization",
       "domain": "meta",
       "started": "2026-02-14T18:00:00Z",
@@ -1628,7 +1690,7 @@
         "~/Desktop/_screenshots/",
         "~/Desktop/_oeff-working/",
         "~/Desktop/_madhudson/",
-        "~/Desktop/_taylor/",
+        "~/Desktop/_partner-art/",
         "~/Desktop/_artifacts/",
         "~/Desktop/_backups/",
         "~/Desktop/_reference/",
@@ -1658,7 +1720,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T20-00-mad-hudson-growth-projections.yaml",
       "id": "2026-02-14T20-00-mad-hudson-growth-projections",
       "domain": "mad-hudson",
       "started": "2026-02-14T20:00:00Z",
@@ -1688,7 +1749,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T21-00-mad-hudson-owner-feedback.yaml",
       "id": "2026-02-14T21-00-mad-hudson-owner-feedback",
       "domain": "mad-hudson",
       "started": "2026-02-14T21:00:00Z",
@@ -1722,7 +1782,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T22-00-mad-hudson-strategic-insights.yaml",
       "id": "2026-02-14T22-00-mad-hudson-strategic-insights",
       "domain": "mad-hudson",
       "started": "2026-02-14T22:00:00Z",
@@ -1754,7 +1813,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T23-00-mad-hudson-slide-polish.yaml",
       "id": "2026-02-14T23-00-mad-hudson-slide-polish",
       "domain": "mad-hudson",
       "started": "2026-02-14T23:00:00Z",
@@ -1775,7 +1833,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-14T23-30-mad-hudson-roadmap-ux.yaml",
       "id": "2026-02-14T23-30-mad-hudson-roadmap-ux",
       "domain": "mad-hudson",
       "started": "2026-02-14T23:30:00Z",
@@ -1797,7 +1854,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-15T00-00-mad-hudson-prose-tightening.yaml",
       "id": "2026-02-15T00-00-mad-hudson-prose-tightening",
       "domain": "mad-hudson",
       "started": "2026-02-15T00:00:00Z",
@@ -1824,7 +1880,128 @@
       "date": "2026-02-15"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-15T15-00-gemini-audit-infrastructure.yaml",
+      "id": "2026-02-15T11-00-oeff-sheets-pipeline",
+      "domain": "oeff",
+      "started": "2026-02-15T11:00:00Z",
+      "intent": "Build live Google Sheets → JSON snapshot pipeline, investigate YAMM integration, backfill 2026 venue contacts from 2025 data",
+      "tags": [
+        "google-sheets-api",
+        "pipeline",
+        "yamm",
+        "contacts",
+        "data-quality",
+        "backfill",
+        "snapshot",
+        "airtable-migration"
+      ],
+      "artifacts_created": [
+        "tools/oeff-snapshot.py",
+        "tools/oeff-backfill-contacts.py",
+        "Desktop/OEFF Clean Data/v7-snapshots/2026-02-15.json"
+      ],
+      "artifacts_modified": [
+        ".gitignore",
+        "Desktop/OEFF Clean Data/2026HostVenues (live sheet)"
+      ],
+      "decisions": [
+        "sheet-as-hub-not-airtable",
+        "tiered-contact-backfill",
+        "yamm-reads-from-working-sheet",
+        "snapshot-row-classification"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T11-00-soundslice-catalog-manager",
+      "domain": "actors-garden",
+      "started": "2026-02-15T17:00:00Z",
+      "intent": "Build Soundslice catalog manager — API integration, naming cleanup, curriculum metadata, push/delete tooling",
+      "tags": [
+        "soundslice",
+        "api-integration",
+        "curriculum",
+        "sheet-music",
+        "naming-convention",
+        "catalog",
+        "lmm-2026",
+        "phase-5-pilot"
+      ],
+      "artifacts_created": [
+        "Actors-Garden/catalog.py",
+        "Actors-Garden/catalog.json",
+        "Actors-Garden/.soundslice-credentials"
+      ],
+      "artifacts_modified": [
+        "Actors-Garden/.gitignore",
+        "Actors-Garden/soundslice-upload-runbook.md"
+      ],
+      "decisions": [
+        "soundslice-catalog-as-local-json",
+        "enriched-naming-convention",
+        "live-slice-safety-guards",
+        "stdlib-api-client",
+        "curriculum-data-in-script"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T11-30-convene-schedule-gcal",
+      "domain": "convene",
+      "started": "2026-02-15T11:30:00Z",
+      "intent": "Build a script to import Convene work schedule CSVs into Google Calendar",
+      "tags": [
+        "convene",
+        "google-calendar",
+        "automation",
+        "oauth"
+      ],
+      "artifacts_created": [
+        "tools/convene-schedule.py"
+      ],
+      "artifacts_modified": [
+        "tools/google-auth.py",
+        ".gitignore",
+        "tools/google-oauth-client.json"
+      ],
+      "decisions": [
+        "convene-gcal-idempotency",
+        "personal-google-oauth-project",
+        "convene-shift-duration-default",
+        "calendar-events-scope"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T13-00-convene-gcal-backfill",
+      "domain": "convene",
+      "started": "2026-02-15T13:00:00Z",
+      "intent": "Backfill all Convene schedule weeks to Google Calendar, establish calendar color system, and add weekly load signals from Events tabs",
+      "tags": [
+        "convene",
+        "google-calendar",
+        "xlsx-parsing",
+        "color-system",
+        "[name]-shared-calendar",
+        "backfill",
+        "load-signals",
+        "pto-planning"
+      ],
+      "artifacts_created": [],
+      "artifacts_modified": [
+        "tools/convene-schedule.py",
+        "tools/google-auth.py"
+      ],
+      "decisions": [
+        "primary-calendar-with-colors-not-dedicated",
+        "calendar-color-system",
+        "xlsx-direct-parsing",
+        "skip-unparseable-entries",
+        "human-voice-load-signals",
+        "load-classification-heuristic"
+      ],
+      "date": "2026-02-15"
+    },
+    {
       "id": "2026-02-15T15-00-gemini-audit-infrastructure",
       "domain": "meta",
       "started": "2026-02-15T15:00:00Z",
@@ -1867,11 +2044,10 @@
       "date": "2026-02-15"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-15T17-00-mad-hudson-design-overhaul.yaml",
       "id": "2026-02-15T17-00-mad-hudson-design-overhaul",
       "domain": "mad-hudson",
       "started": "2026-02-15T17:00:00Z",
-      "intent": "Full visual design overhaul of Mad Hudson SEO deliverable \u2014 palette shift, decoration stripping, typography restraint, mobile fixes, informed by swarm design audit",
+      "intent": "Full visual design overhaul of Mad Hudson SEO deliverable — palette shift, decoration stripping, typography restraint, mobile fixes, informed by swarm design audit",
       "tags": [
         "design-overhaul",
         "palette",
@@ -1907,7 +2083,6 @@
       "date": "2026-02-15"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/2026-02-15T17-30-meta-lostcontextexplorer.yaml",
       "id": "2026-02-15T17-30-meta-lostcontextexplorer",
       "domain": "meta",
       "started": "2026-02-15T17:30:00Z",
@@ -1948,7 +2123,400 @@
       "date": "2026-02-15"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260212-16b7.yaml",
+      "id": "2026-02-15T17-30-oeff-auth-diagnosis",
+      "domain": "oeff",
+      "started": "2026-02-15T17:30:00Z",
+      "intent": "Diagnose 403 auth failure on OEFF Sheets API, verify local snapshot pipeline works offline",
+      "tags": [
+        "google-auth",
+        "debugging",
+        "oauth",
+        "snapshot"
+      ],
+      "artifacts_created": [],
+      "artifacts_modified": [
+        "tools/google-auth.py"
+      ],
+      "decisions": [
+        "wrong-account-403-diagnosis",
+        "park-auth-fix"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T18-00-actors-garden-soundslice-automation",
+      "domain": "actors-garden",
+      "started": "2026-02-15T18:00:00Z",
+      "intent": "Close all 5 Soundslice automation gaps: stems, recording rename, duplicate cleanup, sync copy, student links page",
+      "tags": [
+        "soundslice",
+        "automation",
+        "student-facing",
+        "privacy",
+        "catalog-tooling",
+        "audio-pipeline"
+      ],
+      "artifacts_created": [
+        "Actors-Garden/generate-student-links.py",
+        "Actors-Garden/student-links.html",
+        "Actors-Garden/student-links-public.html",
+        "Actors-Garden/student-links-public-deploy/index.html"
+      ],
+      "artifacts_modified": [
+        "Actors-Garden/catalog.py",
+        "Actors-Garden/catalog.json",
+        "Actors-Garden/soundslice-upload-guide.html"
+      ],
+      "decisions": [
+        "recording-rename-heuristic",
+        "cleanup-safe-vs-review",
+        "sync-copy-from-full-mix",
+        "student-links-public-private-split",
+        "student-links-hosting",
+        "keep-vbfbc-we-know-the-way"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T18-30-oeff-airtable-migration",
+      "domain": "oeff",
+      "started": "2026-02-15T18:30:00Z",
+      "intent": "Programmatic migration of 11 OEFF tables from CSV to Airtable with linked records",
+      "tags": [
+        "airtable",
+        "migration",
+        "data-pipeline",
+        "api-integration"
+      ],
+      "artifacts_created": [
+        "tools/oeff-airtable-migrate.py",
+        "tools/oeff-airtable-audit.py"
+      ],
+      "artifacts_modified": [],
+      "decisions": [
+        "airtable-migration-now",
+        "reuse-existing-base",
+        "human-readable-primary-fields",
+        "keep-text-fk-and-add-link-field"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T19-00-audio-archive-foundation",
+      "domain": "meta",
+      "started": "2026-02-15T19:00:00Z",
+      "intent": "Build and run audio archive foundation scripts (Phases 0-2): inventory, verify, preprocess, classify",
+      "tags": [
+        "audio-archive",
+        "voice-memos",
+        "preprocessing",
+        "classification",
+        "foundation"
+      ],
+      "artifacts_created": [
+        "audio-archive/scripts/01-inventory.py",
+        "audio-archive/scripts/00-verify-backup.py",
+        "audio-archive/scripts/02-preprocess.sh",
+        "audio-archive/scripts/03-classify-audio.py",
+        "audio-archive/master-index.json",
+        "audio-archive/preprocess-log.json",
+        "audio-archive/preprocessed/",
+        "audio-archive/transcripts/",
+        "audio-archive/index/"
+      ],
+      "artifacts_modified": [],
+      "decisions": [
+        "dynamic-import-sqlite3-validator-bypass",
+        "wav-vs-ogg-duration-threshold",
+        "silence-classification-thresholds"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T19-00-meta-ecosystem-dashboard-heatmap",
+      "domain": "meta",
+      "started": "2026-02-15T19:00:00Z",
+      "intent": "Add accordion behavior to timeline view and heatmap calendar view to ecosystem dashboard, with daily rollups data pipeline",
+      "tags": [
+        "ecosystem-dashboard",
+        "heatmap",
+        "visualization",
+        "data-pipeline",
+        "phased-implementation"
+      ],
+      "artifacts_created": [],
+      "artifacts_modified": [
+        "~/ecosystem-dashboard.html",
+        "~/build-ecosystem-index.py",
+        "/tmp/ecosystem-dashboard/index.html",
+        "/tmp/ecosystem-dashboard/ecosystem-index.json"
+      ],
+      "decisions": [
+        "phased-dashboard-implementation",
+        "no-d3-for-heatmap-grid",
+        "calendar-integration-deferred"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T19-30-audio-archive-phase2-3",
+      "domain": "meta",
+      "started": "2026-02-15T19:30:00Z",
+      "intent": "Resume audio archive from Phase 2 — diagnose preprocessing failures, fix path recovery, build Groq transcription pipeline, sensitivity scanner, and search with saved lenses",
+      "tags": [
+        "audio-archive",
+        "transcription",
+        "groq",
+        "sensitivity",
+        "search",
+        "preprocessing",
+        "bash-bug-fix",
+        "therapeutic-use"
+      ],
+      "artifacts_created": [
+        "audio-archive/scripts/02a-recover-paths.py",
+        "audio-archive/scripts/02b-preprocess-remaining.py",
+        "audio-archive/scripts/04-transcribe.py",
+        "audio-archive/scripts/06-sensitivity-scan.py",
+        "audio-archive/scripts/08-search.py",
+        "audio-archive/lenses.json",
+        "audio-archive/sensitive-flagged.json",
+        "audio-archive/master-index.pre-recovery.json"
+      ],
+      "artifacts_modified": [
+        "audio-archive/master-index.json",
+        "audio-archive/preprocess-log.json",
+        "audio-archive/PLAN.md"
+      ],
+      "decisions": [
+        "bash-pipeline-corruption-diagnosis",
+        "groq-sync-api-user-agent",
+        "groq-25mb-upload-limit",
+        "sensitivity-flag-not-filter",
+        "lenses-as-persistent-queries",
+        "oeff-zoom-import-parked",
+        "groq-pipeline-reuse-opportunities",
+        "transcript-music-detection"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T19-30-ecosystem-dashboard-real-data",
+      "domain": "meta",
+      "started": "2026-02-15T19:30:00Z",
+      "intent": "Wire ecosystem dashboard to real data, add privacy filter, enforce design constraints, deploy as static site",
+      "tags": [
+        "dashboard",
+        "real-data",
+        "privacy",
+        "deploy",
+        "design-constraints",
+        "next-js",
+        "framework-exception",
+        "static-export"
+      ],
+      "artifacts_created": [
+        "~/ecosystem-dashboard/",
+        "~/ecosystem-dashboard/lib/ecosystem-provider.tsx",
+        "~/ecosystem-dashboard/deploy.sh",
+        "~/ecosystem-dashboard/public/data/ecosystem-index.json",
+        "~/privacy-filter.py"
+      ],
+      "artifacts_modified": [
+        "~/ecosystem-dashboard/lib/ecosystem-data.ts",
+        "~/ecosystem-dashboard/next.config.mjs",
+        "~/ecosystem-dashboard/app/page.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/overview-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/projects-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/decisions-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/goals-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/activity-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/timeline-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/views/graph-view.tsx",
+        "~/ecosystem-dashboard/components/dashboard/detail-panel.tsx",
+        "~/ecosystem-dashboard/components/dashboard/command-palette.tsx",
+        "~/ecosystem-dashboard/components/dashboard/sidebar-nav.tsx",
+        "~/ecosystem-dashboard/components/dashboard/force-graph.tsx",
+        "~/ecosystem-dashboard/components/dashboard/heatmap-calendar.tsx",
+        "~/ecosystem-dashboard/components/dashboard/radar-balance.tsx",
+        "~/ecosystem-dashboard/components/dashboard/streamgraph.tsx"
+      ],
+      "decisions": [
+        "v0-scaffold-then-real-data",
+        "react-context-over-direct-imports",
+        "care-language-over-streaks",
+        "privacy-filter-structural-redaction",
+        "no-back-to-v0"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T20-00-ecosystem-audit",
+      "domain": "meta",
+      "started": "2026-02-15T20:00:00Z",
+      "intent": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, where the money is, and what to do next",
+      "tags": [
+        "audit",
+        "market-research",
+        "pricing",
+        "strategy",
+        "cross-domain",
+        "monetization"
+      ],
+      "artifacts_created": [
+        "ecosystem-audit.html"
+      ],
+      "artifacts_modified": [
+        "Actors-Garden/AG-Consulting-Scope.md"
+      ],
+      "decisions": [
+        "ecosystem-audit-methodology",
+        "ag-pricing-revision",
+        "five-opportunity-areas-identified",
+        "visibility-as-primary-gap"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T20-00-ecosystem-dashboard-phase4",
+      "domain": "meta",
+      "started": "2026-02-15T20:00:00Z",
+      "intent": "Add Phase 4 overview components to ecosystem dashboard — corpus donut, blocked/questions panels, weekly review card",
+      "tags": [
+        "dashboard",
+        "phase-4",
+        "recharts",
+        "overview-view",
+        "blocked-items"
+      ],
+      "artifacts_created": [
+        "ecosystem-dashboard/components/dashboard/corpus-donut.tsx",
+        "ecosystem-dashboard/components/dashboard/blocked-panel.tsx",
+        "ecosystem-dashboard/components/dashboard/open-questions-panel.tsx",
+        "ecosystem-dashboard/components/dashboard/weekly-review-card.tsx"
+      ],
+      "artifacts_modified": [
+        "ecosystem-dashboard/components/dashboard/views/overview-view.tsx"
+      ],
+      "decisions": [
+        "phase4-layout-three-column",
+        "corpus-domain-key-mapping"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T20-30-availability-heatmap-gcal-signals",
+      "domain": "convene",
+      "started": "2026-02-15T20:30:00Z",
+      "intent": "Build availability heatmap for [name] + daily GCal signals replacing weekly Monday-only load signals",
+      "tags": [
+        "availability",
+        "google-calendar",
+        "convene",
+        "personal-infrastructure",
+        "heatmap",
+        "[name]"
+      ],
+      "artifacts_created": [
+        "tools/availability.py",
+        "tools/week-view.py",
+        "tools/availability.html"
+      ],
+      "artifacts_modified": [
+        "tools/convene-schedule.py",
+        ".gitignore"
+      ],
+      "decisions": [
+        "daily-signals-not-weekly",
+        "only-signal-notable-days",
+        "convene-shift-is-level-2",
+        "weekend-events-high-energy",
+        "recovery-day-ripple",
+        "future-weekdays-default-work"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T20-30-output-audit-career-positioning",
+      "domain": "meta",
+      "started": "2026-02-15T20:30:00Z",
+      "intent": "Audit 48 hours of output (Feb 14-15), quantify agentic time compression, explore career positioning and monetization",
+      "tags": [
+        "career",
+        "strategy",
+        "monetization",
+        "output-audit",
+        "agentic-compression",
+        "cross-domain",
+        "visibility"
+      ],
+      "artifacts_created": [],
+      "artifacts_modified": [],
+      "decisions": [
+        "visibility-is-the-gap",
+        "three-monetization-paths",
+        "imposter-syndrome-contradicted-by-evidence",
+        "agentic-time-compression-ratio",
+        "case-study-as-next-step"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T21-00-audio-archive-dashboard",
+      "domain": "meta",
+      "started": "2026-02-15T21:00:00Z",
+      "intent": "Build HTML dashboard generator for audio archive — visualize 509 transcripts with lens analysis",
+      "tags": [
+        "audio-archive",
+        "dashboard",
+        "visualization",
+        "needs-iteration"
+      ],
+      "artifacts_created": [
+        "audio-archive/scripts/09-dashboard.py",
+        "audio-archive/.gitignore"
+      ],
+      "artifacts_modified": [],
+      "decisions": [
+        "dashboard-python-generator",
+        "dashboard-cross-cutting-insights",
+        "continuous-timeline-with-gaps"
+      ],
+      "date": "2026-02-15"
+    },
+    {
+      "id": "2026-02-15T21-00-oeff-airtable-enhancement",
+      "domain": "oeff",
+      "started": "2026-02-15T21:00:00Z",
+      "intent": "Transform OEFF Airtable from data storage into operational command center — computed fields, visibility layer, dashboard",
+      "tags": [
+        "airtable",
+        "data-visualization",
+        "operational-dashboard",
+        "venue-management",
+        "season-scoping",
+        "beautiful-first",
+        "api-workaround"
+      ],
+      "artifacts_created": [
+        "tools/oeff-airtable-enhance.py",
+        "tools/oeff-airtable-enhance-2.py",
+        "tools/oeff-airtable-enhance-3.py",
+        "tools/oeff-dashboard-gen.py",
+        "tools/oeff-dashboard.html"
+      ],
+      "artifacts_modified": [
+        "Airtable base app9DymWrbAQaHH0K"
+      ],
+      "decisions": [
+        "airtable-api-workaround-selects",
+        "venue-season-scoping",
+        "computed-readiness-over-formulas",
+        "external-dashboard-complement"
+      ],
+      "date": "2026-02-15"
+    },
+    {
       "id": "sw-20260212-16b7",
       "domain": "meta",
       "started": "2026-02-12T16:40:00-06:00",
@@ -1978,7 +2546,6 @@
       "date": "2026-02-12"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260212-e590.yaml",
       "id": "sw-20260212-e590",
       "domain": "oeff",
       "started": "2026-02-12T22:00:00Z",
@@ -2005,7 +2572,6 @@
       "date": "2026-02-12"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260214-47f1.yaml",
       "id": "sw-20260214-47f1",
       "domain": "mad-hudson",
       "started": "2026-02-14T00:00:00Z",
@@ -2030,7 +2596,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260214-e6de.yaml",
       "id": "sw-20260214-e6de",
       "domain": "design",
       "started": "2026-02-14T23:30:00Z",
@@ -2060,11 +2625,10 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260214-ec9b.yaml",
       "id": "sw-20260214-ec9b",
       "domain": "mad-hudson",
       "started": "2026-02-14T09:45:00Z",
-      "intent": "Research competitive landscape, conversion optimization, SEO keyword landscape, and target demographics for Mad Hudson Watches \u2014 informed by Shopify conversion data showing 12,983 sessions / 8 purchases (0.06%) over Jan 10 - Feb 9, 2026",
+      "intent": "Research competitive landscape, conversion optimization, SEO keyword landscape, and target demographics for Mad Hudson Watches — informed by Shopify conversion data showing 12,983 sessions / 8 purchases (0.06%) over Jan 10 - Feb 9, 2026",
       "tags": [
         "swarm",
         "mad-hudson",
@@ -2078,15 +2642,15 @@
         "agent-definition"
       ],
       "artifacts_created": [
-        "/Users/garen/Desktop/madhudson-conversion-jan10-feb09.csv",
-        "/Users/garen/.claude/agents/madhudson-seo-builder.md",
-        "/Users/garen/Desktop/madhudson-seo-project/madhudson-phase1/src/commands/pull-reports.js"
+        "~/Desktop/madhudson-conversion-jan10-feb09.csv",
+        "~/.claude/agents/madhudson-seo-builder.md",
+        "~/Desktop/madhudson-seo-project/madhudson-phase1/src/commands/pull-reports.js"
       ],
       "artifacts_modified": [
-        "/Users/garen/Desktop/madhudson-seo-project/madhudson-phase1/package.json",
-        "/Users/garen/Desktop/madhudson-seo-project/",
+        "~/Desktop/madhudson-seo-project/madhudson-phase1/package.json",
+        "~/Desktop/madhudson-seo-project/",
         "",
-        "/Users/garen/",
+        "~/",
         ""
       ],
       "decisions": [
@@ -2101,11 +2665,10 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260214-f828.yaml",
       "id": "sw-20260214-f828",
       "domain": "mad-hudson",
       "started": "2026-02-14T10:00:00-06:00",
-      "intent": "Research executive communication best practices for consulting presentations, then apply findings to improve Mad Hudson SEO dashboard and slide deck \u2014 open with a win, frame as opportunities, calibrate for friend-client relationship",
+      "intent": "Research executive communication best practices for consulting presentations, then apply findings to improve Mad Hudson SEO dashboard and slide deck — open with a win, frame as opportunities, calibrate for friend-client relationship",
       "tags": [
         "swarm",
         "mad-hudson",
@@ -2120,8 +2683,8 @@
         "/tmp/madhudson-seo-project/docs/dashboard.html"
       ],
       "artifacts_modified": [
-        "/Users/garen/Desktop/mad-hudson-seo-research-slides.html",
-        "/Users/garen/Desktop/mad-hudson-seo-research-dashboard.html"
+        "~/Desktop/mad-hudson-seo-research-slides.html",
+        "~/Desktop/mad-hudson-seo-research-dashboard.html"
       ],
       "decisions": [
         "wins-first-opening",
@@ -2134,7 +2697,6 @@
       "date": "2026-02-14"
     },
     {
-      "file": "/Users/garen/.claude/provenance/sessions/sw-20260215-7627.yaml",
       "id": "sw-20260215-7627",
       "domain": "audio-archive",
       "started": "2026-02-15T16:00:00Z",
@@ -2166,28 +2728,12 @@
   "energy": {
     "entries": [
       {
-        "date": "2026-02-12",
-        "type": "baseline",
-        "source": "ecosystem-tally",
-        "bestHours": "varies",
-        "drains": [
-          "Long meetings with poor leadership",
-          "Unproductive discussions and diatribes",
-          "Chasing other people's work",
-          "Poor communication and organization from others"
-        ],
-        "gives": [
-          "Organizing",
-          "Pair-building with Claude",
-          "Creative problem-solving",
-          "Hearing 'this is really helpful' or 'thanks for your help'"
-        ],
-        "notes": "First baseline from ecosystem context tally. Energy pattern varies a lot \u2014 no consistent best hours. Key insight: energy comes from making order out of chaos and receiving genuine appreciation."
+        "date": "2026-02-12"
       },
       {
         "date": "2026-02-13",
         "energy": 2,
-        "focus": "Browse ~/decisions/ \u2014 review what's been captured, notice gaps, get grounded in the why layer."
+        "focus": "Browse ~/decisions/ — review what's been captured, notice gaps, get grounded in the why layer."
       },
       {
         "date": "2026-02-14",
@@ -2204,7 +2750,7 @@
       {
         "date": "2026-02-13",
         "energy": 2,
-        "focus": "Browse ~/decisions/ \u2014 review what's been captured, notice gaps, get grounded in the why layer."
+        "focus": "Browse ~/decisions/ — review what's been captured, notice gaps, get grounded in the why layer."
       },
       {
         "date": "2026-02-14",
@@ -2221,38 +2767,38 @@
   },
   "weekly_reviews": [
     {
-      "file": "/Users/garen/reflections/weekly/2026-W07.md",
+      "file": "~/reflections/weekly/2026-W07.md",
       "week": "2026-W07",
       "period": "February 9 to February 15, 2026",
-      "summary": "This was an infrastructure explosion week. Personal OS went from a plan to a functioning multi-agent system with 18+ roles, validators, provenance tracking, and an email triage pipeline. Taylor's site got its biggest feature push yet \u2014 the /available page, webhook pipeline, and event creation all sh"
+      "summary": "This was an infrastructure explosion week."
     }
   ],
   "goals": {
     "milestones": [
       {
         "project": "OEFF 2026",
-        "milestone": "Data viz integration \u2014 host map + screening dashboard",
+        "milestone": "Data viz integration — host map + screening dashboard",
         "target_date": "March 1",
         "status": "In progress",
         "dependencies": "Clean host data, venue geocoding"
       },
       {
         "project": "OEFF 2026",
-        "milestone": "Host tracking system \u2014 status pipeline per host",
+        "milestone": "Host tracking system — status pipeline per host",
         "target_date": "March 15",
         "status": "Not started",
         "dependencies": "Data viz foundation"
       },
       {
         "project": "OEFF 2026",
-        "milestone": "Formula deployment \u2014 screening fee calculations, host billing",
+        "milestone": "Formula deployment — screening fee calculations, host billing",
         "target_date": "April 1",
         "status": "Not started",
         "dependencies": "Host tracking"
       },
       {
         "project": "OEFF 2026",
-        "milestone": "Content freeze \u2014 all data finalized",
+        "milestone": "Content freeze — all data finalized",
         "target_date": "April 15",
         "status": "Not started",
         "dependencies": "Formula deployment"
@@ -2261,47 +2807,47 @@
         "project": "OEFF 2026",
         "milestone": "Festival week",
         "target_date": "April 22-26",
-        "status": "\u2014",
+        "status": "—",
         "dependencies": "Everything above"
       },
       {
-        "project": "Taylor Hopkins Art",
-        "milestone": "Pipeline hardening \u2014 validation, notifications, error handling",
+        "project": "[name] Art",
+        "milestone": "Pipeline hardening — validation, notifications, error handling",
         "target_date": "Feb 28",
         "status": "Complete",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
-        "project": "Taylor Hopkins Art",
-        "milestone": "Test coverage \u2014 unit tests for build.py + webhook.js + approve.js",
+        "project": "[name] Art",
+        "milestone": "Test coverage — unit tests for build.py + webhook.js + approve.js",
         "target_date": "March 15",
         "status": "Complete",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
-        "project": "Taylor Hopkins Art",
-        "milestone": "Event creation form \u2014 Tally-based show management",
+        "project": "[name] Art",
+        "milestone": "Event creation form — Tally-based show management",
         "target_date": "Feb 28",
         "status": "Complete",
         "dependencies": "Pipeline hardening"
       },
       {
-        "project": "Taylor Hopkins Art",
-        "milestone": "Dev tools \u2014 local preview server, rebuild watcher",
+        "project": "[name] Art",
+        "milestone": "Dev tools — local preview server, rebuild watcher",
         "target_date": "March 31",
         "status": "Not started",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
         "project": "Warm Stack",
-        "milestone": "v0.1 core extraction \u2014 sentinel, theme, data, html utilities",
+        "milestone": "v0.1 core extraction — sentinel, theme, data, html utilities",
         "target_date": "March 1",
         "status": "Complete",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
         "project": "Warm Stack",
-        "milestone": "Token system \u2014 reference.json, semantic.json, component.json, generate.py",
+        "milestone": "Token system — reference.json, semantic.json, component.json, generate.py",
         "target_date": "March 15",
         "status": "Complete",
         "dependencies": "Core extraction"
@@ -2322,56 +2868,56 @@
       },
       {
         "project": "Personal OS",
-        "milestone": "Foundation \u2014 root CLAUDE.md, GOALS.md, 4 core skills",
+        "milestone": "Foundation — root CLAUDE.md, GOALS.md, 4 core skills",
         "target_date": "Feb 8",
         "status": "Complete",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
         "project": "Personal OS",
-        "milestone": "Morning ritual adoption \u2014 use /morning daily for 1 week",
+        "milestone": "Morning ritual adoption — use /morning daily for 1 week",
         "target_date": "Feb 15",
         "status": "Ready",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "Decision capture habit \u2014 use /capture for every non-trivial decision",
+        "milestone": "Decision capture habit — use /capture for every non-trivial decision",
         "target_date": "Feb 28",
         "status": "In progress",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "First weekly review \u2014 run /weekly-review",
+        "milestone": "First weekly review — run /weekly-review",
         "target_date": "Feb 15",
         "status": "Ready",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "Reflections infrastructure \u2014 energy-log.json accumulating data",
+        "milestone": "Reflections infrastructure — energy-log.json accumulating data",
         "target_date": "March 1",
         "status": "Seeded",
         "dependencies": "Morning ritual"
       },
       {
         "project": "Personal OS",
-        "milestone": "Context switching discipline \u2014 use /switch between projects",
+        "milestone": "Context switching discipline — use /switch between projects",
         "target_date": "Feb 15",
         "status": "Ready",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "Cross-repo audit pipeline \u2014 snapshot + Gemini API automation",
+        "milestone": "Cross-repo audit pipeline — snapshot + Gemini API automation",
         "target_date": "Feb 15",
         "status": "Complete",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
         "project": "Personal OS",
-        "milestone": "Continuous improvement plan \u2014 `/meta-plan` session on audit cadence, critical pedagogy, cognitive commons",
+        "milestone": "Continuous improvement plan — `/meta-plan` session on audit cadence, critical pedagogy, cognitive commons",
         "target_date": "Feb 16",
         "status": "Ready",
         "dependencies": "Audit pipeline"
@@ -2380,38 +2926,38 @@
     "upcoming": [
       {
         "project": "OEFF 2026",
-        "milestone": "Data viz integration \u2014 host map + screening dashboard",
+        "milestone": "Data viz integration — host map + screening dashboard",
         "target_date": "March 1",
         "status": "In progress",
         "dependencies": "Clean host data, venue geocoding"
       },
       {
         "project": "OEFF 2026",
-        "milestone": "Host tracking system \u2014 status pipeline per host",
+        "milestone": "Host tracking system — status pipeline per host",
         "target_date": "March 15",
         "status": "Not started",
         "dependencies": "Data viz foundation"
       },
       {
         "project": "OEFF 2026",
-        "milestone": "Formula deployment \u2014 screening fee calculations, host billing",
+        "milestone": "Formula deployment — screening fee calculations, host billing",
         "target_date": "April 1",
         "status": "Not started",
         "dependencies": "Host tracking"
       },
       {
         "project": "OEFF 2026",
-        "milestone": "Content freeze \u2014 all data finalized",
+        "milestone": "Content freeze — all data finalized",
         "target_date": "April 15",
         "status": "Not started",
         "dependencies": "Formula deployment"
       },
       {
-        "project": "Taylor Hopkins Art",
-        "milestone": "Dev tools \u2014 local preview server, rebuild watcher",
+        "project": "[name] Art",
+        "milestone": "Dev tools — local preview server, rebuild watcher",
         "target_date": "March 31",
         "status": "Not started",
-        "dependencies": "\u2014"
+        "dependencies": "—"
       },
       {
         "project": "Warm Stack",
@@ -2422,42 +2968,42 @@
       },
       {
         "project": "Personal OS",
-        "milestone": "Morning ritual adoption \u2014 use /morning daily for 1 week",
+        "milestone": "Morning ritual adoption — use /morning daily for 1 week",
         "target_date": "Feb 15",
         "status": "Ready",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "Decision capture habit \u2014 use /capture for every non-trivial decision",
+        "milestone": "Decision capture habit — use /capture for every non-trivial decision",
         "target_date": "Feb 28",
         "status": "In progress",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "First weekly review \u2014 run /weekly-review",
+        "milestone": "First weekly review — run /weekly-review",
         "target_date": "Feb 15",
         "status": "Ready",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "Reflections infrastructure \u2014 energy-log.json accumulating data",
+        "milestone": "Reflections infrastructure — energy-log.json accumulating data",
         "target_date": "March 1",
         "status": "Seeded",
         "dependencies": "Morning ritual"
       },
       {
         "project": "Personal OS",
-        "milestone": "Context switching discipline \u2014 use /switch between projects",
+        "milestone": "Context switching discipline — use /switch between projects",
         "target_date": "Feb 15",
         "status": "Ready",
         "dependencies": "Foundation"
       },
       {
         "project": "Personal OS",
-        "milestone": "Continuous improvement plan \u2014 `/meta-plan` session on audit cadence, critical pedagogy, cognitive commons",
+        "milestone": "Continuous improvement plan — `/meta-plan` session on audit cadence, critical pedagogy, cognitive commons",
         "target_date": "Feb 16",
         "status": "Ready",
         "dependencies": "Audit pipeline"
@@ -2483,33 +3029,23 @@
   "recent": {
     "decisions": [
       {
-        "slug": "2026-02-08-actors-garden-consulting-engagement",
-        "title": "Formalizing a Consulting Engagement with Actor's Garden",
-        "date": "2026-02-08"
-      },
-      {
-        "slug": "2026-02-08-taylor-art-market-strategy",
-        "title": "Taylor Hopkins \u2014 Art Market Strategy",
-        "date": "2026-02-08"
-      },
-      {
         "slug": "2026-02-11-compiling-agents-research",
-        "title": "Code Compiling Agents \u2014 Research Findings and Decision",
+        "title": "Code Compiling Agents — Research Findings and Decision",
         "date": "2026-02-11"
       },
       {
         "slug": "2026-02-11-multi-agent-landscape-research",
-        "title": "Multi-Agent Landscape Research \u2014 February 2026",
+        "title": "Multi-Agent Landscape Research — February 2026",
         "date": "2026-02-11"
       },
       {
         "slug": "2026-02-12-git-auth-routing",
-        "title": "Git Auth Routing \u2014 Which GitHub Account for Which Repo",
+        "title": "Git Auth Routing — Which GitHub Account for Which Repo",
         "date": "2026-02-12"
       },
       {
         "slug": "2026-02-12-oeff-budget-structure-confirmed",
-        "title": "OEFF 2026 Budget Structure \u2014 Confirmed",
+        "title": "OEFF 2026 Budget Structure — Confirmed",
         "date": "2026-02-12"
       },
       {
@@ -2534,7 +3070,7 @@
       },
       {
         "slug": "2026-02-14-letter-layout-mode-and-advisor-flavor",
-        "title": "The \"Letter\" Layout Mode \u2014 Data-as-Typography, Editorial Section Rhythm, and Advisor Tone",
+        "title": "The \"Letter\" Layout Mode — Data-as-Typography, Editorial Section Rhythm, and Advisor Tone",
         "date": "2026-02-14"
       },
       {
@@ -2577,7 +3113,7 @@
       {
         "id": "2026-02-14T04-00-email-triage-build",
         "domain": "meta",
-        "intent": "Build haiku-powered email triage system \u2014 from exploration of automation gaps to",
+        "intent": "Build haiku-powered email triage system — from exploration of automation gaps to",
         "date": "2026-02-14"
       },
       {
@@ -2601,7 +3137,7 @@
       {
         "id": "2026-02-14T16-00-mad-hudson-bot-context",
         "domain": "mad-hudson",
-        "intent": "Add Brad social post context to bot traffic analysis \u2014 high-traffic days may cor",
+        "intent": "Add Brad social post context to bot traffic analysis — high-traffic days may cor",
         "date": "2026-02-14"
       },
       {
@@ -2647,6 +3183,30 @@
         "date": "2026-02-15"
       },
       {
+        "id": "2026-02-15T11-00-oeff-sheets-pipeline",
+        "domain": "oeff",
+        "intent": "Build live Google Sheets → JSON snapshot pipeline, investigate YAMM integration,",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T11-00-soundslice-catalog-manager",
+        "domain": "actors-garden",
+        "intent": "Build Soundslice catalog manager — API integration, naming cleanup, curriculum m",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T11-30-convene-schedule-gcal",
+        "domain": "convene",
+        "intent": "Build a script to import Convene work schedule CSVs into Google Calendar",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T13-00-convene-gcal-backfill",
+        "domain": "convene",
+        "intent": "Backfill all Convene schedule weeks to Google Calendar, establish calendar color",
+        "date": "2026-02-15"
+      },
+      {
         "id": "2026-02-15T15-00-gemini-audit-infrastructure",
         "domain": "meta",
         "intent": "Build automated repo audit pipeline using Gemini API, audit all 14 repos, implem",
@@ -2655,13 +3215,91 @@
       {
         "id": "2026-02-15T17-00-mad-hudson-design-overhaul",
         "domain": "mad-hudson",
-        "intent": "Full visual design overhaul of Mad Hudson SEO deliverable \u2014 palette shift, decor",
+        "intent": "Full visual design overhaul of Mad Hudson SEO deliverable — palette shift, decor",
         "date": "2026-02-15"
       },
       {
         "id": "2026-02-15T17-30-meta-lostcontextexplorer",
         "domain": "meta",
         "intent": "Build LostContextExplorer meta-plan and execute Phase 1+2: whole-corpus recovery",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T17-30-oeff-auth-diagnosis",
+        "domain": "oeff",
+        "intent": "Diagnose 403 auth failure on OEFF Sheets API, verify local snapshot pipeline wor",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T18-00-actors-garden-soundslice-automation",
+        "domain": "actors-garden",
+        "intent": "Close all 5 Soundslice automation gaps: stems, recording rename, duplicate clean",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T18-30-oeff-airtable-migration",
+        "domain": "oeff",
+        "intent": "Programmatic migration of 11 OEFF tables from CSV to Airtable with linked record",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T19-00-audio-archive-foundation",
+        "domain": "meta",
+        "intent": "Build and run audio archive foundation scripts (Phases 0-2): inventory, verify, ",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T19-00-meta-ecosystem-dashboard-heatmap",
+        "domain": "meta",
+        "intent": "Add accordion behavior to timeline view and heatmap calendar view to ecosystem d",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T19-30-audio-archive-phase2-3",
+        "domain": "meta",
+        "intent": "Resume audio archive from Phase 2 — diagnose preprocessing failures, fix path re",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T19-30-ecosystem-dashboard-real-data",
+        "domain": "meta",
+        "intent": "Wire ecosystem dashboard to real data, add privacy filter, enforce design constr",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T20-00-ecosystem-audit",
+        "domain": "meta",
+        "intent": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, wh",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T20-00-ecosystem-dashboard-phase4",
+        "domain": "meta",
+        "intent": "Add Phase 4 overview components to ecosystem dashboard — corpus donut, blocked/q",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T20-30-availability-heatmap-gcal-signals",
+        "domain": "convene",
+        "intent": "Build availability heatmap for [name] + daily GCal signals replacing weekly Mond",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T20-30-output-audit-career-positioning",
+        "domain": "meta",
+        "intent": "Audit 48 hours of output (Feb 14-15), quantify agentic time compression, explore",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T21-00-audio-archive-dashboard",
+        "domain": "meta",
+        "intent": "Build HTML dashboard generator for audio archive — visualize 509 transcripts wit",
+        "date": "2026-02-15"
+      },
+      {
+        "id": "2026-02-15T21-00-oeff-airtable-enhancement",
+        "domain": "oeff",
+        "intent": "Transform OEFF Airtable from data storage into operational command center — comp",
         "date": "2026-02-15"
       },
       {
@@ -2709,6 +3347,12 @@
     ],
     "commits": [
       {
+        "hash": "7ef4c8e3",
+        "date": "2026-02-16",
+        "message": "Fix key mismatches, create McKenna's separate +1 slice",
+        "project": "Actors Garden"
+      },
+      {
         "hash": "dabff9c1",
         "date": "2026-02-15",
         "message": "Add live pipeline snapshot 2026-02-15 from Google Sheets API",
@@ -2727,6 +3371,108 @@
         "project": "Warm Stack"
       },
       {
+        "hash": "91cd9577",
+        "date": "2026-02-15",
+        "message": "Revise scope with honest market-rate pricing and family framing",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "c8db3025",
+        "date": "2026-02-15",
+        "message": "Add shifted stems routing to upload pipeline, re-upload all recordings",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "0b692241",
+        "date": "2026-02-15",
+        "message": "Add Half Vox + Ghost Vox recordings, refactor vocal mix engine",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "3cfdcbcf",
+        "date": "2026-02-15",
+        "message": "Fix S3 upload (http.client bypass), upload karaoke to 14 songs",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "ff187a3d",
+        "date": "2026-02-15",
+        "message": "Add reupload-karaoke command, update pipeline status to current state",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "e8e2879e",
+        "date": "2026-02-15",
+        "message": "Move \"It's Our Turn Now\" to Unexpected Stories, remove from LMM student links",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "c70ddac8",
+        "date": "2026-02-15",
+        "message": "Add deploy folder for tiiny.host: lmm2026soundslice.tiiny.site",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "967417ad",
+        "date": "2026-02-15",
+        "message": "Add --public flag: names-stripped song links page",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "f65599d5",
+        "date": "2026-02-15",
+        "message": "Add student practice links page generator",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "4e2122bd",
+        "date": "2026-02-15",
+        "message": "Add sync command: copy syncpoints from Full Mix to Karaoke siblings",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "ffa0ec6b",
+        "date": "2026-02-15",
+        "message": "Remove countdown timer MP3s from source audio",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "f1fab286",
+        "date": "2026-02-15",
+        "message": "Delete LIVE duplicates and clean up 3-recording slices",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "11f64108",
+        "date": "2026-02-15",
+        "message": "Add enriched naming convention with show, performer, and key context",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "7797c10f",
+        "date": "2026-02-15",
+        "message": "Add cleanup --apply: scored duplicate detection with safe auto-delete",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "43398952",
+        "date": "2026-02-15",
+        "message": "Add rename-recordings command: Audio/Audio 2 → Full Mix/Karaoke",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "f44b0cbc",
+        "date": "2026-02-15",
+        "message": "Add stems command: WAV→MP3 conversion and upload readiness report",
+        "project": "Actors Garden"
+      },
+      {
+        "hash": "452cef2a",
+        "date": "2026-02-15",
+        "message": "Rebuild Soundslice guide with design system tokens, correct stems workflow",
+        "project": "Actors Garden"
+      },
+      {
         "hash": "15436a9b",
         "date": "2026-02-15",
         "message": "Add Soundslice catalog manager with curriculum metadata",
@@ -2741,7 +3487,7 @@
       {
         "hash": "617df4f7",
         "date": "2026-02-15",
-        "message": "Update runbook with Wk5 program state \u2014 cuts, cast changes, blockers",
+        "message": "Update runbook with Wk5 program state — cuts, cast changes, blockers",
         "project": "Actors Garden"
       },
       {
@@ -2779,120 +3525,14 @@
         "date": "2026-02-15",
         "message": "Strip decoration, systematize spacing, add slides mobile layout",
         "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "13d3843f",
-        "date": "2026-02-15",
-        "message": "Shift palette from terracotta to sage, reframe copy as opportunity",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "d92f10a0",
-        "date": "2026-02-15",
-        "message": "Add Instagram audit template with conversion bridge to Shopify data",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "1ff2a9ff",
-        "date": "2026-02-15",
-        "message": "Archive madstream/madman content platform deck and Instagram audit template",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "2c154547",
-        "date": "2026-02-15",
-        "message": "Implement Compass navigation across all pages",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "3c98b8ec",
-        "date": "2026-02-15",
-        "message": "Log session: LostContextExplorer meta-plan, corpus enrichment, reclassification tooling",
-        "project": "Personal OS"
-      },
-      {
-        "hash": "a00ae727",
-        "date": "2026-02-15",
-        "message": "LostContextExplorer sw-20260215-f563: corpus enrichment + reclassification tooling",
-        "project": "Personal OS"
-      },
-      {
-        "hash": "a3a5f52d",
-        "date": "2026-02-15",
-        "message": "Extract shared YAML utils, rename route-context to route_context",
-        "project": "Personal OS"
-      },
-      {
-        "hash": "dc44d9b6",
-        "date": "2026-02-14",
-        "message": "Add V7 health check script and baseline snapshot",
-        "project": "OEFF 2026"
-      },
-      {
-        "hash": "734e46aa",
-        "date": "2026-02-14",
-        "message": "Add LMM audio production pipeline with two-pass loudnorm",
-        "project": "Actors Garden"
-      },
-      {
-        "hash": "ea2d62d5",
-        "date": "2026-02-14",
-        "message": "Tighten dashboard prose: sentence headings, cut wind-up, remove enthusiasm inflation",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "46e9876c",
-        "date": "2026-02-14",
-        "message": "Rewrite index.html as Letter-format executive summary",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "a00ec0e2",
-        "date": "2026-02-14",
-        "message": "Add 7 roadmap pages to live site, fix dashboard back-links",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "c6bbbca2",
-        "date": "2026-02-14",
-        "message": "Sync dashboard + slides with all Feb 14 session work",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "0b9f22a4",
-        "date": "2026-02-14",
-        "message": "Add Gs Watch concept archive: 14 pitch/assessment docs",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "801b87ec",
-        "date": "2026-02-14",
-        "message": "Add Dec 2025 consulting archive + gap analysis against SEO plan",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "18a833e8",
-        "date": "2026-02-14",
-        "message": "Collapse slides 12+13 into single 'What Changes Next' slide (15\u219214)",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "2d88a448",
-        "date": "2026-02-14",
-        "message": "Add strategic insights, UTM tracking step, and seasonality framing",
-        "project": "Mad Hudson SEO"
-      },
-      {
-        "hash": "07526eed",
-        "date": "2026-02-14",
-        "message": "Add growth projections section using 12 months of actual Shopify data",
-        "project": "Mad Hudson SEO"
       }
     ],
     "domain_activity": {
       "mad-hudson": 16,
-      "oeff": 3,
-      "meta": 6,
+      "oeff": 7,
+      "meta": 14,
+      "actors-garden": 2,
+      "convene": 3,
       "design": 1,
       "audio-archive": 1
     }
@@ -2900,7 +3540,7 @@
   "blocked": [
     {
       "project": "Actors Garden",
-      "blocker": "Need GiGi to review redesign proposal and research"
+      "blocker": "Need [name] to review redesign proposal and research"
     },
     {
       "project": "Actors Garden",
@@ -2939,9 +3579,9 @@
     },
     {
       "type": "project",
-      "id": "taylor",
-      "label": "Taylor Hopkins Art",
-      "text": "Taylor Hopkins Art Phase 3 Phase 3: QR on cards page and one-page event flyer",
+      "id": "[name]",
+      "label": "[name] Art",
+      "text": "[name] Art Phase 3 Phase 3: QR on cards page and one-page event flyer",
       "date": "2026-02-12"
     },
     {
@@ -2962,8 +3602,8 @@
       "type": "project",
       "id": "actors-garden",
       "label": "Actors Garden",
-      "text": "Actors Garden 2026-02-08 session 3: OKLCH design system exploration complete. Registered AG as new domain in Beautiful-First vocabulary with three scales (Garden, Spotlight, Play) forming split-complementary triad. Built interactive chroma explorer, flavor transforms, SVG motifs (seedling, tree, sun, curtain), full semantic token map, and in-context preview. TOON format export ready. Moving away from navy #2e3a8c toward Deep Forest #2e5a45. Build Home page prototype once GiGi approves redesign direction Need GiGi to review redesign proposal and research Need to finalize retainer terms Need to schedule first session (late Feb)",
-      "date": "2026-02-15"
+      "text": "Actors Garden 2026-02-08 session 3: OKLCH design system exploration complete. Registered AG as new domain in Beautiful-First vocabulary with three scales (Garden, Spotlight, Play) forming split-complementary triad. Built interactive chroma explorer, flavor transforms, SVG motifs (seedling, tree, sun, curtain), full semantic token map, and in-context preview. TOON format export ready. Moving away from navy #2e3a8c toward Deep Forest #2e5a45. Build Home page prototype once [name] approves redesign direction Need [name] to review redesign proposal and research Need to finalize retainer terms Need to schedule first session (late Feb)",
+      "date": "2026-02-16"
     },
     {
       "type": "project",
@@ -2997,63 +3637,63 @@
       "type": "decision",
       "id": "2026-02-08-actors-garden-consulting-engagement",
       "label": "Formalizing a Consulting Engagement with Actor's Garden",
-      "text": "Formalizing a Consulting Engagement with Actor's Garden Garen and GG (Actor's Garden) agreed to formalize a consulting relationship focused on documentation, operational architecture, and handoff planning for Actor's Garden. This grows directly out of the operational skills Garen has been developing through the OEFF film festival and Convene work \u2014 disco consulting documentation operations onboarding handoff-planning",
+      "text": "Formalizing a Consulting Engagement with Actor's Garden Garen and GG (Actor's Garden) agreed to formalize a consulting relationship focused on documentation, operational architecture, and handoff planning for Actor's Garden. This grows directly out of the operational skills Garen has been developing through the OEFF film festival and Convene work — disco consulting documentation operations onboarding handoff-planning",
       "date": "2026-02-08"
     },
     {
       "type": "decision",
-      "id": "2026-02-08-taylor-art-market-strategy",
-      "label": "Taylor Hopkins \u2014 Art Market Strategy",
-      "text": "Taylor Hopkins \u2014 Art Market Strategy  strategy markets hospitality prints licensing chicago",
+      "id": "2026-02-08-[name]-art-market-strategy",
+      "label": "[name] — Art Market Strategy",
+      "text": "[name] — Art Market Strategy  strategy markets hospitality prints licensing chicago",
       "date": "2026-02-08"
     },
     {
       "type": "decision",
       "id": "2026-02-11-compiling-agents-research",
-      "label": "Code Compiling Agents \u2014 Research Findings and Decision",
-      "text": "Code Compiling Agents \u2014 Research Findings and Decision We investigated whether high-efficiency code compiling agents would benefit our stack. A three-agent research team (landscape researcher, stack-mapper, architecture advisor) converged on the same finding from different angles: **We already have a compiling architecture.** The ecosystem \u2014 `build.py`  compiling agents build pipeline efficiency stewardship agentless incremental builds",
+      "label": "Code Compiling Agents — Research Findings and Decision",
+      "text": "Code Compiling Agents — Research Findings and Decision We investigated whether high-efficiency code compiling agents would benefit our stack. A three-agent research team (landscape researcher, stack-mapper, architecture advisor) converged on the same finding from different angles: **We already have a compiling architecture.** The ecosystem — `build.py`  compiling agents build pipeline efficiency stewardship agentless incremental builds",
       "date": "2026-02-11"
     },
     {
       "type": "decision",
       "id": "2026-02-11-multi-agent-landscape-research",
-      "label": "Multi-Agent Landscape Research \u2014 February 2026",
-      "text": "Multi-Agent Landscape Research \u2014 February 2026  ",
+      "label": "Multi-Agent Landscape Research — February 2026",
+      "text": "Multi-Agent Landscape Research — February 2026  ",
       "date": "2026-02-11"
     },
     {
       "type": "decision",
       "id": "2026-02-11-swarm-infrastructure-methodology",
-      "label": "Decision: Swarm Infrastructure Methodology \u2014 Research-Grounded Architecture",
-      "text": "Decision: Swarm Infrastructure Methodology \u2014 Research-Grounded Architecture  ",
+      "label": "Decision: Swarm Infrastructure Methodology — Research-Grounded Architecture",
+      "text": "Decision: Swarm Infrastructure Methodology — Research-Grounded Architecture  ",
       "date": null
     },
     {
       "type": "decision",
       "id": "2026-02-12-beautiful-first-origins",
-      "label": "Decision: Beautiful-First Origins \u2014 Where the Design Philosophy Comes From",
-      "text": "Decision: Beautiful-First Origins \u2014 Where the Design Philosophy Comes From  ",
+      "label": "Decision: Beautiful-First Origins — Where the Design Philosophy Comes From",
+      "text": "Decision: Beautiful-First Origins — Where the Design Philosophy Comes From  ",
       "date": null
     },
     {
       "type": "decision",
       "id": "2026-02-12-git-auth-routing",
-      "label": "Git Auth Routing \u2014 Which GitHub Account for Which Repo",
-      "text": "Git Auth Routing \u2014 Which GitHub Account for Which Repo Two GitHub accounts are configured via `gh auth`. Each repo belongs to a specific account, and pushing with the wrong one active gives a \"repository not found\" error. | Repo / Domain | GitHub Account | Switch Command | |---------------|---------------|----------------| | `personal-os` (~/Desktop/cla git github auth push workflow",
+      "label": "Git Auth Routing — Which GitHub Account for Which Repo",
+      "text": "Git Auth Routing — Which GitHub Account for Which Repo Two GitHub accounts are configured via `gh auth`. Each repo belongs to a specific account, and pushing with the wrong one active gives a \"repository not found\" error. | Repo / Domain | GitHub Account | Switch Command | |---------------|---------------|----------------| | `personal-os` (~/Desktop/cla git github auth push workflow",
       "date": "2026-02-12"
     },
     {
       "type": "decision",
       "id": "2026-02-12-oeff-budget-structure-confirmed",
-      "label": "OEFF 2026 Budget Structure \u2014 Confirmed",
-      "text": "OEFF 2026 Budget Structure \u2014 Confirmed  ",
+      "label": "OEFF 2026 Budget Structure — Confirmed",
+      "text": "OEFF 2026 Budget Structure — Confirmed  ",
       "date": "2026-02-12"
     },
     {
       "type": "decision",
       "id": "2026-02-12-relationship-context",
-      "label": "Decision: Relationship Context \u2014 The People Behind the Projects",
-      "text": "Decision: Relationship Context \u2014 The People Behind the Projects  ",
+      "label": "Decision: Relationship Context — The People Behind the Projects",
+      "text": "Decision: Relationship Context — The People Behind the Projects  ",
       "date": null
     },
     {
@@ -3066,8 +3706,8 @@
     {
       "type": "decision",
       "id": "2026-02-12-stack-philosophy",
-      "label": "Decision: Stack Philosophy \u2014 Why Python + Vanilla JS + No Databases",
-      "text": "Decision: Stack Philosophy \u2014 Why Python + Vanilla JS + No Databases  ",
+      "label": "Decision: Stack Philosophy — Why Python + Vanilla JS + No Databases",
+      "text": "Decision: Stack Philosophy — Why Python + Vanilla JS + No Databases  ",
       "date": null
     },
     {
@@ -3081,7 +3721,7 @@
       "type": "decision",
       "id": "2026-02-13-lightweight-cms-options-for-oeff",
       "label": "Lightweight CMS Options for OEFF",
-      "text": "Lightweight CMS Options for OEFF The OEFF docs site (`docs.oneearthfilmfest.org`) is static HTML on Cloudflare Pages, authored entirely by Garen. Every content change \u2014 email templates, escalation procedures, host FAQ updates \u2014 routes through him. This is the primary collaboration bottleneck: the team can't edit operational content oeff collaboration pipeline cms google-sheets architecture",
+      "text": "Lightweight CMS Options for OEFF The OEFF docs site (`docs.oneearthfilmfest.org`) is static HTML on Cloudflare Pages, authored entirely by Garen. Every content change — email templates, escalation procedures, host FAQ updates — routes through him. This is the primary collaboration bottleneck: the team can't edit operational content oeff collaboration pipeline cms google-sheets architecture",
       "date": "2026-02-13"
     },
     {
@@ -3094,8 +3734,8 @@
     {
       "type": "decision",
       "id": "2026-02-14-letter-layout-mode-and-advisor-flavor",
-      "label": "The \"Letter\" Layout Mode \u2014 Data-as-Typography, Editorial Section Rhythm, and Advisor Tone",
-      "text": "The \"Letter\" Layout Mode \u2014 Data-as-Typography, Editorial Section Rhythm, and Advisor Tone Adopt \"Letter\" as a named layout mode in the Beautiful-First design system, and \"Advisor\" as a flavor descriptor. This came from rediscovering an early Mad Hudson SEO summary artifact (`mad-hudson-seo-summary.html`) that felt distinctly better than the later dashboard and slide deck built from the s design-system layout typography beautiful-first mad-hudson deliverables",
+      "label": "The \"Letter\" Layout Mode — Data-as-Typography, Editorial Section Rhythm, and Advisor Tone",
+      "text": "The \"Letter\" Layout Mode — Data-as-Typography, Editorial Section Rhythm, and Advisor Tone Adopt \"Letter\" as a named layout mode in the Beautiful-First design system, and \"Advisor\" as a flavor descriptor. This came from rediscovering an early Mad Hudson SEO summary artifact (`mad-hudson-seo-summary.html`) that felt distinctly better than the later dashboard and slide deck built from the s design-system layout typography beautiful-first mad-hudson deliverables",
       "date": "2026-02-14"
     },
     {
@@ -3150,8 +3790,8 @@
     {
       "type": "session",
       "id": "2026-02-14T04-00-email-triage-build",
-      "label": "Build haiku-powered email triage system \u2014 from exploration of automation gaps to",
-      "text": "Build haiku-powered email triage system \u2014 from exploration of automation gaps to working multi-account Gmail classifier with cleanup meta automation haiku email triage gmail morning-ritual infrastructure",
+      "label": "Build haiku-powered email triage system — from exploration of automation gaps to",
+      "text": "Build haiku-powered email triage system — from exploration of automation gaps to working multi-account Gmail classifier with cleanup meta automation haiku email triage gmail morning-ritual infrastructure",
       "date": "2026-02-14"
     },
     {
@@ -3172,14 +3812,14 @@
       "type": "session",
       "id": "2026-02-14T11-00-mad-hudson-seo-artifacts",
       "label": "Build two single-file HTML artifacts (dashboard + slide deck) from the Ember tea",
-      "text": "Build two single-file HTML artifacts (dashboard + slide deck) from the Ember team research session findings. First pass was too simplified and non-technical \u2014 rebuilt with analytical depth, data density, and proper sourcing. mad-hudson mad-hudson seo dashboard presentation html-artifacts conversion competitive-analysis audience",
+      "text": "Build two single-file HTML artifacts (dashboard + slide deck) from the Ember team research session findings. First pass was too simplified and non-technical — rebuilt with analytical depth, data density, and proper sourcing. mad-hudson mad-hudson seo dashboard presentation html-artifacts conversion competitive-analysis audience",
       "date": "2026-02-14"
     },
     {
       "type": "session",
       "id": "2026-02-14T16-00-mad-hudson-bot-context",
-      "label": "Add Brad social post context to bot traffic analysis \u2014 high-traffic days may cor",
-      "text": "Add Brad social post context to bot traffic analysis \u2014 high-traffic days may correlate with Brad's posts driving real interest, not purely bot traffic. Nuance the framing in both dashboard and slides, then deploy to GitHub Pages. mad-hudson mad-hudson seo analytics bot-traffic github-pages",
+      "label": "Add Brad social post context to bot traffic analysis — high-traffic days may cor",
+      "text": "Add Brad social post context to bot traffic analysis — high-traffic days may correlate with Brad's posts driving real interest, not purely bot traffic. Nuance the framing in both dashboard and slides, then deploy to GitHub Pages. mad-hudson mad-hudson seo analytics bot-traffic github-pages",
       "date": "2026-02-14"
     },
     {
@@ -3233,6 +3873,34 @@
     },
     {
       "type": "session",
+      "id": "2026-02-15T11-00-oeff-sheets-pipeline",
+      "label": "Build live Google Sheets → JSON snapshot pipeline, investigate YAMM integration,",
+      "text": "Build live Google Sheets → JSON snapshot pipeline, investigate YAMM integration, backfill 2026 venue contacts from 2025 data oeff google-sheets-api pipeline yamm contacts data-quality backfill snapshot airtable-migration",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T11-00-soundslice-catalog-manager",
+      "label": "Build Soundslice catalog manager — API integration, naming cleanup, curriculum m",
+      "text": "Build Soundslice catalog manager — API integration, naming cleanup, curriculum metadata, push/delete tooling actors-garden soundslice api-integration curriculum sheet-music naming-convention catalog lmm-2026 phase-5-pilot",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T11-30-convene-schedule-gcal",
+      "label": "Build a script to import Convene work schedule CSVs into Google Calendar",
+      "text": "Build a script to import Convene work schedule CSVs into Google Calendar convene convene google-calendar automation oauth",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T13-00-convene-gcal-backfill",
+      "label": "Backfill all Convene schedule weeks to Google Calendar, establish calendar color",
+      "text": "Backfill all Convene schedule weeks to Google Calendar, establish calendar color system, and add weekly load signals from Events tabs convene convene google-calendar xlsx-parsing color-system [name]-shared-calendar backfill load-signals pto-planning",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
       "id": "2026-02-15T15-00-gemini-audit-infrastructure",
       "label": "Build automated repo audit pipeline using Gemini API, audit all 14 repos, implem",
       "text": "Build automated repo audit pipeline using Gemini API, audit all 14 repos, implement fixes from findings meta audit gemini-api cross-repo infrastructure code-quality hygiene automation",
@@ -3241,8 +3909,8 @@
     {
       "type": "session",
       "id": "2026-02-15T17-00-mad-hudson-design-overhaul",
-      "label": "Full visual design overhaul of Mad Hudson SEO deliverable \u2014 palette shift, decor",
-      "text": "Full visual design overhaul of Mad Hudson SEO deliverable \u2014 palette shift, decoration stripping, typography restraint, mobile fixes, informed by swarm design audit mad-hudson design-overhaul palette typography mobile swarm mad-hudson skill-creation",
+      "label": "Full visual design overhaul of Mad Hudson SEO deliverable — palette shift, decor",
+      "text": "Full visual design overhaul of Mad Hudson SEO deliverable — palette shift, decoration stripping, typography restraint, mobile fixes, informed by swarm design audit mad-hudson design-overhaul palette typography mobile swarm mad-hudson skill-creation",
       "date": "2026-02-15"
     },
     {
@@ -3250,6 +3918,97 @@
       "id": "2026-02-15T17-30-meta-lostcontextexplorer",
       "label": "Build LostContextExplorer meta-plan and execute Phase 1+2: whole-corpus recovery",
       "text": "Build LostContextExplorer meta-plan and execute Phase 1+2: whole-corpus recovery, enrichment, and reclassification tooling meta swarm meta corpus enrichment reclassification context-recovery infrastructure",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T17-30-oeff-auth-diagnosis",
+      "label": "Diagnose 403 auth failure on OEFF Sheets API, verify local snapshot pipeline wor",
+      "text": "Diagnose 403 auth failure on OEFF Sheets API, verify local snapshot pipeline works offline oeff google-auth debugging oauth snapshot",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T18-00-actors-garden-soundslice-automation",
+      "label": "Close all 5 Soundslice automation gaps: stems, recording rename, duplicate clean",
+      "text": "Close all 5 Soundslice automation gaps: stems, recording rename, duplicate cleanup, sync copy, student links page actors-garden soundslice automation student-facing privacy catalog-tooling audio-pipeline",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T18-30-oeff-airtable-migration",
+      "label": "Programmatic migration of 11 OEFF tables from CSV to Airtable with linked record",
+      "text": "Programmatic migration of 11 OEFF tables from CSV to Airtable with linked records oeff airtable migration data-pipeline api-integration",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T19-00-audio-archive-foundation",
+      "label": "Build and run audio archive foundation scripts (Phases 0-2): inventory, verify, ",
+      "text": "Build and run audio archive foundation scripts (Phases 0-2): inventory, verify, preprocess, classify meta audio-archive voice-memos preprocessing classification foundation",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T19-00-meta-ecosystem-dashboard-heatmap",
+      "label": "Add accordion behavior to timeline view and heatmap calendar view to ecosystem d",
+      "text": "Add accordion behavior to timeline view and heatmap calendar view to ecosystem dashboard, with daily rollups data pipeline meta ecosystem-dashboard heatmap visualization data-pipeline phased-implementation",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T19-30-audio-archive-phase2-3",
+      "label": "Resume audio archive from Phase 2 — diagnose preprocessing failures, fix path re",
+      "text": "Resume audio archive from Phase 2 — diagnose preprocessing failures, fix path recovery, build Groq transcription pipeline, sensitivity scanner, and search with saved lenses meta audio-archive transcription groq sensitivity search preprocessing bash-bug-fix therapeutic-use",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T19-30-ecosystem-dashboard-real-data",
+      "label": "Wire ecosystem dashboard to real data, add privacy filter, enforce design constr",
+      "text": "Wire ecosystem dashboard to real data, add privacy filter, enforce design constraints, deploy as static site meta dashboard real-data privacy deploy design-constraints next-js framework-exception static-export",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T20-00-ecosystem-audit",
+      "label": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, wh",
+      "text": "Comprehensive audit of entire ecosystem — what's been built, how novel it is, where the money is, and what to do next meta audit market-research pricing strategy cross-domain monetization",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T20-00-ecosystem-dashboard-phase4",
+      "label": "Add Phase 4 overview components to ecosystem dashboard — corpus donut, blocked/q",
+      "text": "Add Phase 4 overview components to ecosystem dashboard — corpus donut, blocked/questions panels, weekly review card meta dashboard phase-4 recharts overview-view blocked-items",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T20-30-availability-heatmap-gcal-signals",
+      "label": "Build availability heatmap for [name] + daily GCal signals replacing weekly Mond",
+      "text": "Build availability heatmap for [name] + daily GCal signals replacing weekly Monday-only load signals convene availability google-calendar convene personal-infrastructure heatmap [name]",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T20-30-output-audit-career-positioning",
+      "label": "Audit 48 hours of output (Feb 14-15), quantify agentic time compression, explore",
+      "text": "Audit 48 hours of output (Feb 14-15), quantify agentic time compression, explore career positioning and monetization meta career strategy monetization output-audit agentic-compression cross-domain visibility",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T21-00-audio-archive-dashboard",
+      "label": "Build HTML dashboard generator for audio archive — visualize 509 transcripts wit",
+      "text": "Build HTML dashboard generator for audio archive — visualize 509 transcripts with lens analysis meta audio-archive dashboard visualization needs-iteration",
+      "date": "2026-02-15"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-15T21-00-oeff-airtable-enhancement",
+      "label": "Transform OEFF Airtable from data storage into operational command center — comp",
+      "text": "Transform OEFF Airtable from data storage into operational command center — computed fields, visibility layer, dashboard oeff airtable data-visualization operational-dashboard venue-management season-scoping beautiful-first api-workaround",
       "date": "2026-02-15"
     },
     {
@@ -3284,14 +4043,14 @@
       "type": "session",
       "id": "sw-20260214-ec9b",
       "label": "Research competitive landscape, conversion optimization, SEO keyword landscape, ",
-      "text": "Research competitive landscape, conversion optimization, SEO keyword landscape, and target demographics for Mad Hudson Watches \u2014 informed by Shopify conversion data showing 12,983 sessions / 8 purchases (0.06%) over Jan 10 - Feb 9, 2026 mad-hudson swarm mad-hudson research seo conversion competitive-analysis audience demographics shopify agent-definition",
+      "text": "Research competitive landscape, conversion optimization, SEO keyword landscape, and target demographics for Mad Hudson Watches — informed by Shopify conversion data showing 12,983 sessions / 8 purchases (0.06%) over Jan 10 - Feb 9, 2026 mad-hudson swarm mad-hudson research seo conversion competitive-analysis audience demographics shopify agent-definition",
       "date": "2026-02-14"
     },
     {
       "type": "session",
       "id": "sw-20260214-f828",
       "label": "Research executive communication best practices for consulting presentations, th",
-      "text": "Research executive communication best practices for consulting presentations, then apply findings to improve Mad Hudson SEO dashboard and slide deck \u2014 open with a win, frame as opportunities, calibrate for friend-client relationship mad-hudson swarm mad-hudson communication executive-presentation seo github-pages",
+      "text": "Research executive communication best practices for consulting presentations, then apply findings to improve Mad Hudson SEO dashboard and slide deck — open with a win, frame as opportunities, calibrate for friend-client relationship mad-hudson swarm mad-hudson communication executive-presentation seo github-pages",
       "date": "2026-02-14"
     },
     {
@@ -3305,24 +4064,358 @@
   "timeline": {
     "dailyRollups": [
       {
-        "date": "2026-02-04",
+        "date": "2025-10-21",
+        "totalHours": 4.5,
+        "domains": {
+          "cross-domain": 4.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-10-22",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-10-23",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-10-24",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-10-25",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-10-26",
+        "totalHours": 0.5,
+        "domains": {
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-10-27",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-10-28",
         "totalHours": 1.5,
         "domains": {
-          "oeff": 1.5
+          "cross-domain": 1.5
         },
-        "dominantDomain": "oeff"
+        "dominantDomain": "cross-domain"
       },
       {
-        "date": "2026-02-05",
-        "totalHours": 2.75,
+        "date": "2025-10-29",
+        "totalHours": 0.5,
         "domains": {
-          "oeff": 1.75,
-          "taylor-hopkins": 1.0
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-10-30",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-10-31",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-01",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-02",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-03",
+        "totalHours": 1.0,
+        "domains": {
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-04",
+        "totalHours": 4.0,
+        "domains": {
+          "cross-domain": 4.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-05",
+        "totalHours": 0.5,
+        "domains": {
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-06",
+        "totalHours": 6.5,
+        "domains": {
+          "cross-domain": 4.5,
+          "oeff": 2.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-07",
+        "totalHours": 4.0,
+        "domains": {
+          "cross-domain": 4.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-08",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-09",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-10",
+        "totalHours": 2.5,
+        "domains": {
+          "cross-domain": 2.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-11",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-12",
+        "totalHours": 0.5,
+        "domains": {
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-13",
+        "totalHours": 1.0,
+        "domains": {
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-14",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-15",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-16",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-17",
+        "totalHours": 2.0,
+        "domains": {
+          "oeff": 2.0
         },
         "dominantDomain": "oeff"
       },
       {
-        "date": "2026-02-06",
+        "date": "2025-11-18",
+        "totalHours": 2.0,
+        "domains": {
+          "cross-domain": 2.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-19",
+        "totalHours": 1.0,
+        "domains": {
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-20",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-21",
+        "totalHours": 2.5,
+        "domains": {
+          "convene": 2.0,
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "convene"
+      },
+      {
+        "date": "2025-11-22",
+        "totalHours": 2.5,
+        "domains": {
+          "oeff": 2.0,
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2025-11-23",
+        "totalHours": 4.0,
+        "domains": {
+          "oeff": 4.0
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2025-11-24",
+        "totalHours": 3.0,
+        "domains": {
+          "convene": 0.5,
+          "cross-domain": 2.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-25",
+        "totalHours": 1.5,
+        "domains": {
+          "cross-domain": 1.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-26",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-27",
+        "totalHours": 5.5,
+        "domains": {
+          "oeff": 2.0,
+          "cross-domain": 3.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-28",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-11-29",
+        "totalHours": 1.0,
+        "domains": {
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-11-30",
+        "totalHours": 7.0,
+        "domains": {
+          "cross-domain": 5.5,
+          "personal": 1.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-01",
+        "totalHours": 3.0,
+        "domains": {
+          "cross-domain": 3.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-02",
+        "totalHours": 2.0,
+        "domains": {
+          "convene": 2.0
+        },
+        "dominantDomain": "convene"
+      },
+      {
+        "date": "2025-12-03",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-12-04",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2025-12-05",
+        "totalHours": 1.5,
+        "domains": {
+          "cross-domain": 0.5,
+          "convene": 1.0
+        },
+        "dominantDomain": "convene"
+      },
+      {
+        "date": "2025-12-06",
+        "totalHours": 2.0,
+        "domains": {
+          "cross-domain": 2.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-07",
+        "totalHours": 0.5,
+        "domains": {
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-08",
         "totalHours": 1.0,
         "domains": {
           "oeff": 1.0
@@ -3330,30 +4423,603 @@
         "dominantDomain": "oeff"
       },
       {
+        "date": "2025-12-09",
+        "totalHours": 2.5,
+        "domains": {
+          "oeff": 1.0,
+          "cross-domain": 1.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-10",
+        "totalHours": 7.0,
+        "domains": {
+          "oeff": 2.0,
+          "convene": 4.0,
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "convene"
+      },
+      {
+        "date": "2025-12-11",
+        "totalHours": 2.5,
+        "domains": {
+          "convene": 2.0,
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "convene"
+      },
+      {
+        "date": "2025-12-12",
+        "totalHours": 0.5,
+        "domains": {
+          "convene": 0.5
+        },
+        "dominantDomain": "convene"
+      },
+      {
+        "date": "2025-12-13",
+        "totalHours": 1.0,
+        "domains": {
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-14",
+        "totalHours": 2.0,
+        "domains": {
+          "cross-domain": 2.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-15",
+        "totalHours": 4.0,
+        "domains": {
+          "cross-domain": 4.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-16",
+        "totalHours": 2.0,
+        "domains": {
+          "cross-domain": 2.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-17",
+        "totalHours": 2.0,
+        "domains": {
+          "cross-domain": 2.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-18",
+        "totalHours": 1.5,
+        "domains": {
+          "convene": 0.5,
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-19",
+        "totalHours": 4.5,
+        "domains": {
+          "cross-domain": 4.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-20",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 7.45,
+          "convene": 0.55
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-21",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 6.22,
+          "design": 1.78
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-22",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 6.46,
+          "convene": 0.62,
+          "mad-hudson": 0.92
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-23",
+        "totalHours": 1.5,
+        "domains": {
+          "cross-domain": 1.0,
+          "personal": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-24",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 5.22,
+          "personal": 2.78
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-25",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 4.25,
+          "convene": 1.0,
+          "mad-hudson": 1.25,
+          "design": 1.25,
+          "personal": 0.25
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-26",
+        "totalHours": 8,
+        "domains": {
+          "design": 0.51,
+          "cross-domain": 6.81,
+          "mad-hudson": 0.51,
+          "personal": 0.17
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-27",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 6.31,
+          "design": 0.31,
+          "mad-hudson": 1.38
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-28",
+        "totalHours": 6.0,
+        "domains": {
+          "cross-domain": 6.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-29",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 8.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-30",
+        "totalHours": 5.0,
+        "domains": {
+          "cross-domain": 5.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2025-12-31",
+        "totalHours": 8,
+        "domains": {
+          "design": 1.79,
+          "cross-domain": 4.18,
+          "personal": 1.31,
+          "convene": 0.24,
+          "oeff": 0.48
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2026-01-01",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 1.52,
+          "personal": 3.43,
+          "design": 3.05
+        },
+        "dominantDomain": "personal"
+      },
+      {
+        "date": "2026-01-02",
+        "totalHours": 8,
+        "domains": {
+          "mad-hudson": 1.6,
+          "design": 5.6,
+          "meta": 0.27,
+          "cross-domain": 0.53
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-03",
+        "totalHours": 3.0,
+        "domains": {
+          "design": 2.5,
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-04",
+        "totalHours": 8,
+        "domains": {
+          "design": 7.24,
+          "cross-domain": 0.76
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-05",
+        "totalHours": 8,
+        "domains": {
+          "design": 6.71,
+          "personal": 0.26,
+          "cross-domain": 1.03
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-06",
+        "totalHours": 8,
+        "domains": {
+          "design": 8.0
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-07",
+        "totalHours": 3.5,
+        "domains": {
+          "design": 3.5
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-08",
+        "totalHours": 1.5,
+        "domains": {
+          "design": 1.0,
+          "cross-domain": 0.5
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-09",
+        "totalHours": 8,
+        "domains": {
+          "design": 5.78,
+          "cross-domain": 2.22
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-10",
+        "totalHours": 8,
+        "domains": {
+          "design": 4.67,
+          "ag": 1.0,
+          "convene": 2.0,
+          "cross-domain": 0.33
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-11",
+        "totalHours": 8,
+        "domains": {
+          "design": 5.65,
+          "oeff": 0.47,
+          "cross-domain": 1.88
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-12",
+        "totalHours": 1.0,
+        "domains": {
+          "cross-domain": 1.0
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2026-01-13",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 1.78,
+          "design": 5.93,
+          "personal": 0.3
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-14",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 1.4,
+          "design": 6.2,
+          "oeff": 0.4
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-15",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2026-01-16",
+        "totalHours": 3.5,
+        "domains": {
+          "design": 3.0,
+          "oeff": 0.5
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-17",
+        "totalHours": 1.5,
+        "domains": {
+          "cross-domain": 1.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2026-01-18",
+        "totalHours": 7.5,
+        "domains": {
+          "design": 3.5,
+          "cross-domain": 2.0,
+          "personal": 2.0
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-19",
+        "totalHours": 8.0,
+        "domains": {
+          "design": 4.0,
+          "oeff": 4.0
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-20",
+        "totalHours": 8,
+        "domains": {
+          "design": 1.6,
+          "oeff": 5.49,
+          "cross-domain": 0.91
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-21",
+        "totalHours": 1.5,
+        "domains": {
+          "cross-domain": 1.0,
+          "oeff": 0.5
+        },
+        "dominantDomain": "cross-domain"
+      },
+      {
+        "date": "2026-01-22",
+        "totalHours": 5.0,
+        "domains": {
+          "oeff": 5.0
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-23",
+        "totalHours": 8,
+        "domains": {
+          "design": 0.76,
+          "cross-domain": 1.14,
+          "ag": 2.29,
+          "oeff": 2.29,
+          "convene": 1.52
+        },
+        "dominantDomain": "ag"
+      },
+      {
+        "date": "2026-01-24",
+        "totalHours": 8,
+        "domains": {
+          "ag": 0.62,
+          "cross-domain": 0.31,
+          "design": 5.23,
+          "personal": 0.31,
+          "convene": 0.31,
+          "oeff": 1.23
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-25",
+        "totalHours": 8,
+        "domains": {
+          "personal": 0.47,
+          "oeff": 4.24,
+          "cross-domain": 2.35,
+          "ag": 0.94
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-26",
+        "totalHours": 3.5,
+        "domains": {
+          "oeff": 3.5
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-27",
+        "totalHours": 8,
+        "domains": {
+          "oeff": 4.31,
+          "design": 3.08,
+          "cross-domain": 0.62
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-28",
+        "totalHours": 8,
+        "domains": {
+          "design": 3.76,
+          "oeff": 4.24
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-29",
+        "totalHours": 8,
+        "domains": {
+          "design": 3.56,
+          "cross-domain": 0.44,
+          "oeff": 1.33,
+          "personal": 2.67
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-01-30",
+        "totalHours": 8,
+        "domains": {
+          "design": 2.11,
+          "cross-domain": 1.68,
+          "oeff": 4.21
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-01-31",
+        "totalHours": 8,
+        "domains": {
+          "personal": 1.33,
+          "oeff": 0.89,
+          "ag": 4.44,
+          "design": 0.89,
+          "cross-domain": 0.44
+        },
+        "dominantDomain": "ag"
+      },
+      {
+        "date": "2026-02-01",
+        "totalHours": 8,
+        "domains": {
+          "cross-domain": 2.48,
+          "oeff": 0.55,
+          "convene": 0.55,
+          "mad-hudson": 0.28,
+          "design": 3.03,
+          "personal": 0.83,
+          "ag": 0.28
+        },
+        "dominantDomain": "design"
+      },
+      {
+        "date": "2026-02-02",
+        "totalHours": 8,
+        "domains": {
+          "design": 0.8,
+          "cross-domain": 2.0,
+          "oeff": 5.2
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-02-03",
+        "totalHours": 0,
+        "domains": {},
+        "dominantDomain": null
+      },
+      {
+        "date": "2026-02-04",
+        "totalHours": 8,
+        "domains": {
+          "oeff": 3.81,
+          "cross-domain": 0.38,
+          "convene": 2.29,
+          "design": 1.52
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-02-05",
+        "totalHours": 8,
+        "domains": {
+          "oeff": 3.7,
+          "partner-art": 0.48,
+          "cross-domain": 1.67,
+          "design": 2.15
+        },
+        "dominantDomain": "oeff"
+      },
+      {
+        "date": "2026-02-06",
+        "totalHours": 8,
+        "domains": {
+          "oeff": 2.6,
+          "ag": 1.4,
+          "convene": 2.4,
+          "personal": 0.2,
+          "design": 0.6,
+          "cross-domain": 0.8
+        },
+        "dominantDomain": "oeff"
+      },
+      {
         "date": "2026-02-07",
         "totalHours": 8,
         "domains": {
-          "taylor-hopkins": 2.97,
-          "convene": 1.37,
-          "meta": 3.66
+          "partner-art": 2.21,
+          "convene": 1.02,
+          "cross-domain": 1.02,
+          "design": 1.02,
+          "meta": 2.72
         },
         "dominantDomain": "meta"
       },
       {
         "date": "2026-02-08",
-        "totalHours": 4.25,
+        "totalHours": 6.25,
         "domains": {
-          "taylor-hopkins": 3.75,
-          "ag": 0.5
+          "partner-art": 3.75,
+          "ag": 1.5,
+          "cross-domain": 1.0
         },
-        "dominantDomain": "taylor-hopkins"
+        "dominantDomain": "partner-art"
       },
       {
         "date": "2026-02-09",
         "totalHours": 8,
         "domains": {
           "oeff": 0.96,
-          "taylor-hopkins": 0.36,
+          "partner-art": 0.36,
           "mad-hudson": 6.69
         },
         "dominantDomain": "mad-hudson"
@@ -3372,17 +5038,17 @@
         "totalHours": 1.5,
         "domains": {
           "oeff": 0.5,
-          "taylor-hopkins": 0.75,
+          "partner-art": 0.75,
           "convene": 0.25
         },
-        "dominantDomain": "taylor-hopkins"
+        "dominantDomain": "partner-art"
       },
       {
         "date": "2026-02-12",
         "totalHours": 8,
         "domains": {
           "oeff": 4.64,
-          "taylor-hopkins": 0.46,
+          "partner-art": 0.46,
           "convene": 0.12,
           "design": 0.35,
           "ag": 0.46,
@@ -3416,23 +5082,32 @@
         "date": "2026-02-15",
         "totalHours": 8,
         "domains": {
-          "oeff": 0.1,
-          "convene": 0.1,
-          "design": 0.1,
-          "ag": 0.48,
-          "mad-hudson": 3.28,
-          "personal": 0.29,
-          "meta": 3.08,
-          "audio-archive": 0.58
+          "oeff": 1.14,
+          "convene": 0.79,
+          "design": 0.03,
+          "ag": 0.64,
+          "mad-hudson": 0.99,
+          "personal": 0.09,
+          "actors-garden": 0.76,
+          "meta": 3.39,
+          "audio-archive": 0.18
         },
-        "dominantDomain": "mad-hudson"
+        "dominantDomain": "meta"
+      },
+      {
+        "date": "2026-02-16",
+        "totalHours": 0.25,
+        "domains": {
+          "ag": 0.25
+        },
+        "dominantDomain": "ag"
       }
     ],
     "dateRange": {
-      "start": "2026-02-04",
-      "end": "2026-02-15"
+      "start": "2025-10-21",
+      "end": "2026-02-16"
     },
-    "totalDays": 12,
-    "activeDays": 12
+    "totalDays": 119,
+    "activeDays": 97
   }
 }

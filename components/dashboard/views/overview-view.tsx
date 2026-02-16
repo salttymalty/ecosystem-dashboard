@@ -15,6 +15,10 @@ import { HeatmapCalendar } from "../heatmap-calendar"
 import { Sparkline } from "../sparkline"
 import { DomainChip } from "../domain-chip"
 import { RadarBalance } from "../radar-balance"
+import { CorpusDonut } from "../corpus-donut"
+import { BlockedPanel } from "../blocked-panel"
+import { OpenQuestionsPanel } from "../open-questions-panel"
+import { WeeklyReviewCard } from "../weekly-review-card"
 import {
   Layers,
   GitCommit,
@@ -28,7 +32,7 @@ import { cn } from "@/lib/utils"
 
 export function OverviewView() {
   const { activeDomain, setDetailPanel, setActiveView } = useDashboard()
-  const { projects, timelineData, energyLogs, goals, sessions } = useEcosystemData()
+  const { projects, timelineData, energyLogs, goals, sessions, blocked, openQuestions, weeklyReviews, corpus } = useEcosystemData()
 
   const filteredProjects = useMemo(
     () => (activeDomain ? projects.filter((p) => p.domain === activeDomain) : projects),
@@ -218,6 +222,35 @@ export function OverviewView() {
                 })}
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Corpus + Blocked + Questions + Weekly Review */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Corpus donut — 1 col */}
+        <div
+          className="p-5 rounded-xl bg-card border border-border animate-fade-in-up"
+          style={{ animationDelay: "720ms", boxShadow: "0 2px 8px hsla(25, 40%, 30%, 0.08)" }}
+        >
+          <h2 className="font-display text-base font-semibold text-foreground mb-2">Corpus</h2>
+          <CorpusDonut corpus={corpus} />
+        </div>
+
+        {/* Blocked + Open Questions — 1 col */}
+        <div
+          className="p-5 rounded-xl bg-card border border-border animate-fade-in-up space-y-6"
+          style={{ animationDelay: "800ms", boxShadow: "0 2px 8px hsla(25, 40%, 30%, 0.08)" }}
+        >
+          <BlockedPanel items={blocked} />
+          <OpenQuestionsPanel items={openQuestions} />
+        </div>
+
+        {/* Weekly Review — 1 col */}
+        <div
+          className="p-5 rounded-xl bg-card border border-border animate-fade-in-up"
+          style={{ animationDelay: "880ms", boxShadow: "0 2px 8px hsla(25, 40%, 30%, 0.08)" }}
+        >
+          <WeeklyReviewCard reviews={weeklyReviews} />
         </div>
       </div>
 

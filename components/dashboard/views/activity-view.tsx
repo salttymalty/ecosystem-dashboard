@@ -1,17 +1,19 @@
 "use client"
 
 import { useMemo } from "react"
-import { sessions, projects, DOMAIN_COLORS, DOMAIN_LABELS } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
+import { DOMAIN_COLORS, DOMAIN_LABELS } from "@/lib/ecosystem-data"
 import { useDashboard } from "@/lib/dashboard-store"
 import { DomainChip } from "../domain-chip"
 import { Clock, FileText, ChevronRight } from "lucide-react"
 
 export function ActivityView() {
   const { activeDomain, setDetailPanel } = useDashboard()
+  const { sessions, projects } = useEcosystemData()
 
   const filtered = useMemo(
     () => (activeDomain ? sessions.filter((s) => s.domain === activeDomain) : sessions),
-    [activeDomain]
+    [activeDomain, sessions]
   )
 
   const totalDuration = useMemo(

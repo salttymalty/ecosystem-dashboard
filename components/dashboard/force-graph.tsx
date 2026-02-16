@@ -3,9 +3,9 @@
 import { useEffect, useRef, useState, useCallback } from "react"
 import {
   DOMAIN_COLORS,
-  projects,
-  decisions,
-  sessions,
+  type Project,
+  type Decision,
+  type ProvenanceSession,
 } from "@/lib/ecosystem-data"
 import { useDashboard } from "@/lib/dashboard-store"
 
@@ -26,7 +26,13 @@ interface Link {
   target: string
 }
 
-export function ForceGraph() {
+interface ForceGraphProps {
+  projects: Project[]
+  decisions: Decision[]
+  sessions: ProvenanceSession[]
+}
+
+export function ForceGraph({ projects, decisions, sessions }: ForceGraphProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const animRef = useRef<number>(0)
@@ -56,16 +62,18 @@ export function ForceGraph() {
     })
 
     decisions.forEach((d) => {
-      const relevantProjects = d.projectIds.filter(
-        (pid) => !activeDomain || projects.find((p) => p.id === pid)?.domain === activeDomain
-      )
+      const relevantProjects = d.projectIds
+        .map((pid) => projects.find((p) => p.id === pid || p.name === pid))
+        .filter(Boolean)
+        .filter((p) => !activeDomain || p!.domain === activeDomain)
+
       if (activeDomain && relevantProjects.length === 0) return
 
       nodes.push({
         id: d.id,
         type: "decision",
         label: d.summary.slice(0, 30) + "...",
-        color: "#f2cc8f",
+        color: "#e9c46a",
         x: 200 + Math.random() * 300,
         y: 100 + Math.random() * 200,
         vx: 0,
@@ -73,9 +81,9 @@ export function ForceGraph() {
         radius: 7,
       })
 
-      relevantProjects.forEach((pid) => {
-        if (nodes.some((n) => n.id === pid)) {
-          links.push({ source: d.id, target: pid })
+      relevantProjects.forEach((p) => {
+        if (p && nodes.some((n) => n.id === p.id)) {
+          links.push({ source: d.id, target: p.id })
         }
       })
     })
@@ -95,16 +103,18 @@ export function ForceGraph() {
         radius: 5,
       })
 
-      s.projectIds.forEach((pid) => {
-        if (nodes.some((n) => n.id === pid)) {
-          links.push({ source: s.id, target: pid })
+      // Link to projects in same domain
+      const domainProjects = projects.filter((p) => p.domain === s.domain)
+      domainProjects.forEach((p) => {
+        if (nodes.some((n) => n.id === p.id)) {
+          links.push({ source: s.id, target: p.id })
         }
       })
     })
 
     nodesRef.current = nodes
     linksRef.current = links
-  }, [activeDomain])
+  }, [projects, decisions, sessions, activeDomain])
 
   useEffect(() => {
     buildGraph()
@@ -261,7 +271,7 @@ export function ForceGraph() {
 
         // Label for projects
         if (n.type === "project") {
-          ctx.font = "11px var(--font-body), system-ui"
+          ctx.font = "12px var(--font-body), system-ui"
           ctx.fillStyle = "hsl(30 15% 90%)"
           ctx.textAlign = "center"
           ctx.fillText(n.label, n.x, n.y + n.radius + 14)

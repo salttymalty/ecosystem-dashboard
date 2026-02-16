@@ -1,13 +1,15 @@
 "use client"
 
 import { Streamgraph } from "../streamgraph"
-import { timelineData, DOMAIN_COLORS, DOMAIN_LABELS } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
+import { DOMAIN_COLORS, DOMAIN_LABELS } from "@/lib/ecosystem-data"
 import { useDashboard } from "@/lib/dashboard-store"
 import { AnimatedNumber } from "../animated-number"
 import { useMemo } from "react"
 
 export function TimelineView() {
   const { activeDomain } = useDashboard()
+  const { timelineData } = useEcosystemData()
 
   const stats = useMemo(() => {
     const last30 = timelineData.slice(-30)
@@ -23,7 +25,7 @@ export function TimelineView() {
 
     const sorted = Object.entries(domainTotals).sort((a, b) => b[1] - a[1])
     return { totalHours, avgDaily, domainTotals, sorted }
-  }, [])
+  }, [timelineData])
 
   return (
     <div className="space-y-6">

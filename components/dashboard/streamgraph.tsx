@@ -48,14 +48,14 @@ export function Streamgraph({ data }: { data: TimelineRollup[] }) {
           <XAxis
             dataKey="date"
             tickFormatter={formatDate}
-            tick={{ fill: "hsl(25 10% 55%)", fontSize: 11 }}
+            tick={{ fill: "hsl(25 10% 55%)", fontSize: 12 }}
             tickLine={false}
             axisLine={false}
             interval="preserveStartEnd"
             minTickGap={60}
           />
           <YAxis
-            tick={{ fill: "hsl(25 10% 55%)", fontSize: 11 }}
+            tick={{ fill: "hsl(25 10% 55%)", fontSize: 12 }}
             tickLine={false}
             axisLine={false}
             width={30}

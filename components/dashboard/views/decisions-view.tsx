@@ -1,19 +1,24 @@
 "use client"
 
 import { useMemo } from "react"
-import { decisions, projects, DOMAIN_COLORS } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
+import { DOMAIN_COLORS } from "@/lib/ecosystem-data"
 import { useDashboard } from "@/lib/dashboard-store"
 import { cn } from "@/lib/utils"
 
 export function DecisionsView() {
   const { activeDomain, setDetailPanel } = useDashboard()
+  const { decisions, projects } = useEcosystemData()
 
   const filtered = useMemo(() => {
     if (!activeDomain) return decisions
     return decisions.filter((d) =>
-      d.projectIds.some((pid) => projects.find((p) => p.id === pid)?.domain === activeDomain)
+      d.projectIds.some((pid) => {
+        const project = projects.find((p) => p.id === pid || p.name === pid)
+        return project?.domain === activeDomain
+      })
     )
-  }, [activeDomain])
+  }, [activeDomain, decisions, projects])
 
   return (
     <div className="space-y-6">
@@ -57,19 +62,19 @@ export function DecisionsView() {
                 {decision.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="text-[10px] px-1.5 py-0.5 rounded bg-accent text-accent-foreground"
+                    className="text-xs px-1.5 py-0.5 rounded bg-accent text-accent-foreground"
                   >
                     {tag}
                   </span>
                 ))}
-                <span className="text-muted-foreground text-[10px]">&middot;</span>
+                <span className="text-muted-foreground text-xs">&middot;</span>
                 {decision.projectIds.map((pid) => {
-                  const project = projects.find((p) => p.id === pid)
+                  const project = projects.find((p) => p.id === pid || p.name === pid)
                   if (!project) return null
                   return (
                     <span
                       key={pid}
-                      className="flex items-center gap-1 text-[10px] text-muted-foreground"
+                      className="flex items-center gap-1 text-xs text-muted-foreground"
                     >
                       <span
                         className="w-1.5 h-1.5 rounded-full"

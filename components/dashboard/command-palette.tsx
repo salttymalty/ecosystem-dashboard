@@ -9,7 +9,8 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command"
-import { buildSearchIndex, DOMAIN_COLORS, type SearchItem } from "@/lib/ecosystem-data"
+import { DOMAIN_COLORS, type SearchItem } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
 import { useDashboard, type ViewId } from "@/lib/dashboard-store"
 import {
   Layers,
@@ -34,7 +35,7 @@ const VIEW_ITEMS: { id: ViewId; label: string; icon: React.ReactNode }[] = [
 
 export function CommandPalette() {
   const { commandOpen, setCommandOpen, setActiveView, setDetailPanel, setActiveDomain } = useDashboard()
-  const searchIndex = useMemo(() => buildSearchIndex(), [])
+  const { searchIndex } = useEcosystemData()
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {

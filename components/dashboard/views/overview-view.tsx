@@ -1,14 +1,10 @@
 "use client"
 
 import { useMemo } from "react"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
 import {
-  projects,
-  timelineData,
-  energyLogs,
-  goals,
-  sessions,
   generateNarratives,
-  detectStreaks,
+  detectDomainGaps,
   predictStaleness,
   DOMAIN_COLORS,
   DOMAIN_LABELS,
@@ -26,17 +22,17 @@ import {
   Zap,
   TrendingUp,
   AlertTriangle,
-  Flame,
   Lightbulb,
 } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function OverviewView() {
   const { activeDomain, setDetailPanel, setActiveView } = useDashboard()
+  const { projects, timelineData, energyLogs, goals, sessions } = useEcosystemData()
 
   const filteredProjects = useMemo(
     () => (activeDomain ? projects.filter((p) => p.domain === activeDomain) : projects),
-    [activeDomain]
+    [activeDomain, projects]
   )
 
   const filteredTimeline = useMemo(
@@ -47,15 +43,15 @@ export function OverviewView() {
             totalHours: d.domains[activeDomain] || 0,
           }))
         : timelineData,
-    [activeDomain]
+    [activeDomain, timelineData]
   )
 
   const narratives = useMemo(
     () => generateNarratives(timelineData, energyLogs),
-    []
+    [timelineData, energyLogs]
   )
 
-  const streaks = useMemo(() => detectStreaks(timelineData), [])
+  const gaps = useMemo(() => detectDomainGaps(timelineData), [timelineData])
 
   const stats = useMemo(() => {
     const totalHours = filteredTimeline.slice(-30).reduce((s, d) => s + d.totalHours, 0)
@@ -65,7 +61,7 @@ export function OverviewView() {
     const avgEnergy =
       energyLogs.slice(-7).reduce((s, e) => s + e.energy, 0) / Math.max(energyLogs.slice(-7).length, 1)
     return { totalHours, totalCommits, activeProjects, completedGoals, avgEnergy }
-  }, [filteredProjects, filteredTimeline])
+  }, [filteredProjects, filteredTimeline, goals, energyLogs])
 
   return (
     <div className="space-y-6">
@@ -150,7 +146,7 @@ export function OverviewView() {
         </div>
       </div>
 
-      {/* Narratives + Streaks */}
+      {/* Narratives + Care & Attention */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Narrative Engine */}
         <div
@@ -174,32 +170,26 @@ export function OverviewView() {
           </div>
         </div>
 
-        {/* Streaks + Staleness */}
+        {/* Care & Attention */}
         <div
           className="p-5 rounded-xl bg-card border border-border animate-fade-in-up"
           style={{ animationDelay: "640ms", boxShadow: "0 2px 8px hsla(25, 40%, 30%, 0.08)" }}
         >
           <div className="flex items-center gap-2 mb-3">
-            <Flame className="h-4 w-4 text-orange-400" />
-            <h2 className="font-display text-base font-semibold text-foreground">Streaks & Staleness</h2>
+            <AlertTriangle className="h-4 w-4 text-amber-400" />
+            <h2 className="font-display text-base font-semibold text-foreground">Care & Attention</h2>
           </div>
           <div className="space-y-2.5">
-            {streaks.slice(0, 5).map((s, i) => (
+            {gaps.slice(0, 5).map((g, i) => (
               <div
-                key={`${s.domain}-${s.type}`}
+                key={g.domain}
                 className="flex items-center gap-2 text-sm animate-fade-in-up"
                 style={{ animationDelay: `${680 + i * 80}ms` }}
               >
-                <DomainChip domain={s.domain} size="xs" />
-                {s.type === "active" ? (
-                  <span className="text-emerald-400">
-                    {s.streak} day streak
-                  </span>
-                ) : (
-                  <span className="text-red-400">
-                    longest gap: {s.gapDays}d
-                  </span>
-                )}
+                <DomainChip domain={g.domain} size="xs" />
+                <span className="text-amber-400">
+                  hasn't been tended in {g.gapDays}d
+                </span>
               </div>
             ))}
             <div className="pt-2 border-t border-border mt-3">
@@ -260,7 +250,7 @@ export function OverviewView() {
                 </div>
                 <span
                   className={cn(
-                    "text-[10px] px-1.5 py-0.5 rounded",
+                    "text-xs px-1.5 py-0.5 rounded",
                     project.state === "active" && "bg-emerald-500/15 text-emerald-400",
                     project.state === "paused" && "bg-amber-500/15 text-amber-400",
                     project.state === "stale" && "bg-red-500/15 text-red-400",

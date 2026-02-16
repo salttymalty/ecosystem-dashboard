@@ -55,7 +55,7 @@ export function RadarBalance({ data }: { data: TimelineRollup[] }) {
             />
             <PolarAngleAxis
               dataKey="domain"
-              tick={{ fill: "hsl(25 10% 55%)", fontSize: 10 }}
+              tick={{ fill: "hsl(25 10% 55%)", fontSize: 12 }}
             />
             <Radar
               name="Hours"

@@ -1,11 +1,8 @@
 "use client"
 
 import { useMemo } from "react"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
 import {
-  projects,
-  goals,
-  sessions,
-  timelineData,
   DOMAIN_COLORS,
   predictStaleness,
 } from "@/lib/ecosystem-data"
@@ -24,10 +21,11 @@ import { cn } from "@/lib/utils"
 
 export function ProjectsView() {
   const { activeDomain, setDetailPanel } = useDashboard()
+  const { projects, goals, sessions, timelineData } = useEcosystemData()
 
   const filteredProjects = useMemo(
     () => (activeDomain ? projects.filter((p) => p.domain === activeDomain) : projects),
-    [activeDomain]
+    [activeDomain, projects]
   )
 
   return (
@@ -74,7 +72,7 @@ export function ProjectsView() {
                       </h3>
                       <span
                         className={cn(
-                          "text-[10px] px-1.5 py-0.5 rounded",
+                          "text-xs px-1.5 py-0.5 rounded",
                           project.state === "active" && "bg-emerald-500/15 text-emerald-400",
                           project.state === "paused" && "bg-amber-500/15 text-amber-400",
                           project.state === "stale" && "bg-red-500/15 text-red-400",
@@ -84,7 +82,7 @@ export function ProjectsView() {
                         {project.state}
                       </span>
                       {daysUntilStale !== null && daysUntilStale <= 3 && (
-                        <span className="text-amber-400 flex items-center gap-0.5 text-[10px]">
+                        <span className="text-amber-400 flex items-center gap-0.5 text-xs">
                           <AlertTriangle className="h-3 w-3" />
                           {daysUntilStale === 0 ? "Stale" : `${daysUntilStale}d to stale`}
                         </span>

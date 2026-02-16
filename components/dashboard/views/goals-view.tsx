@@ -1,7 +1,8 @@
 "use client"
 
 import { useMemo } from "react"
-import { goals, projects, DOMAIN_COLORS } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
+import { DOMAIN_COLORS } from "@/lib/ecosystem-data"
 import { useDashboard } from "@/lib/dashboard-store"
 import { cn } from "@/lib/utils"
 import { CheckCircle2, Circle, AlertCircle, Clock } from "lucide-react"
@@ -15,11 +16,15 @@ const STATUS_CONFIG = {
 
 export function GoalsView() {
   const { activeDomain, setDetailPanel } = useDashboard()
+  const { goals, projects } = useEcosystemData()
 
   const filtered = useMemo(() => {
     if (!activeDomain) return goals
-    return goals.filter((g) => projects.find((p) => p.id === g.projectId)?.domain === activeDomain)
-  }, [activeDomain])
+    return goals.filter((g) => {
+      const project = projects.find((p) => p.id === g.projectId || p.name === g.projectId)
+      return project?.domain === activeDomain
+    })
+  }, [activeDomain, goals, projects])
 
   const grouped = useMemo(() => {
     const groups: Record<string, typeof goals> = {
@@ -87,7 +92,7 @@ export function GoalsView() {
             </div>
             <div className="space-y-2">
               {items.map((goal, i) => {
-                const project = projects.find((p) => p.id === goal.projectId)
+                const project = projects.find((p) => p.id === goal.projectId || p.name === goal.projectId)
                 return (
                   <button
                     key={goal.id}

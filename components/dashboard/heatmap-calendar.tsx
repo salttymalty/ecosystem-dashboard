@@ -95,7 +95,7 @@ export function HeatmapCalendar({ data }: { data: TimelineRollup[] }) {
         {/* Day labels */}
         <div className="flex flex-col justify-between pr-1.5" style={{ height: 7 * (CELL_SIZE + CELL_GAP) - CELL_GAP }}>
           {DAYS.map((d, i) => (
-            <span key={i} className="text-[10px] text-muted-foreground leading-none" style={{ height: CELL_SIZE, lineHeight: `${CELL_SIZE}px` }}>
+            <span key={i} className="text-xs text-muted-foreground leading-none" style={{ height: CELL_SIZE, lineHeight: `${CELL_SIZE}px` }}>
               {d}
             </span>
           ))}

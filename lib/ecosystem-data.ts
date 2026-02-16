@@ -1,30 +1,38 @@
 // ============================================================
-// ECOSYSTEM INDEX — SAMPLE DATA
+// ECOSYSTEM INDEX — REAL DATA ADAPTER
+// ============================================================
+// Loads real ecosystem-index.json and transforms it into
+// the shapes expected by dashboard views.
 // ============================================================
 
+// === Domain colors — canonical palette ===
 export const DOMAIN_COLORS: Record<string, string> = {
-  "mad-hudson": "#e07a5f",
-  oeff: "#81b29a",
-  ag: "#f2cc8f",
-  meta: "#a8dadc",
+  oeff: "#5c7c6b",
+  convene: "#4b7c8c",
+  ag: "#b8864b",
+  "mad-hudson": "#a0644b",
+  "taylor-hopkins": "#c4704b",
   design: "#e9c46a",
-  convene: "#f4a261",
-  "red-0": "#e76f51",
-  syzygy: "#9b5de5",
-  drift: "#00bbf9",
+  meta: "#a8dadc",
+  personal: "#d4c8b8",
+  "audio-archive": "#8b6b5b",
+  "cross-domain": "#9ca3af",
 }
 
 export const DOMAIN_LABELS: Record<string, string> = {
-  "mad-hudson": "Mad Hudson",
   oeff: "OEFF",
-  ag: "Actors Garden",
-  meta: "Meta / Infra",
-  design: "Design",
   convene: "Convene",
-  "red-0": "Red Zero",
-  syzygy: "Syzygy",
-  drift: "Drift",
+  ag: "Actors Garden",
+  "mad-hudson": "Mad Hudson",
+  "taylor-hopkins": "Taylor Art",
+  design: "Design",
+  meta: "Meta / Infra",
+  personal: "Personal OS",
+  "audio-archive": "Audio Archive",
+  "cross-domain": "Cross-domain",
 }
+
+// === TypeScript interfaces — dashboard shapes ===
 
 export interface Project {
   id: string
@@ -36,6 +44,10 @@ export interface Project {
   commitCount: number
   staleDays: number
   recentCommits: { date: string; count: number }[]
+  nextAction?: string
+  blockers?: string[]
+  openQuestions?: string[]
+  path?: string
 }
 
 export interface ProvenanceSession {
@@ -46,6 +58,7 @@ export interface ProvenanceSession {
   artifacts: string[]
   summary: string
   projectIds: string[]
+  tags?: string[]
 }
 
 export interface Decision {
@@ -64,6 +77,7 @@ export interface GoalMilestone {
   status: "done" | "in-progress" | "blocked" | "planned"
   targetDate: string
   completedDate?: string
+  dependencies?: string
 }
 
 export interface EnergyLog {
@@ -80,314 +94,286 @@ export interface TimelineRollup {
   dominantDomain: string
 }
 
-// Generate realistic timeline data for the last 120 days
-function generateTimeline(): TimelineRollup[] {
-  const domains = Object.keys(DOMAIN_COLORS)
-  const data: TimelineRollup[] = []
-  const now = new Date(2026, 1, 15) // Feb 15, 2026
+export interface BlockedItem {
+  project: string
+  blocker: string
+}
 
-  for (let i = 119; i >= 0; i--) {
-    const date = new Date(now)
-    date.setDate(date.getDate() - i)
-    const dateStr = date.toISOString().split("T")[0]
-    const dayOfWeek = date.getDay()
+export interface OpenQuestion {
+  project: string
+  question: string
+}
 
-    // Lower hours on weekends
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6
-    const baseHours = isWeekend ? Math.random() * 3 : 3 + Math.random() * 5
-    const totalHours = Math.min(8, Math.round(baseHours * 10) / 10)
+export interface WeeklyReview {
+  week: string
+  period: string
+  summary: string
+}
 
-    // Distribute across domains with realistic clustering
-    const domainHours: Record<string, number> = {}
-    let remaining = totalHours
+export interface CorpusStats {
+  total: number
+  byDomain: Record<string, number>
+}
 
-    // Pick 2-4 active domains per day with weighting
-    const activeDomains = domains
-      .filter(() => Math.random() > 0.5)
-      .slice(0, Math.floor(2 + Math.random() * 3))
+export interface SearchItem {
+  type: "project" | "decision" | "session" | "goal"
+  id: string
+  title: string
+  subtitle: string
+  domain?: string
+  date?: string
+}
 
-    if (activeDomains.length === 0) activeDomains.push("mad-hudson")
+// === Raw JSON schema (what the file actually looks like) ===
 
-    // Weight toward mad-hudson and meta more heavily
-    const weights: Record<string, number> = {
-      "mad-hudson": 3 + Math.sin(i / 14) * 2,
-      oeff: 1.5 + Math.cos(i / 20),
-      ag: 1 + Math.sin(i / 10) * 0.5,
-      meta: 2 + Math.cos(i / 7),
-      design: 0.8 + Math.sin(i / 12) * 0.5,
-      convene: 0.5 + Math.cos(i / 15) * 0.3,
-      "red-0": 0.3 + Math.sin(i / 25) * 0.2,
-      syzygy: 0.4 + Math.cos(i / 18) * 0.3,
-      drift: 0.6 + Math.sin(i / 22) * 0.4,
+interface RawProject {
+  id: string
+  name: string
+  path: string
+  domain: string
+  exists: boolean
+  is_git_repo: boolean
+  state_summary: {
+    last_updated: string
+    working_on: string
+    blockers: string[]
+    next_action: string
+    open_questions: string[]
+  }
+  last_activity: string
+  staleness_days: number
+  recent_commits: { hash: string; date: string; message: string }[]
+}
+
+interface RawDecision {
+  file: string
+  slug: string
+  date: string
+  title: string
+  project: string
+  tags: string[]
+  summary: string
+}
+
+interface RawSession {
+  file: string
+  id: string
+  domain: string
+  started: string
+  intent: string
+  tags: string[]
+  artifacts_created: string[]
+  artifacts_modified: string[]
+  decisions: string[]
+  date: string
+}
+
+interface RawGoal {
+  project: string
+  milestone: string
+  target_date: string
+  status: string
+  dependencies: string
+}
+
+interface RawEnergyEntry {
+  date: string
+  energy?: number
+  focus?: string
+  type?: string
+}
+
+interface RawTimeline {
+  dailyRollups: TimelineRollup[]
+  dateRange: { start: string; end: string }
+  totalDays: number
+  activeDays: number
+}
+
+interface RawSearchItem {
+  type: string
+  id: string
+  label: string
+  text: string
+  date?: string
+}
+
+interface RawEcosystemIndex {
+  _meta: { generated: string; generator: string; staleness_threshold_days: number }
+  projects: RawProject[]
+  decisions: RawDecision[]
+  sessions: RawSession[]
+  energy: { entries: RawEnergyEntry[]; recent: RawEnergyEntry[]; average_recent: number }
+  weekly_reviews: { file: string; week: string; period: string; summary: string }[]
+  goals: { milestones: RawGoal[]; upcoming: RawGoal[] }
+  corpus: { total: number; by_domain: Record<string, number> }
+  stale: unknown[]
+  recent: { decisions: unknown[]; sessions: unknown[]; commits: unknown[]; domain_activity: unknown }
+  blocked: { project: string; blocker: string }[]
+  open_questions: { project: string; question: string }[]
+  search: RawSearchItem[]
+  timeline: RawTimeline
+}
+
+// === Adapter functions ===
+
+function deriveState(staleDays: number): "active" | "paused" | "stale" {
+  if (staleDays > 14) return "stale"
+  if (staleDays > 7) return "paused"
+  return "active"
+}
+
+function aggregateCommitsByDate(commits: { date: string }[]): { date: string; count: number }[] {
+  const counts: Record<string, number> = {}
+  commits.forEach((c) => {
+    counts[c.date] = (counts[c.date] || 0) + 1
+  })
+  return Object.entries(counts)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([date, count]) => ({ date, count }))
+}
+
+function estimateDuration(artifactCount: number): number {
+  if (artifactCount === 0) return 1
+  if (artifactCount <= 2) return 1.5
+  if (artifactCount <= 5) return 2.5
+  return 4
+}
+
+function mapGoalStatus(raw: string): "done" | "in-progress" | "blocked" | "planned" {
+  const lower = raw.toLowerCase()
+  if (lower === "complete" || lower === "done") return "done"
+  if (lower === "in progress") return "in-progress"
+  if (lower === "blocked") return "blocked"
+  if (lower === "seeded" || lower === "ready") return "in-progress"
+  if (lower === "\u2014") return "planned"
+  return "planned"
+}
+
+function findProjectIdByName(name: string, projects: RawProject[]): string {
+  const exact = projects.find((p) => p.name === name)
+  if (exact) return exact.id
+
+  const partial = projects.find((p) =>
+    name.toLowerCase().includes(p.name.toLowerCase()) ||
+    p.name.toLowerCase().includes(name.toLowerCase()) ||
+    name.toLowerCase().includes(p.id.toLowerCase())
+  )
+  if (partial) return partial.id
+
+  const nameMap: Record<string, string> = {
+    "OEFF 2026": "oeff",
+    "Taylor Hopkins Art": "taylor",
+    "Personal OS": "personal-os",
+    "Warm Stack": "warm-stack",
+    "Actors Garden": "ag",
+    "Actors-Garden": "ag",
+    "Mad Hudson SEO": "mad-hudson",
+  }
+  return nameMap[name] || name.toLowerCase().replace(/\s+/g, "-")
+}
+
+// === Transform the full index ===
+
+export function transformEcosystemData(raw: RawEcosystemIndex) {
+  const projects: Project[] = raw.projects.map((p) => ({
+    id: p.id,
+    name: p.name,
+    domain: p.domain,
+    description: p.state_summary.working_on || "No current focus",
+    state: deriveState(p.staleness_days),
+    lastCommit: p.last_activity,
+    commitCount: p.recent_commits.length,
+    staleDays: p.staleness_days,
+    recentCommits: aggregateCommitsByDate(p.recent_commits),
+    nextAction: p.state_summary.next_action,
+    blockers: p.state_summary.blockers,
+    openQuestions: p.state_summary.open_questions,
+    path: p.path,
+  }))
+
+  const decisions: Decision[] = raw.decisions.map((d) => ({
+    id: d.slug,
+    date: d.date,
+    summary: d.title,
+    tags: d.tags,
+    projectIds: [d.project].filter(Boolean),
+    rationale: d.summary || "",
+  }))
+
+  const sessions: ProvenanceSession[] = raw.sessions.map((s) => {
+    const allArtifacts = [...(s.artifacts_created || []), ...(s.artifacts_modified || [])]
+    return {
+      id: s.id,
+      date: s.date,
+      domain: s.domain,
+      duration: estimateDuration(allArtifacts.length),
+      artifacts: allArtifacts,
+      summary: s.intent,
+      projectIds: [],
+      tags: s.tags,
     }
+  })
 
-    const totalWeight = activeDomains.reduce((s, d) => s + (weights[d] || 1), 0)
+  const goals: GoalMilestone[] = raw.goals.milestones.map((g, i) => ({
+    id: `goal-${i}`,
+    title: g.milestone,
+    projectId: findProjectIdByName(g.project, raw.projects),
+    status: mapGoalStatus(g.status),
+    targetDate: g.target_date,
+    dependencies: g.dependencies,
+  }))
 
-    activeDomains.forEach((d, idx) => {
-      if (idx === activeDomains.length - 1) {
-        domainHours[d] = Math.round(remaining * 100) / 100
-      } else {
-        const share = (weights[d] || 1) / totalWeight
-        const hours = Math.round(remaining * share * 100) / 100
-        domainHours[d] = hours
-        remaining -= hours
-      }
-    })
+  const energyLogs: EnergyLog[] = raw.energy.entries
+    .filter((e) => typeof e.energy === "number")
+    .map((e) => ({
+      date: e.date,
+      energy: e.energy!,
+      focus: e.focus || "",
+      dominantDomain: "",
+    }))
 
-    const dominant = Object.entries(domainHours).sort((a, b) => b[1] - a[1])[0][0]
+  const timelineData: TimelineRollup[] = raw.timeline.dailyRollups
 
-    data.push({ date: dateStr, totalHours, domains: domainHours, dominantDomain: dominant })
+  const blocked: BlockedItem[] = raw.blocked
+  const openQuestions: OpenQuestion[] = raw.open_questions
+
+  const weeklyReviews: WeeklyReview[] = raw.weekly_reviews.map((r) => ({
+    week: r.week,
+    period: r.period,
+    summary: r.summary,
+  }))
+
+  const corpus: CorpusStats = {
+    total: raw.corpus.total,
+    byDomain: raw.corpus.by_domain,
   }
 
-  return data
-}
+  const searchIndex: SearchItem[] = raw.search.map((s) => ({
+    type: s.type as SearchItem["type"],
+    id: s.id,
+    title: s.label,
+    subtitle: s.text,
+    date: s.date,
+  }))
 
-function generateEnergyLogs(): EnergyLog[] {
-  const logs: EnergyLog[] = []
-  const now = new Date(2026, 1, 15)
-  const focuses = [
-    "Deep coding session",
-    "Design iteration",
-    "Writing and documentation",
-    "Architecture planning",
-    "Bug fixing marathon",
-    "Creative exploration",
-    "Refactoring sprint",
-    "Feature prototyping",
-    "Review and feedback",
-    "System integration",
-  ]
-  const domains = Object.keys(DOMAIN_COLORS)
-
-  for (let i = 59; i >= 0; i--) {
-    const date = new Date(now)
-    date.setDate(date.getDate() - i)
-    const dayOfWeek = date.getDay()
-    const isWeekend = dayOfWeek === 0 || dayOfWeek === 6
-
-    // Energy tends to be higher mid-week, lower on weekends and Mondays
-    let baseEnergy = 3
-    if (dayOfWeek === 3 || dayOfWeek === 4) baseEnergy = 4
-    if (isWeekend) baseEnergy = 2.5
-    if (dayOfWeek === 1) baseEnergy = 2.5
-
-    const energy = Math.max(1, Math.min(5, Math.round(baseEnergy + (Math.random() - 0.5) * 2)))
-
-    logs.push({
-      date: date.toISOString().split("T")[0],
-      energy,
-      focus: focuses[Math.floor(Math.random() * focuses.length)],
-      dominantDomain: domains[Math.floor(Math.random() * domains.length)],
-    })
-  }
-
-  return logs
-}
-
-export const projects: Project[] = [
-  {
-    id: "mad-hudson",
-    name: "Mad Hudson",
-    domain: "mad-hudson",
-    description: "Interactive fiction engine with procedural narrative generation",
-    state: "active",
-    lastCommit: "2026-02-14",
-    commitCount: 247,
-    staleDays: 1,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: Math.floor(Math.random() * (i < 5 ? 8 : 4)),
-    })),
-  },
-  {
-    id: "oeff",
-    name: "OEFF",
-    domain: "oeff",
-    description: "Open-ended form framework for adaptive questionnaires",
-    state: "active",
-    lastCommit: "2026-02-12",
-    commitCount: 183,
-    staleDays: 3,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: Math.floor(Math.random() * (i < 3 ? 5 : 3)),
-    })),
-  },
-  {
-    id: "ag",
-    name: "Actors Garden",
-    domain: "ag",
-    description: "Actor-model microservice orchestrator with visual debugging",
-    state: "paused",
-    lastCommit: "2026-02-08",
-    commitCount: 92,
-    staleDays: 7,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: i > 7 ? Math.floor(Math.random() * 3) : 0,
-    })),
-  },
-  {
-    id: "meta-infra",
-    name: "Meta / Infra",
-    domain: "meta",
-    description: "Shared tooling, CI/CD, and ecosystem orchestration layer",
-    state: "active",
-    lastCommit: "2026-02-15",
-    commitCount: 312,
-    staleDays: 0,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: Math.floor(Math.random() * 6),
-    })),
-  },
-  {
-    id: "design-sys",
-    name: "Design System",
-    domain: "design",
-    description: "Unified component library and design tokens across all projects",
-    state: "active",
-    lastCommit: "2026-02-13",
-    commitCount: 156,
-    staleDays: 2,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: Math.floor(Math.random() * 4),
-    })),
-  },
-  {
-    id: "convene",
-    name: "Convene",
-    domain: "convene",
-    description: "Real-time collaboration space with spatial audio",
-    state: "stale",
-    lastCommit: "2026-01-28",
-    commitCount: 67,
-    staleDays: 18,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: i > 18 ? Math.floor(Math.random() * 2) : 0,
-    })),
-  },
-  {
-    id: "red-0",
-    name: "Red Zero",
-    domain: "red-0",
-    description: "Zero-latency edge computing framework for real-time apps",
-    state: "paused",
-    lastCommit: "2026-02-05",
-    commitCount: 45,
-    staleDays: 10,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: i > 10 ? Math.floor(Math.random() * 2) : 0,
-    })),
-  },
-  {
-    id: "syzygy",
-    name: "Syzygy",
-    domain: "syzygy",
-    description: "Astronomical event tracker and celestial alignment calculator",
-    state: "active",
-    lastCommit: "2026-02-11",
-    commitCount: 78,
-    staleDays: 4,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: Math.floor(Math.random() * 3),
-    })),
-  },
-  {
-    id: "drift",
-    name: "Drift",
-    domain: "drift",
-    description: "Ambient generative music engine driven by code patterns",
-    state: "active",
-    lastCommit: "2026-02-10",
-    commitCount: 134,
-    staleDays: 5,
-    recentCommits: Array.from({ length: 30 }, (_, i) => ({
-      date: new Date(2026, 1, 15 - i).toISOString().split("T")[0],
-      count: Math.floor(Math.random() * 4),
-    })),
-  },
-]
-
-export const sessions: ProvenanceSession[] = Array.from({ length: 28 }, (_, i) => {
-  const domains = Object.keys(DOMAIN_COLORS)
-  const domain = domains[i % domains.length]
-  const date = new Date(2026, 1, 15 - Math.floor(i * 1.5))
-  const projectPool = projects.filter((p) => p.domain === domain || Math.random() > 0.7)
   return {
-    id: `session-${i + 1}`,
-    date: date.toISOString().split("T")[0],
-    domain,
-    duration: 0.5 + Math.round(Math.random() * 3.5 * 10) / 10,
-    artifacts: [
-      `${domain}-artifact-${i}-a.ts`,
-      ...(Math.random() > 0.5 ? [`${domain}-artifact-${i}-b.md`] : []),
-    ],
-    summary: [
-      "Refactored core routing logic and added edge-case handling",
-      "Designed new component variants for the notification system",
-      "Implemented streaming data pipeline with backpressure",
-      "Wrote integration tests for the auth middleware",
-      "Prototyped spatial audio positioning algorithm",
-      "Migrated database schema and seeded test data",
-      "Built custom animation system for page transitions",
-      "Optimized bundle size by tree-shaking unused exports",
-      "Created visual debugger for actor message passing",
-      "Documented API surface and added OpenAPI schemas",
-    ][i % 10],
-    projectIds: projectPool.slice(0, 1 + Math.floor(Math.random() * 2)).map((p) => p.id),
+    projects,
+    decisions,
+    sessions,
+    goals,
+    energyLogs,
+    timelineData,
+    blocked,
+    openQuestions,
+    weeklyReviews,
+    corpus,
+    searchIndex,
+    meta: raw._meta,
   }
-})
+}
 
-export const decisions: Decision[] = [
-  { id: "d1", date: "2026-02-14", summary: "Adopted streaming SSR for all dynamic routes", tags: ["architecture", "performance"], projectIds: ["mad-hudson", "meta-infra"], rationale: "Reduces TTFB by 40% and enables progressive hydration" },
-  { id: "d2", date: "2026-02-12", summary: "Switched to OKLCH color space for design tokens", tags: ["design", "accessibility"], projectIds: ["design-sys"], rationale: "Perceptually uniform gradients and better accessibility contrast checking" },
-  { id: "d3", date: "2026-02-10", summary: "Moved to actor model for real-time collaboration", tags: ["architecture"], projectIds: ["convene", "ag"], rationale: "Decouples state management from transport layer" },
-  { id: "d4", date: "2026-02-08", summary: "Standardized on Zod for all runtime validation", tags: ["dx", "safety"], projectIds: ["meta-infra", "oeff"], rationale: "Single source of truth for TypeScript types and runtime checks" },
-  { id: "d5", date: "2026-02-06", summary: "Implemented edge caching with stale-while-revalidate", tags: ["performance", "infrastructure"], projectIds: ["red-0", "meta-infra"], rationale: "95th percentile latency dropped from 200ms to 45ms" },
-  { id: "d6", date: "2026-02-04", summary: "Chose WebGPU over WebGL for celestial rendering", tags: ["technology", "performance"], projectIds: ["syzygy"], rationale: "Compute shaders enable real-time n-body simulation" },
-  { id: "d7", date: "2026-02-02", summary: "Adopted Tone.js for audio synthesis pipeline", tags: ["technology"], projectIds: ["drift"], rationale: "Best Web Audio API abstraction with scheduling precision" },
-  { id: "d8", date: "2026-01-30", summary: "Unified error boundary strategy across projects", tags: ["dx", "architecture"], projectIds: ["meta-infra", "mad-hudson", "oeff"], rationale: "Consistent error reporting and recovery UX" },
-  { id: "d9", date: "2026-01-28", summary: "Deprecated REST in favor of tRPC for internal APIs", tags: ["architecture", "dx"], projectIds: ["meta-infra", "convene"], rationale: "End-to-end type safety without code generation" },
-  { id: "d10", date: "2026-01-25", summary: "Introduced feature flags via edge config", tags: ["infrastructure", "dx"], projectIds: ["meta-infra"], rationale: "Zero-deploy feature rollouts with instant propagation" },
-  { id: "d11", date: "2026-01-22", summary: "Migrated state management to Zustand", tags: ["architecture"], projectIds: ["mad-hudson", "convene"], rationale: "Simpler mental model than Redux, built-in devtools" },
-  { id: "d12", date: "2026-01-20", summary: "Added questionnaire branching logic engine", tags: ["feature"], projectIds: ["oeff"], rationale: "Enables conditional paths based on previous responses" },
-  { id: "d13", date: "2026-01-18", summary: "Set up monorepo with Turborepo", tags: ["infrastructure", "dx"], projectIds: ["meta-infra"], rationale: "Shared dependencies and cached builds across projects" },
-  { id: "d14", date: "2026-01-15", summary: "Chose procedural narrative over scripted content", tags: ["design", "architecture"], projectIds: ["mad-hudson"], rationale: "Infinite replayability and emergent storytelling" },
-  { id: "d15", date: "2026-01-12", summary: "Standardized on Vitest for all testing", tags: ["dx", "infrastructure"], projectIds: ["meta-infra"], rationale: "Vite-native, fast, and compatible with existing Jest tests" },
-  { id: "d16", date: "2026-01-10", summary: "Implemented ambient music generation algorithm", tags: ["feature", "technology"], projectIds: ["drift"], rationale: "Uses Markov chains seeded by code complexity metrics" },
-]
-
-export const goals: GoalMilestone[] = [
-  { id: "g1", title: "Mad Hudson alpha release", projectId: "mad-hudson", status: "in-progress", targetDate: "2026-03-01" },
-  { id: "g2", title: "OEFF public beta", projectId: "oeff", status: "in-progress", targetDate: "2026-03-15" },
-  { id: "g3", title: "Design system v2.0", projectId: "design-sys", status: "planned", targetDate: "2026-04-01" },
-  { id: "g4", title: "Actors Garden demo video", projectId: "ag", status: "blocked", targetDate: "2026-02-28" },
-  { id: "g5", title: "Meta CI/CD pipeline complete", projectId: "meta-infra", status: "done", targetDate: "2026-02-10", completedDate: "2026-02-08" },
-  { id: "g6", title: "Convene spatial audio prototype", projectId: "convene", status: "blocked", targetDate: "2026-03-10" },
-  { id: "g7", title: "Red Zero benchmarks published", projectId: "red-0", status: "planned", targetDate: "2026-03-20" },
-  { id: "g8", title: "Syzygy eclipse predictor", projectId: "syzygy", status: "in-progress", targetDate: "2026-02-25" },
-  { id: "g9", title: "Drift first album generated", projectId: "drift", status: "planned", targetDate: "2026-04-15" },
-  { id: "g10", title: "OEFF accessibility audit", projectId: "oeff", status: "done", targetDate: "2026-01-30", completedDate: "2026-01-29" },
-  { id: "g11", title: "Mad Hudson save system", projectId: "mad-hudson", status: "done", targetDate: "2026-01-20", completedDate: "2026-01-18" },
-  { id: "g12", title: "Design tokens migration", projectId: "design-sys", status: "done", targetDate: "2026-02-01", completedDate: "2026-02-01" },
-  { id: "g13", title: "Ecosystem dashboard v1", projectId: "meta-infra", status: "done", targetDate: "2026-02-05", completedDate: "2026-02-04" },
-  { id: "g14", title: "Mad Hudson multiplayer", projectId: "mad-hudson", status: "planned", targetDate: "2026-05-01" },
-  { id: "g15", title: "OEFF analytics pipeline", projectId: "oeff", status: "in-progress", targetDate: "2026-03-01" },
-  { id: "g16", title: "Convene video integration", projectId: "convene", status: "planned", targetDate: "2026-04-01" },
-  { id: "g17", title: "Syzygy mobile app", projectId: "syzygy", status: "planned", targetDate: "2026-05-15" },
-  { id: "g18", title: "Meta observability stack", projectId: "meta-infra", status: "in-progress", targetDate: "2026-02-20" },
-  { id: "g19", title: "Drift live performance mode", projectId: "drift", status: "planned", targetDate: "2026-06-01" },
-  { id: "g20", title: "Red Zero serverless adapter", projectId: "red-0", status: "planned", targetDate: "2026-03-30" },
-  { id: "g21", title: "Actors Garden k8s integration", projectId: "ag", status: "planned", targetDate: "2026-04-15" },
-]
-
-export const timelineData: TimelineRollup[] = generateTimeline()
-export const energyLogs: EnergyLog[] = generateEnergyLogs()
+export type EcosystemData = ReturnType<typeof transformEcosystemData>
 
 // ============================================================
 // NARRATIVE ENGINE
@@ -395,61 +381,64 @@ export const energyLogs: EnergyLog[] = generateEnergyLogs()
 
 export function generateNarratives(timeline: TimelineRollup[], energy: EnergyLog[]): string[] {
   const narratives: string[] = []
-  const last7 = timeline.slice(-7)
-  const prev7 = timeline.slice(-14, -7)
 
-  // Domain comparison
-  const last7Totals: Record<string, number> = {}
-  const prev7Totals: Record<string, number> = {}
-
-  last7.forEach((d) => {
-    Object.entries(d.domains).forEach(([k, v]) => {
-      last7Totals[k] = (last7Totals[k] || 0) + v
-    })
-  })
-  prev7.forEach((d) => {
-    Object.entries(d.domains).forEach(([k, v]) => {
-      prev7Totals[k] = (prev7Totals[k] || 0) + v
-    })
-  })
-
-  // Find biggest changes
-  Object.keys(DOMAIN_LABELS).forEach((domain) => {
-    const current = last7Totals[domain] || 0
-    const previous = prev7Totals[domain] || 0
-    if (previous > 0 && current / previous > 2) {
-      narratives.push(
-        `You spent ${(current / previous).toFixed(1)}x more time on ${DOMAIN_LABELS[domain]} this week than last.`
-      )
-    }
-    if (previous > 2 && current < 0.5) {
-      narratives.push(`${DOMAIN_LABELS[domain]} has gone quiet — only ${current.toFixed(1)}h this week vs ${previous.toFixed(1)}h last week.`)
-    }
-  })
-
-  // Energy correlation
-  const recentEnergy = energy.slice(-7)
-  const avgEnergy = recentEnergy.reduce((s, e) => s + e.energy, 0) / recentEnergy.length
-  const prevEnergy = energy.slice(-14, -7)
-  const prevAvgEnergy = prevEnergy.length > 0 ? prevEnergy.reduce((s, e) => s + e.energy, 0) / prevEnergy.length : 3
-
-  if (avgEnergy > prevAvgEnergy + 0.5) {
-    narratives.push(`Energy is trending up — averaging ${avgEnergy.toFixed(1)} this week vs ${prevAvgEnergy.toFixed(1)} last week.`)
-  } else if (avgEnergy < prevAvgEnergy - 0.5) {
-    narratives.push(`Energy dipped to ${avgEnergy.toFixed(1)} this week from ${prevAvgEnergy.toFixed(1)} last week. Take it easy.`)
+  if (timeline.length < 2) {
+    narratives.push(`${timeline.length} day${timeline.length !== 1 ? "s" : ""} of activity data so far — the picture fills in over time.`)
+    return narratives
   }
 
-  // Total hours
-  const totalThisWeek = last7.reduce((s, d) => s + d.totalHours, 0)
-  const totalLastWeek = prev7.reduce((s, d) => s + d.totalHours, 0)
-  narratives.push(`Total output: ${totalThisWeek.toFixed(1)}h this week${totalLastWeek > 0 ? ` (${totalLastWeek > totalThisWeek ? "down" : "up"} from ${totalLastWeek.toFixed(1)}h)` : ""}.`)
+  const midpoint = Math.floor(timeline.length / 2)
+  const firstHalf = timeline.slice(0, midpoint)
+  const secondHalf = timeline.slice(midpoint)
 
-  // Domain concentration
-  const balance = computeDomainBalance(last7Totals)
+  const firstTotals: Record<string, number> = {}
+  const secondTotals: Record<string, number> = {}
+
+  firstHalf.forEach((d) => {
+    Object.entries(d.domains).forEach(([k, v]) => {
+      firstTotals[k] = (firstTotals[k] || 0) + v
+    })
+  })
+  secondHalf.forEach((d) => {
+    Object.entries(d.domains).forEach(([k, v]) => {
+      secondTotals[k] = (secondTotals[k] || 0) + v
+    })
+  })
+
+  Object.keys(DOMAIN_LABELS).forEach((domain) => {
+    const current = secondTotals[domain] || 0
+    const previous = firstTotals[domain] || 0
+    if (previous > 0 && current / previous > 2) {
+      narratives.push(
+        `${DOMAIN_LABELS[domain]} saw ${(current / previous).toFixed(1)}x more activity recently.`
+      )
+    }
+    if (previous > 1 && current < 0.5) {
+      narratives.push(
+        `${DOMAIN_LABELS[domain]} hasn't been tended recently — ${current.toFixed(1)}h vs ${previous.toFixed(1)}h earlier.`
+      )
+    }
+  })
+
+  if (energy.length >= 2) {
+    const avgEnergy = energy.reduce((s, e) => s + e.energy, 0) / energy.length
+    narratives.push(`Average energy: ${avgEnergy.toFixed(1)}/5 across ${energy.length} check-ins.`)
+  }
+
+  const totalHours = timeline.reduce((s, d) => s + d.totalHours, 0)
+  narratives.push(`${totalHours.toFixed(1)}h tracked across ${timeline.length} days.`)
+
+  const allTotals: Record<string, number> = {}
+  timeline.forEach((d) => {
+    Object.entries(d.domains).forEach(([k, v]) => {
+      allTotals[k] = (allTotals[k] || 0) + v
+    })
+  })
+  const balance = computeDomainBalance(allTotals)
   if (balance < 0.3) {
-    narratives.push("Work is highly concentrated — consider spreading across projects.")
+    narratives.push("Work is highly concentrated in a few domains.")
   } else if (balance > 0.7) {
-    narratives.push("Work is well-distributed across domains this week.")
+    narratives.push("Work is well-distributed across domains.")
   }
 
   return narratives
@@ -465,99 +454,33 @@ export function computeDomainBalance(totals: Record<string, number>): number {
   return maxEntropy > 0 ? entropy / maxEntropy : 0
 }
 
-export function detectStreaks(timeline: TimelineRollup[]): { domain: string; streak: number; type: "active" | "gap"; gapDays?: number }[] {
-  const streaks: { domain: string; streak: number; type: "active" | "gap"; gapDays?: number }[] = []
+export function detectDomainGaps(timeline: TimelineRollup[]): { domain: string; gapDays: number }[] {
+  const gaps: { domain: string; gapDays: number }[] = []
   const domains = Object.keys(DOMAIN_LABELS)
 
   domains.forEach((domain) => {
-    let currentStreak = 0
-    let longestGap = 0
-    let currentGap = 0
-
-    // Count from most recent backwards
+    let daysSinceLast = 0
     for (let i = timeline.length - 1; i >= 0; i--) {
-      if (timeline[i].domains[domain] && timeline[i].domains[domain] > 0) {
-        if (currentGap === 0) currentStreak++
-        else break
-        currentGap = 0
-      } else {
-        if (currentStreak > 0) break
-        currentGap++
-      }
+      if (timeline[i].domains[domain] && timeline[i].domains[domain] > 0) break
+      daysSinceLast++
     }
 
-    // Find longest gap
-    let tempGap = 0
-    for (let i = 0; i < timeline.length; i++) {
-      if (!timeline[i].domains[domain] || timeline[i].domains[domain] === 0) {
-        tempGap++
-        longestGap = Math.max(longestGap, tempGap)
-      } else {
-        tempGap = 0
-      }
-    }
-
-    if (currentStreak >= 3) {
-      streaks.push({ domain, streak: currentStreak, type: "active" })
-    }
-    if (longestGap >= 5) {
-      streaks.push({ domain, streak: longestGap, type: "gap", gapDays: longestGap })
+    if (daysSinceLast >= 3 && daysSinceLast < timeline.length) {
+      gaps.push({ domain, gapDays: daysSinceLast })
     }
   })
 
-  return streaks.sort((a, b) => b.streak - a.streak)
+  return gaps.sort((a, b) => b.gapDays - a.gapDays)
 }
 
 export function predictStaleness(project: Project, timeline: TimelineRollup[]): number | null {
   const domain = project.domain
-  const recent = timeline.slice(-30)
-  const activeDays = recent.filter((d) => d.domains[domain] && d.domains[domain] > 0).length
+  const activeDays = timeline.filter((d) => d.domains[domain] && d.domains[domain] > 0).length
 
   if (activeDays === 0) return 0
-  const avgGapBetweenActive = 30 / activeDays
+  const avgGapBetweenActive = timeline.length / activeDays
   const daysSinceLast = project.staleDays
 
   if (daysSinceLast >= avgGapBetweenActive * 2) return 0
   return Math.max(0, Math.round(avgGapBetweenActive * 2 - daysSinceLast))
-}
-
-// Search index
-export interface SearchItem {
-  type: "project" | "decision" | "session" | "goal"
-  id: string
-  title: string
-  subtitle: string
-  domain?: string
-  date?: string
-}
-
-export function buildSearchIndex(): SearchItem[] {
-  const items: SearchItem[] = []
-
-  projects.forEach((p) =>
-    items.push({ type: "project", id: p.id, title: p.name, subtitle: p.description, domain: p.domain })
-  )
-  decisions.forEach((d) =>
-    items.push({ type: "decision", id: d.id, title: d.summary, subtitle: d.tags.join(", "), date: d.date })
-  )
-  sessions.forEach((s) =>
-    items.push({
-      type: "session",
-      id: s.id,
-      title: s.summary,
-      subtitle: `${s.duration}h on ${s.date}`,
-      domain: s.domain,
-      date: s.date,
-    })
-  )
-  goals.forEach((g) =>
-    items.push({
-      type: "goal",
-      id: g.id,
-      title: g.title,
-      subtitle: `${g.status} — ${g.targetDate}`,
-    })
-  )
-
-  return items
 }

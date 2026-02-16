@@ -2,19 +2,17 @@
 
 import { useDashboard } from "@/lib/dashboard-store"
 import {
-  projects,
-  decisions,
-  sessions,
-  goals,
   DOMAIN_COLORS,
   DOMAIN_LABELS,
 } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
 import { DomainChip } from "./domain-chip"
 import { X, ExternalLink, GitCommit, Clock, Target, Zap } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 export function DetailPanel() {
   const { detailPanel, setDetailPanel } = useDashboard()
+  const { projects, decisions, sessions, goals } = useEcosystemData()
 
   if (!detailPanel) return null
 
@@ -49,6 +47,28 @@ export function DetailPanel() {
                 <p className="text-lg font-semibold text-foreground font-mono">{project.staleDays}</p>
               </div>
             </div>
+            {project.blockers && project.blockers.length > 0 && (
+              <div className="space-y-2">
+                <h4 className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Blockers</h4>
+                {project.blockers.map((b, i) => (
+                  <div key={i} className="text-sm text-amber-400 p-2 rounded-lg bg-amber-500/10">{b}</div>
+                ))}
+              </div>
+            )}
+            {project.openQuestions && project.openQuestions.length > 0 && (
+              <div className="space-y-2">
+                <h4 className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Open Questions</h4>
+                {project.openQuestions.map((q, i) => (
+                  <div key={i} className="text-sm text-muted-foreground p-2 rounded-lg bg-accent/50">{q}</div>
+                ))}
+              </div>
+            )}
+            {project.nextAction && (
+              <div className="p-3 rounded-lg bg-accent/50">
+                <div className="text-xs text-muted-foreground mb-1">Next Action</div>
+                <p className="text-sm text-foreground">{project.nextAction}</p>
+              </div>
+            )}
             <div className="space-y-2">
               <h4 className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Related Goals</h4>
               {goals
@@ -118,13 +138,13 @@ export function DetailPanel() {
             <div className="space-y-2">
               <h4 className="text-xs text-muted-foreground uppercase tracking-wider font-medium">Linked Projects</h4>
               {decision.projectIds.map((pid) => {
-                const project = projects.find((p) => p.id === pid)
+                const project = projects.find((p) => p.id === pid || p.name === pid)
                 if (!project) return null
                 return (
                   <button
                     key={pid}
                     className="w-full text-left p-2.5 rounded-lg bg-accent/30 hover:bg-accent/50 transition-colors flex items-center gap-2"
-                    onClick={() => setDetailPanel({ type: "project", id: pid })}
+                    onClick={() => setDetailPanel({ type: "project", id: project.id })}
                     type="button"
                   >
                     <span className="h-2 w-2 rounded-full" style={{ backgroundColor: DOMAIN_COLORS[project.domain] }} />

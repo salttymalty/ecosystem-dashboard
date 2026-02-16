@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils"
 import { useDashboard, type ViewId } from "@/lib/dashboard-store"
 import { DOMAIN_COLORS, DOMAIN_LABELS } from "@/lib/ecosystem-data"
+import { useEcosystemData } from "@/lib/ecosystem-provider"
 import { DomainChip } from "./domain-chip"
 import {
   LayoutDashboard,
@@ -18,7 +19,7 @@ import {
   X,
   Menu,
 } from "lucide-react"
-import { useState } from "react"
+import { useState, useMemo } from "react"
 
 const NAV_ITEMS: { id: ViewId; label: string; icon: React.ReactNode; shortcut: string }[] = [
   { id: "overview", label: "Overview", icon: <LayoutDashboard className="h-4 w-4" />, shortcut: "1" },
@@ -40,6 +41,13 @@ export function SidebarNav() {
     isDark,
     setIsDark,
   } = useDashboard()
+
+  const { projects } = useEcosystemData()
+
+  const activeDomains = useMemo(() => {
+    const domainSet = new Set(projects.map((p) => p.domain))
+    return Object.keys(DOMAIN_COLORS).filter((d) => domainSet.has(d))
+  }, [projects])
 
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -77,7 +85,7 @@ export function SidebarNav() {
             Ecosystem
           </h1>
           <p className="text-xs text-muted-foreground mt-0.5">
-            9 projects, one nervous system
+            {projects.length} projects, one nervous system
           </p>
         </div>
 
@@ -89,7 +97,7 @@ export function SidebarNav() {
         >
           <Search className="h-3.5 w-3.5" />
           <span>Search...</span>
-          <kbd className="ml-auto text-[10px] font-mono bg-muted px-1.5 py-0.5 rounded text-muted-foreground">
+          <kbd className="ml-auto text-xs font-mono bg-muted px-1.5 py-0.5 rounded text-muted-foreground">
             {"/"}</kbd>
         </button>
 
@@ -112,7 +120,7 @@ export function SidebarNav() {
             >
               {item.icon}
               <span>{item.label}</span>
-              <kbd className="ml-auto text-[10px] font-mono text-muted-foreground opacity-50">
+              <kbd className="ml-auto text-xs font-mono text-muted-foreground opacity-50">
                 {item.shortcut}
               </kbd>
             </button>
@@ -128,7 +136,7 @@ export function SidebarNav() {
             {activeDomain && (
               <button
                 onClick={() => setActiveDomain(null)}
-                className="text-[10px] text-primary hover:underline"
+                className="text-xs text-primary hover:underline"
                 type="button"
               >
                 Clear
@@ -136,7 +144,7 @@ export function SidebarNav() {
             )}
           </div>
           <div className="flex flex-wrap gap-1.5">
-            {Object.keys(DOMAIN_COLORS).map((domain) => (
+            {activeDomains.map((domain) => (
               <DomainChip key={domain} domain={domain} size="xs" />
             ))}
           </div>

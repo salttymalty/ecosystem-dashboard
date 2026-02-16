@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-02-16T09:29:24.635884",
+    "generated": "2026-02-16T10:28:45.670671",
     "generator": "build-ecosystem-index.py",
     "staleness_threshold_days": 14
   },
@@ -1069,7 +1069,7 @@
       ],
       "links": {
         "repo": "https://github.com/salttymalty/madhudson-seo-project",
-        "site": "https://madhudsonwatches.com"
+        "site": "https://salttymalty.github.io/madhudson-seo-project"
       }
     },
     {
@@ -1317,6 +1317,22 @@
         "prioritization"
       ],
       "summary": "Gemini proposed four iteration paths for the design extraction ecosystem: Sonification (ADSR envelopes mapped to interaction models), Live Lens (automated primitives extractor), Entropy metrics (quantifying chaos/vibe), and Permacomputing audit (transfer-size-per-word-of-content). We're sequencing b"
+    },
+    {
+      "slug": "2026-02-16-codex-integration-meadows-informed-attention-inversion",
+      "date": "2026-02-16",
+      "title": "Codex Integration Strategy — Meadows-Informed Attention Inversion",
+      "project": "cross-project",
+      "tags": [
+        "codex",
+        "meadows",
+        "leverage-points",
+        "attention",
+        "email-triage",
+        "self-organization",
+        "compute-stewardship"
+      ],
+      "summary": "The integration of OpenAI Codex into the ecosystem is not a task migration exercise. It's an attention architecture change. The naive approach — \"move these 6 batch tasks to Codex\" — is leverage point 12 (parameters). It saves 40 minutes a day and changes nothing about how the system works. The actu"
     }
   ],
   "sessions": [
@@ -2607,15 +2623,70 @@
         "infrastructure",
         "platform-exports"
       ],
-      "artifacts_created": [],
+      "artifacts_created": [
+        "~/claude-ecosystem/_staging/claude-export/",
+        "~/claude-ecosystem/_staging/claude-export/claude-conversation-memory.md",
+        "~/claude-ecosystem/_staging/claude-export/claude-project-memories.md",
+        "~/.claude/domains/oeff/Garen_Ana Weekly 1_1 Meeting.docx",
+        "~/.claude/domains/oeff/oeff-auto-reply-config.docx",
+        "~/Desktop/claude/domains/design/knowledge/lens-pro.jsx",
+        "~/claude-ecosystem/_staging/artifacts/ag/cowork-file-recovery-prompt.txt",
+        "~/claude-ecosystem/_staging/artifacts/ag/file-recovery-context.json"
+      ],
       "artifacts_modified": [
         "~/.claude/corpus/digests/",
-        "~/.claude/corpus/corpus-index.yaml"
+        "~/.claude/corpus/corpus-index.yaml",
+        "~/claude-ecosystem/LOSTCONTEXTEXPLORER-state.json"
       ],
       "decisions": [
         "enriched-before-reclassified-merge-order",
         "platform-exports-requested",
+        "claude-export-retention-window",
+        "four-binary-files-low-priority",
         "gemini-api-not-viable-for-artifacts"
+      ],
+      "date": "2026-02-16"
+    },
+    {
+      "id": "2026-02-16T13-00-meta-gemini-recovery-triage",
+      "domain": "meta",
+      "started": "2026-02-16T13:00:00Z",
+      "intent": "Process Claude.ai data export, save Gemini file classification manifest, triage and recover high-leverage design files from Gemini",
+      "tags": [
+        "context-recovery",
+        "gemini",
+        "design-system",
+        "corpus",
+        "platform-exports",
+        "triage"
+      ],
+      "artifacts_created": [
+        "~/claude-ecosystem/_staging/claude-export/claude-conversation-memory.md",
+        "~/claude-ecosystem/_staging/claude-export/claude-project-memories.md",
+        "~/claude-ecosystem/_staging/gemini-recovery/gemini-file-classification.json",
+        "~/.claude/domains/oeff/Garen_Ana Weekly 1_1 Meeting.docx",
+        "~/.claude/domains/oeff/oeff-auto-reply-config.docx",
+        "~/Desktop/claude/domains/design/knowledge/color-system-expansion.md",
+        "~/Desktop/claude/domains/design/knowledge/design-language-deep-analysis.html",
+        "~/Desktop/claude/domains/design/knowledge/biophilic-transitions-catalog.html",
+        "~/Desktop/claude/domains/design/knowledge/visual-vocabulary-flavors.md",
+        "~/Desktop/claude/domains/design/knowledge/systematic-warmth-story.html",
+        "~/Desktop/claude/domains/design/knowledge/complete_stack_guide (2).html",
+        "~/Desktop/claude/domains/design/knowledge/context-resolution-module.md",
+        "~/Desktop/claude/domains/design/knowledge/color-language-domain-sensing.md",
+        "~/Desktop/claude/domains/design/knowledge/03-ref-context-layers.html",
+        "~/Desktop/claude/domains/design/knowledge/03-ref-environment-layer.html",
+        "~/Desktop/claude/domains/design/knowledge/03-ref-context-layers (1).html",
+        "~/Desktop/claude/domains/cogcom/Deep Research_ Warm Data Lineage Expansion.md",
+        "~/Desktop/claude/consulting/madhudson/mad-hudson-claude-instructions.md"
+      ],
+      "artifacts_modified": [
+        "~/claude-ecosystem/LOSTCONTEXTEXPLORER-state.json"
+      ],
+      "decisions": [
+        "gemini-classification-manifest-from-conversation",
+        "design-gap-triage-4-files",
+        "claude-export-project-docs-extracted"
       ],
       "date": "2026-02-16"
     },
@@ -3227,6 +3298,11 @@
         "slug": "2026-02-15-design-extraction-iteration-priority",
         "title": "Design Extraction Iteration Priority",
         "date": "2026-02-15"
+      },
+      {
+        "slug": "2026-02-16-codex-integration-meadows-informed-attention-inversion",
+        "title": "Codex Integration Strategy — Meadows-Informed Attention Inversion",
+        "date": "2026-02-16"
       }
     ],
     "sessions": [
@@ -3465,6 +3541,12 @@
         "date": "2026-02-16"
       },
       {
+        "id": "2026-02-16T13-00-meta-gemini-recovery-triage",
+        "domain": "meta",
+        "intent": "Process Claude.ai data export, save Gemini file classification manifest, triage ",
+        "date": "2026-02-16"
+      },
+      {
         "id": "2026-02-16T14-45-gemini-audit-quickwins",
         "domain": "meta",
         "intent": "Resume Gemini repo audits from Feb 15, implement all 5 quick wins from synthesis",
@@ -3698,7 +3780,7 @@
     "domain_activity": {
       "mad-hudson": 16,
       "oeff": 7,
-      "meta": 16,
+      "meta": 17,
       "actors-garden": 3,
       "convene": 3,
       "design": 1,
@@ -3912,6 +3994,13 @@
       "label": "Design Extraction Iteration Priority",
       "text": "Design Extraction Iteration Priority Gemini proposed four iteration paths for the design extraction ecosystem: Sonification (ADSR envelopes mapped to interaction models), Live Lens (automated primitives extractor), Entropy metrics (quantifying chaos/vibe), and Permacomputing audit (transfer-size-per-word-of-content). We're sequencing b design-extraction live-lens tooling permacomputing prioritization",
       "date": "2026-02-15"
+    },
+    {
+      "type": "decision",
+      "id": "2026-02-16-codex-integration-meadows-informed-attention-inversion",
+      "label": "Codex Integration Strategy — Meadows-Informed Attention Inversion",
+      "text": "Codex Integration Strategy — Meadows-Informed Attention Inversion The integration of OpenAI Codex into the ecosystem is not a task migration exercise. It's an attention architecture change. The naive approach — \"move these 6 batch tasks to Codex\" — is leverage point 12 (parameters). It saves 40 minutes a day and changes nothing about how the system works. The actu codex meadows leverage-points attention email-triage self-organization compute-stewardship",
+      "date": "2026-02-16"
     },
     {
       "type": "session",
@@ -4191,6 +4280,13 @@
       "id": "2026-02-16T12-00-meta-corpus-promotion",
       "label": "Promote enriched and reclassified corpus digests to main corpus, rebuild index, ",
       "text": "Promote enriched and reclassified corpus digests to main corpus, rebuild index, research platform export options meta corpus enrichment reclassification context-recovery infrastructure platform-exports",
+      "date": "2026-02-16"
+    },
+    {
+      "type": "session",
+      "id": "2026-02-16T13-00-meta-gemini-recovery-triage",
+      "label": "Process Claude.ai data export, save Gemini file classification manifest, triage ",
+      "text": "Process Claude.ai data export, save Gemini file classification manifest, triage and recover high-leverage design files from Gemini meta context-recovery gemini design-system corpus platform-exports triage",
       "date": "2026-02-16"
     },
     {
@@ -5319,12 +5415,12 @@
       },
       {
         "date": "2026-02-16",
-        "totalHours": 6.75,
+        "totalHours": 8,
         "domains": {
-          "convene": 0.25,
-          "ag": 0.75,
-          "mad-hudson": 0.25,
-          "meta": 5.5
+          "convene": 0.15,
+          "ag": 0.45,
+          "mad-hudson": 0.15,
+          "meta": 7.25
         },
         "dominantDomain": "meta"
       }
@@ -5508,6 +5604,83 @@
       "project": "mad-hudson"
     },
     {
+      "url": "https://salttymalty.github.io/madhudson-seo-project",
+      "label": "SEO Research Hub",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/quick-wins.html",
+      "label": "Quick Wins",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/dashboard.html",
+      "label": "Research Dashboard",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/slides.html",
+      "label": "Slide Deck",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/product-content.html",
+      "label": "Roadmap: Product Content",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/schema-markup.html",
+      "label": "Roadmap: Schema Markup",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/aeo-strategy.html",
+      "label": "Roadmap: AEO Strategy",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/entity-building.html",
+      "label": "Roadmap: Entity Building",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/extractable-copy.html",
+      "label": "Roadmap: Extractable Copy",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/growth-model.html",
+      "label": "Roadmap: Growth Model",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
+      "url": "https://salttymalty.github.io/madhudson-seo-project/claude/consulting/madhudson/roadmaps/technical-seo.html",
+      "label": "Roadmap: Technical SEO",
+      "domain": "mad-hudson",
+      "platform": "github-pages",
+      "project": "mad-hudson"
+    },
+    {
       "url": "https://watchconcepts.tiiny.site",
       "label": "Watch Concepts",
       "domain": "mad-hudson",
@@ -5536,6 +5709,18 @@
       "label": "Intentional Tech Tools",
       "domain": "design",
       "platform": "tiiny"
+    },
+    {
+      "url": "https://salttymalty.github.io",
+      "label": "Personal Landing Page",
+      "domain": "personal",
+      "platform": "github-pages"
+    },
+    {
+      "url": "https://salttymalty.github.io/the-lens",
+      "label": "The Lens — Design Studies",
+      "domain": "design",
+      "platform": "github-pages"
     },
     {
       "url": "https://ecosystem-dashboard.vercel.app",
